@@ -5,11 +5,13 @@ import Link from "next/link";
 import HamburgerIcon from '../../../public/svgs/hamburger-menu.svg'
 import Image from 'next/image'
 import TechverseLogo from '../../../public/svgs/techverse-logo.svg'
+import { usePathname } from 'next/navigation';
 
 type Props = {};
 
 const NavBar = (props: Props) => {
   const [openNavbar, setOpenNavbar] = useState(false);
+  const pathname = usePathname();
   const navMenus = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
@@ -46,7 +48,7 @@ const NavBar = (props: Props) => {
           <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
             {navMenus.map(({ name, path }, index) => (
               <li key={index} className="text-body text-[16px]">
-                <Link href={path}>{name}</Link>
+                <Link href={path} className={`${pathname === path && 'text-primary text-[18px] font-semibold leading-6'}`}>{name}</Link>
               </li>
             ))}
             <button className="flex py-[10px] px-[24px] justify-center items-center bg-primary text-white rounded-[10px] md:hidden">Get Started</button>
