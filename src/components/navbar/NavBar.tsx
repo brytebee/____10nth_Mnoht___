@@ -19,45 +19,41 @@ const NavBar = (props: Props) => {
     { name: "About", path: "/about" },
     { name: "Contact Us", path: "/contact" },
   ];
-  return <nav className="w-full bg-white">
-    <div className="justify-between px-2 mx-auto lg:max-w-7xl md:items-center md:flex md:px-0">
-      <div>
-        <div className="flex items-center justify-between py-3 md:py-4 md:block">
-          <Link href="/" className="">
-            <Image src={TechverseLogo} alt="Techverse Logo" className="w-[150px] h-[60px] md:w-[233px]"/>
-          </Link>
-          <div className="md:hidden">
-            <button
-              className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-              onClick={() => setOpenNavbar(!openNavbar)}
+
+  return (
+    <nav className="bg-inherit w-full relative">
+      <div className="max-w-screen-xl flex items-center justify-between mx-auto py-4 px-2 md:px-0">
+        <Link href="/" className="flex items-center">
+          <Image src={TechverseLogo} alt="Techverse Logo" className="w-[150px] h-[60px] md:w-[233px]" />
+        </Link>
+        <div className="md:hidden">
+           <button
+            className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+            onClick={() => setOpenNavbar(!openNavbar)}
             >
               {openNavbar ? (
-                <span className="text-body">X</span>
-              ) : (
-                <Image src={HamburgerIcon} alt="Hamburger Icon" />
+                <span className="text-primary text-lg">X</span>
+               ) : (
+                 <Image src={HamburgerIcon} alt="Hamburger Icon" />
               )}
-            </button>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div
-          className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${openNavbar ? "block" : "hidden"
-            }`}
-        >
-          <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+             </button>
+           </div>
+        <div className={`w-full md:block md:w-auto ${openNavbar ? 'w-full bg-primary block absolute top-16 right-0 md:relative' : 'hidden'}`}>
+          <ul className="items-center justify-center space-y-4 p-4 md:pl-0 md:flex md:space-x-4 md:space-y-0">
             {navMenus.map(({ name, path }, index) => (
-              <li key={index} className="text-body text-[16px]">
-                <Link href={path} className={`${pathname === path && 'text-primary text-[18px] font-semibold leading-6'}`}>{name}</Link>
+              <li key={index}>
+                <Link href={path} className={`block py-2 pl-3 pr-4 rounded ${pathname === path ? 'md:text-primary text-[18px] font-semibold leading-6 text-black' : 'text-white md:text-body'} hover:bg-gray-100 hover:text-primary md:hover:bg-transparent md:p-0`} aria-current={pathname === path ? 'page' : undefined}>
+                  {name}
+                </Link>
               </li>
             ))}
-            <button className="flex py-[10px] px-[24px] justify-center items-center bg-primary text-white rounded-[10px] md:hidden">Get Started</button>
+            <button className='w-[150px] py-[10px] px-[24px] justify-center items-center bg-white text-primary rounded-[10px] md:hidden'>Get Started</button>
           </ul>
         </div>
+        <button className='md:flex py-[10px] px-[24px] md:px-[20px] justify-center items-center bg-primary text-white rounded-[10px] hidden'>Get Started</button>
       </div>
-      <button className='md:flex py-[10px] px-[24px] justify-center items-center bg-primary text-white rounded-[10px] hidden'>Get Started</button>
-    </div>
-  </nav>;
+    </nav>
+  )
 };
 
 export default NavBar;
