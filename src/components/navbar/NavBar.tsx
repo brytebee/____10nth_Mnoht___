@@ -38,7 +38,7 @@ const NavBar = (props: Props) => {
               )}
              </button>
            </div>
-        <div className={`w-full md:block md:w-auto ${openNavbar ? 'w-full bg-primary block absolute top-16 right-0 md:relative' : 'hidden'}`}>
+        <div className={`w-full md:block md:w-auto ${openNavbar ? 'w-full z-20 bg-primary block absolute top-16 right-0 md:relative' : 'hidden'}`}>
           <ul className="items-center justify-center space-y-4 p-4 md:pl-0 md:flex md:space-x-4 md:space-y-0">
             {navMenus.map(({ name, path }, index) => (
               <li key={index}>
