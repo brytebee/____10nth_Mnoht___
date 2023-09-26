@@ -7,9 +7,7 @@ import Image from 'next/image'
 import TechverseLogo from '../../../public/svgs/techverse-logo.svg'
 import { usePathname } from 'next/navigation';
 
-type Props = {};
-
-const NavBar = (props: Props) => {
+const NavBar = () => {
   const [openNavbar, setOpenNavbar] = useState(false);
   const pathname = usePathname();
   const navMenus = [
@@ -22,9 +20,9 @@ const NavBar = (props: Props) => {
 
   return (
     <nav className="bg-inherit w-full relative">
-      <div className="max-w-screen-xl flex items-center justify-between mx-auto py-4 px-2 md:px-0">
+      <div className="max-w-screen-xl flex items-center justify-between mx-auto py-4 px-2 md:px-1">
         <Link href="/" className="flex items-center">
-          <Image src={TechverseLogo} alt="Techverse Logo" className="w-[150px] h-[60px] md:w-[233px]" />
+          <Image src={TechverseLogo} alt="Techverse Logo" className="w-[150px] h-[60px] md:w-[200px]" />
         </Link>
         <div className="md:hidden">
            <button
@@ -39,7 +37,7 @@ const NavBar = (props: Props) => {
              </button>
            </div>
         <div className={`w-full md:block md:w-auto ${openNavbar ? 'w-full z-20 bg-primary block absolute top-16 right-0 md:relative' : 'hidden'}`}>
-          <ul className="items-center justify-center space-y-4 p-4 md:pl-0 md:flex md:space-x-4 md:space-y-0">
+          <ul className="items-center justify-center space-y-4 p-4 md:pl-0 md:flex md:space-x-3 lg:space-x-8 md:space-y-0">
             {navMenus.map(({ name, path }, index) => (
               <li key={index}>
                 <Link href={path} className={`block py-2 pl-3 pr-4 rounded ${pathname === path ? 'md:text-primary text-[18px] font-semibold leading-6 text-black' : 'text-white md:text-body'} hover:bg-gray-100 hover:text-primary md:hover:bg-transparent md:p-0`} aria-current={pathname === path ? 'page' : undefined}>
