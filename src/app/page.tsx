@@ -1,3 +1,4 @@
+import Courses from "@/components/home/Courses";
 import Hero from "@/components/home/Hero";
 import Stats from "@/components/home/Stats";
 
@@ -24,6 +25,7 @@ export default function Home() {
     <main className="bg-mobile-bg md:bg-white lg:bg-white">
       <Hero />
       <Stats stats={stats} />
+      <Courses />
     </main>
   );
 }
