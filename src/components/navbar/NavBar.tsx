@@ -20,13 +20,13 @@ const NavBar = () => {
 
   return (
     <nav className="bg-inherit w-full relative">
-      <div className="flex items-center justify-between mx-auto py-4 px-2 md:px-1 lg:mx-0 lg:px-8">
+      <div className="flex items-center justify-between mx-auto py-3 px-2 md:px-1 lg:mx-0 lg:px-8">
         <Link href="/" className="flex items-center">
-          <Image src={TechverseLogo} alt="Techverse Logo" className="w-[150px] h-[60px] md:w-[200px] lg:w-full" />
+          <Image src={TechverseLogo} alt="Techverse Logo" className="w-[150px] md:w-[200px] lg:w-[233px]" />
         </Link>
         <div className="md:hidden">
            <button
-            className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+            className="p-2 text-gray-700 rounded-md outline-none"
             onClick={() => setOpenNavbar(!openNavbar)}
             >
               {openNavbar ? (

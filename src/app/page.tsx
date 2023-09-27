@@ -1,13 +1,29 @@
+import Hero from "@/components/home/Hero";
+import Stats from "@/components/home/Stats";
+
 export default function Home() {
+  const stats = [
+    {
+      title: 'Courses',
+      value: 25,
+    },
+    {
+      title: 'Students enrolled',
+      value: 30000,
+    },
+    {
+      title: 'Instructors',
+      value: 500,
+    },
+    {
+      title: 'Certified students',
+      value: 185,
+    },
+  ]
   return (
-    <main>
-      <h1>Landing Page</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla quisquam
-        eos veniam officiis. Tenetur temporibus ab dicta eos, excepturi
-        reiciendis unde! Quasi at cum magni, dolor fugit quaerat harum sapiente?
-      </p>
-      <a href="/course">View Course</a>
+    <main className="bg-mobile-bg md:bg-white lg:bg-white">
+      <Hero />
+      <Stats stats={stats} />
     </main>
   );
 }
