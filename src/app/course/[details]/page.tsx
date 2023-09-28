@@ -47,64 +47,79 @@ const page = () => {
   };
 
   return (
-    <div className="text-left px-[26px] pb-[62px]">
-      <button className="p-0" onClick={handleClick}>
-        <Image
-          className="p-0"
-          width={38}
-          height={38}
-          src={Back}
-          alt="go back"
-        />
-      </button>
-      {courses &&
-        courses.map(
-          ({
-            image,
-            name,
-            description,
-            eligibility,
-            learnings,
-            conclusion,
-          }) => (
-            <div>
-              <div className="flex justify-center items-center">
-                <Image
-                  width={280}
-                  height={280}
-                  src={image}
-                  alt={`${name} image`}
-                />
-              </div>
-              <h1 className="text-xl pt-[30px] font-bold">
-                {name.toUpperCase()}
-              </h1>
-              <p className="leading-7 pt-[10px]">{description}</p>
-              <h3 className="pt-[28px] text-lg font-semibold">
-                Program Eligibility
-              </h3>
-              <p className="leading-7 pt-[10px]">{eligibility}</p>
-              <h3 className="pt-[28px] text-lg font-semibold">
-                What you’ll learn
-              </h3>
-              <p className="leading-7 pt-[10px]">{learnings.intro}</p>
-              <ul className="pt-[18px] list-disc list-inside pl-1">
-                {learnings.listings.split(",").map((list) => (
-                  <li className="leading-7 pt-[2px] font-semibold" key={list}>
-                    {list}
-                  </li>
-                ))}
-              </ul>
-              <p className="pt-[20px] leading-7">{conclusion}</p>
-            </div>
-          )
-        )}
-      <div className="text-center pt-[52px]">
-        <button className="w-[150px] py-[10px] px-[24px] justify-center text-center bg-[#D97508] text-white text-primary text-lg rounded-[10px]">
-          Enroll now
-        </button>
+    <>
+      <div className="tablet&_desktop_only md:block hidden">
+        <div className="flex flex-col items-center pt-[86px] pb-[60px] my-8">
+          <hr className="my-[-24px] w-full text-[rgba(230, 192, 156, 0.50)]" />
+          <div className="border-[3px] bg-white border-[rgba(230, 192, 156, 0.50)]-500 rounded-[28px] w-[220px] py-2 mx-6 text-center text-lg">
+            Course Overview
+          </div>
+        </div>
+        <div className="bg-[#D97508] text-white text-center p-3">
+          <h1 className="text-xl font-bold">
+            {courses?.[0]?.name.toUpperCase()}
+          </h1>
+        </div>
       </div>
-    </div>
+      <div className="text-left px-[26px] pb-[62px] md:pt-[75px]">
+        <button className="md:hidden" onClick={handleClick}>
+          <Image
+            className="p-0"
+            width={34}
+            height={34}
+            src={Back}
+            alt="go back"
+          />
+        </button>
+        {courses &&
+          courses.map(
+            ({
+              image,
+              name,
+              description,
+              eligibility,
+              learnings,
+              conclusion,
+            }) => (
+              <div>
+                <div className="flex justify-center items-center">
+                  <Image
+                    width={280}
+                    height={280}
+                    src={image}
+                    alt={`${name} image`}
+                  />
+                </div>
+                <h1 className="text-xl pt-[30px] font-bold md:hidden">
+                  {name.toUpperCase()}
+                </h1>
+                <p className="leading-7 pt-[10px]">{description}</p>
+                <h3 className="pt-[28px] text-lg font-semibold">
+                  Program Eligibility
+                </h3>
+                <p className="leading-7 pt-[10px]">{eligibility}</p>
+                <h3 className="pt-[28px] text-lg font-semibold">
+                  What you’ll learn
+                </h3>
+                <p className="leading-7 pt-[10px]">{learnings.intro}</p>
+                <ul className="pt-[18px] list-disc list-inside pl-1">
+                  {learnings.listings.split(",").map((list) => (
+                    <li className="leading-7 pt-[2px] font-semibold" key={list}>
+                      {list}
+                    </li>
+                  ))}
+                </ul>
+                <p className="pt-[20px] leading-7">{conclusion}</p>
+              </div>
+            )
+          )}
+        <div className="text-center pt-[52px]">
+          <button className="w-[150px] py-[10px] px-[24px] justify-center text-center bg-[#D97508] text-white text-primary text-lg rounded-[10px]">
+            Enroll now
+          </button>
+        </div>
+      </div>
+    </>
   );
 };
 
