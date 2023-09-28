@@ -14,7 +14,7 @@ export default function Courses({ }: Props) {
     { name: 'Graphics Design', description: 'Learn how to build websites and web applications using HTML, CSS, JavaScript, React, and more.' },
   ]
   return (
-    <section className='w-full bg-mobile-bg-color mt-10 pb-10 px-4 flex flex-col gap-6 lg:bg-mobile-bg md:bg-mobile-bg lg:pt-12 md:pt-11 md:px-16 lg:px-32'>
+    <section className='w-full bg-mobile-bg-color mt-10 pb-10 px-4 flex flex-col gap-6 lg:bg-mobile-bg md:bg-mobile-bg lg:pt-12 md:pt-11 md:px-8 lg:px-32'>
       <div className='flex flex-col gap-4 lg:gap-5 lg:items-center lg:justify-center md:items-center md:mb-20'>
         <h3 className='text-body text-2xl font-black lg:text-3xl'>Our Popular Courses</h3>
         <p className='text-base w-full md:w-11/12 lg:w-[902px] lg:text-base text-justify md:text-center font-light'>Our curriculum is designed by industry experts who are at the forefront of technological advancements. From programming languages like Python and JavaScript to emerging fields like artificial intelligence and blockchain, our courses cover a wide range of in-demand topics.</p>
