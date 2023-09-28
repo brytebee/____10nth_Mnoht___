@@ -1,3 +1,4 @@
+import WhyChooseUsSection from "@/components/home/Choose";
 import Courses from "@/components/home/courses/Courses";
 import Hero from "@/components/home/Hero";
 import Stats from "@/components/home/Stats";
@@ -26,6 +27,7 @@ export default function Home() {
       <Hero />
       <Stats stats={stats} />
       <Courses />
+      <WhyChooseUsSection />
     </main>
   );
 }
