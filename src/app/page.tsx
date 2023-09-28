@@ -1,4 +1,4 @@
-import Courses from "@/components/home/Courses";
+import Courses from "@/components/home/courses/Courses";
 import Hero from "@/components/home/Hero";
 import Stats from "@/components/home/Stats";
 
