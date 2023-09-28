@@ -40,7 +40,7 @@ const NavBar = () => {
           <ul className="items-center justify-center space-y-4 p-4 md:pl-0 md:flex md:space-x-3 lg:space-x-8 md:space-y-0">
             {navMenus.map(({ name, path }, index) => (
               <li key={index}>
-                <Link href={path} className={`block py-2 pl-3 pr-4 rounded ${pathname === path ? 'md:text-primary text-[18px] font-semibold leading-6 text-black' : 'text-white md:text-body'} hover:bg-gray-100 hover:text-primary md:hover:bg-transparent md:p-0`} aria-current={pathname === path ? 'page' : undefined}>
+                <Link href={path} className={`block py-2 pl-3 pr-4 rounded ${pathname === path ? 'md:text-primary text-[18px] font-semibold leading-6 text-black' : 'text-white md:text-body md:text-sm lg:text-lg'} hover:bg-gray-100 hover:text-primary md:hover:bg-transparent md:p-0`} aria-current={pathname === path ? 'page' : undefined}>
                   {name}
                 </Link>
               </li>

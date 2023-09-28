@@ -46,7 +46,7 @@ const Footer = () => {
             <h4 className="text-white text-[14px] leading-5 font-medium lg:hidden">Sign up for our newsletter</h4>
             <div>
               <input type="email" name="email" placeholder="Enter your email" className="w-full py-3 px-2 md:pl-1 lg:px-2 rounded-md" />
-              <button type="button" className="bg-primary text-white text-sm w-[111px] md:w-[100px] py-3 px-3 md:px-1 lg:px-1 lg:w-[200px] rounded-md shadow-[0px 7px 52px 0px] absolute right-1 bottom-0.5">{isMobile ? 'Sign up for newsletter' : 'Sign up'}</button>
+              <button type="button" className="bg-primary text-white text-sm w-[111px] md:w-[100px] py-3 px-3 md:px-1 lg:px-1 lg:w-[180px] rounded-md shadow-[0px 7px 52px 0px] absolute right-1 bottom-0.5">{isMobile ? 'Sign up for newsletter' : 'Sign up'}</button>
             </div>
           </div>
         </section>
