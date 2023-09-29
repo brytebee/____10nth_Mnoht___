@@ -1,4 +1,5 @@
 import WhyChooseUsSection from "@/components/home/Choose";
+import OurCommunitySection from "@/components/home/community/Community";
 import Courses from "@/components/home/courses/Courses";
 import Hero from "@/components/home/Hero";
 import Stats from "@/components/home/Stats";
@@ -28,6 +29,7 @@ export default function Home() {
       <Stats stats={stats} />
       <Courses />
       <WhyChooseUsSection />
+      <OurCommunitySection />
     </main>
   );
 }
