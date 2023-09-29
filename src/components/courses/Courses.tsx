@@ -7,6 +7,8 @@ import polygon4 from "../../../public/svgs/Polygon-4.svg";
 import polygon5 from "../../../public/svgs/Polygon-5.svg";
 import polygon12 from "../../../public/svgs/Polygon-12.svg";
 import Carousel from "./coursesCourasel/CoursesCourasel";
+import CourseData from './CourseData';
+import CourseCard from './CourseCard';
 
 interface Props {
   // Add props here
@@ -18,7 +20,7 @@ const Courses: React.FC<Props> = (props) => {
       <div className="static z-30">
         <Carousel />
       </div>
-      <div className="w-[100%] md:my-6 h-[300px] border-b-4">
+      <div className="w-[100%] md:my-6 h-[300px] ">
         <div className="flex justify-between">
           <ul className="p-0 flex flex-col gap-[20px] ">
             <li className="md:w-[476px] font-serif md:text-[35px] font-normal leading-[120%]">
@@ -81,6 +83,9 @@ h-[60px] bg-[#F2F2F2] border-[rgba(230, 192, 156, 0.50)
           alt="polygon"
           className="absolute lg:ml-[200px] md:ml[140px]"
         />
+      </div>
+      <div>
+        <CourseCard items={CourseData}/>
       </div>
     </div>
   );
