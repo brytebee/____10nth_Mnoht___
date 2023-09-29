@@ -15,7 +15,9 @@ interface Props {
 const Courses: React.FC<Props> = (props) => {
   return (
     <div className="bg-[#F2F2F2] md: px-16 py-1">
-      <Carousel />
+      <div className="static z-30">
+        <Carousel />
+      </div>
       <div className="w-[100%] md:my-6 h-[300px] border-b-4">
         <div className="flex justify-between">
           <ul className="p-0 flex flex-col gap-[20px] ">
@@ -29,21 +31,23 @@ const Courses: React.FC<Props> = (props) => {
               All the best courses, ready when you are
             </li>
           </ul>
-          <ul> <Image
-          src={polygon1}
-          height={50}
-          width={50}
-          alt="polygon"
-          className="absolute md:ml-[12px] mt-[-20px]"
-          
-        />
-        <Image
-          src={polygon2}
-          height={50}
-          width={50}
-          alt="polygon"
-          className="absolute md:ml-[12px] mt-[20px]"
-        /></ul>
+          <ul>
+            {" "}
+            <Image
+              src={polygon1}
+              height={50}
+              width={50}
+              alt="polygon"
+              className="absolute md:ml-[12px] mt-[-20px]"
+            />
+            <Image
+              src={polygon2}
+              height={50}
+              width={50}
+              alt="polygon"
+              className="absolute md:ml-[12px] mt-[20px]"
+            />
+          </ul>
         </div>
         <ul className="border-b-2 border-[rgba(230, 192, 156, 0.50)] w-[100%] flex justify-center">
           <li
@@ -55,10 +59,28 @@ h-[60px] bg-[#F2F2F2] border-[rgba(230, 192, 156, 0.50)
             Our Courses
           </li>
         </ul>
-       
-        <Image src={polygon4} height={80} width={80} alt="polygon" />
-        <Image src={polygon5} height={100} width={100} alt="polygon" />
-        <Image src={polygon12} height={150} width={150} alt="polygon" />
+
+        <Image
+          src={polygon4}
+          height={80}
+          width={80}
+          alt="polygon"
+          className="absolute lg:ml-[900px] md:ml-[450px] md:mt-[30px]"
+        />
+        <Image
+          src={polygon5}
+          height={100}
+          width={100}
+          alt="polygon"
+          className="absolute lg:ml-[600px] md:ml-[200px] mt-[-240px]"
+        />
+        <Image
+          src={polygon12}
+          height={150}
+          width={150}
+          alt="polygon"
+          className="absolute lg:ml-[200px] md:ml[140px]"
+        />
       </div>
     </div>
   );
