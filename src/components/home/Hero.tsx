@@ -18,7 +18,7 @@ export default function Hero({ }: Props) {
           <h1 className='text-hero-header w-[296px] text-3xl font-semibold'>Online Tech Classes From The Best Instructors</h1>
           <div className='flex flex-col gap-2'>
             <h2 className='text-primary text-xl font-semibold'>Introduction</h2>
-            <p className='w-full text-[15px] font-normal'>Welcome to <strong>TechVerse</strong> Academy, your gateway to unlocking the world of cutting-edge technology! Whether you're a curious beginner or an aspiring tech enthusiast, our online platform offers an unparalleled learning experience tailored to your needs.</p>
+            <p className='w-[95%] text-lg text-body font-light'>Welcome to <strong>TechVerse</strong> Academy, your gateway to unlocking the world of cutting-edge technology! Whether you're a curious beginner or an aspiring tech enthusiast, our online platform offers an unparalleled learning experience tailored to your needs.</p>
             <button type="button" className='border-none w-[140px] flex justify-center items-center px-[15px] py-3 rounded-[10px] text-white text-lg bg-primary mx-auto mt-4 mb-8'>Enroll now</button>
           </div>
         </div>
