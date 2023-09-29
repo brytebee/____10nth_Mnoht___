@@ -14,6 +14,9 @@ module.exports = {
         testimonial: 'var(--testimonials-bg-color)',
       }
     },
+    fontFamily: {
+      'serif': ['Georgia', 'Cambria', 'Tiempos Headline'],
+    }
   },
   plugins: [],
 }

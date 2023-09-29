@@ -13,14 +13,17 @@ const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
     items: 3,
+    slidesToSlide: 2,
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
     items: 2,
+    slidesToSlide: 1,
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
     items: 1,
+    slidesToSlide: 1,
   },
 };
 
@@ -59,7 +62,7 @@ const CustomCarousel = () => {
 
   return (
     <>
-      <div className={`${styles.container_cont} overflow-hidden`}>
+      <div className={`${styles.container_cont} overflow-hidden md:my-2 bg-white px-2 pb-2`}>
         <Carousel
           swipeable
           draggable
@@ -92,7 +95,7 @@ const CustomCarousel = () => {
           ))}
         </Carousel>
       </div>
-      <div className={styles.carousel_arrows}>
+      <div className="md:flex justify-between w-100% md:px-2">
         <button onClick={handlePrevClick} className={styles.btn}>
           <Image src={leftArrow} alt="Previous" width={48} height={48} />
         </button>
