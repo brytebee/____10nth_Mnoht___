@@ -55,7 +55,7 @@ const Courses: React.FC<Props> = (props) => {
           <li
             className="mb-[-25px] w-[248px]
 h-[60px] bg-[#F2F2F2] border-[rgba(230, 192, 156, 0.50)
-] border-b-2 md:rounded-[30px] flex justify-center items-center md:text-[25px] font-serif font-semibold
+] border md:rounded-[30px] flex justify-center items-center md:text-[25px] font-serif font-semibold
 "
           >
             Our Courses

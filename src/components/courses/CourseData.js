@@ -12,14 +12,14 @@ import underline from '../../../public/svgs/Line-7.svg';
 const CourseData = [
   {
     id: 1,
-    img: productManagement,
+    img: computerAppreciation,
     header: "Introduction to computer appreciation",
     underline,
     desc: "Our computer appreciation course is designed to introduce you to the fundamental concepts, skills, and practical knowledge necessary to understand and effectively use computers. It is typically aimed at beginners or those with limited computer experience.",
   },
   {
     id: 2,
-    img: computerAppreciation,
+    img: productManagement,
     header: "Product management",
     underline,
     desc: "Our Product Management course is designed to equip you with the skills needed to become an effective product manager. You'll learn how to identify market opportunities, conduct user research, define product strategies, and oversee the entire product lifecycle.",
