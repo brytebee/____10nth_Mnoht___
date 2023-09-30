@@ -17,6 +17,9 @@ module.exports = {
         'mobile-bg': 'var(--mobile-bg-color)',
       }
     },
+    fontFamily: {
+      'serif': ['Georgia', 'Cambria', 'Tiempos Headline'],
+    }
   },
   plugins: [],
 }
