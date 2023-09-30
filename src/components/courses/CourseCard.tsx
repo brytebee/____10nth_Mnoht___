@@ -5,8 +5,8 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 // import CourseData from './CourseData';
 
 interface CourseDataItems {
-  image: string;
-  line: string;
+  img: string;
+  underline: string;
   header: string;
   desc: string;
   id: number;
