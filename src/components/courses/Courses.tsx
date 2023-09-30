@@ -58,8 +58,8 @@ h-[173px] bg-[#A63F0E1A] md:bg-[#F2F2F2]
         <ul className="md:border-b-2 md:border-[rgba(230, 192, 156, 0.50)] w-[100%] flex justify-center md:my-[40px]">
           <li
             className="w-[131px] h-[34px] mt-[-18px] md:mt-[10px] md:mb-[-30px] md:w-[248px]
-md:h-[60px] bg-[#F2F2F2] border-[rgba(230, 192, 156, 0.50)
-] border rounded-[30px] flex justify-center items-center md:text-[25px] text-[16px] font-serif font-semibold
+            md:h-[60px] bg-[#F2F2F2] border-[rgba(230, 192, 156, 0.50)
+            ] border rounded-[30px] flex justify-center items-center md:text-[25px] text-[16px] font-serif font-semibold
 "
           >
             Our Courses
