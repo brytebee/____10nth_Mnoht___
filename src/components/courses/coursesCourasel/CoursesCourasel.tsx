@@ -62,7 +62,7 @@ const CustomCarousel = () => {
 
   return (
     <>
-      <div className={`${styles.container_cont} overflow-hidden md:my-2 bg-white px-2 pb-2`}>
+      <div className={`${styles.container_cont} overflow-hidden md:my-2 bg-white px-2 pb-2 hidden md:block`}>
         <Carousel
           swipeable
           draggable
@@ -95,7 +95,7 @@ const CustomCarousel = () => {
           ))}
         </Carousel>
       </div>
-      <div className="md:flex justify-between w-100% md:px-2">
+      <div className="md:flex justify-between w-100% md:px-2 hidden md:block">
         <button onClick={handlePrevClick} className={styles.btn}>
           <Image src={leftArrow} alt="Previous" width={48} height={48} />
         </button>

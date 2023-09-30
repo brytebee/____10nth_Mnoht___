@@ -1,5 +1,7 @@
+'use client'
 import React from 'react';
 import Image from 'next/image';
+import useMediaQuery  from "../../hooks/useMediaQuery";
 // import CourseData from './CourseData';
 
 interface CourseDataItems {
@@ -7,7 +9,7 @@ interface CourseDataItems {
   line: string;
   header: string;
   desc: string;
-  id:any;
+  id:number;
 }
 
 interface Props {
@@ -16,22 +18,29 @@ interface Props {
 }
 
 const CourseCard: React.FC<Props> = ({ items }) => {
+  const isMobile = useMediaQuery('(max-width: 768px)');
   return (
     <div>
       {items.map((item: any) => (
         <div
           key={item.id}
-          className="md:w-[1296px]
-md:h-[344px] bg-[#fff] md:rounded-[10px]
-md:flex  md:gap-[70px] md:mb-[30px] md:px-[60px] md:py-[20px] items-center"
+          className="mb-[20px] p-[30px] md:w-[100%]
+md:h-[344px] bg-[#fff] rounded-[10px]
+md:flex md:flex-col lg:flex lg:flex-row lg:gap-[70px] md:mb-[30px] lg:px-[60px] md:py-[10px] items-center lg:items-center m-auto z-50 md:items-start box-border"
         >
           <ul className="p-0">
             <li>
-              <Image src={item.img} height={300} width={300} alt="img" />
+              <Image
+                src={item.img}
+                height={300}
+                width={300}
+                alt="img"
+                className="w-[140px] h-[140px] lg:w-[300px] lg:h-[300px]"
+              />
             </li>
           </ul>
-          <ul className="p-0 flex flex-col gap-[10px]">
-            <li className="md:w-[476px] font-serif md:text-[35px] font-normal leading-[120%]">
+          <ul className="p-0 flex flex-col lg:gap-[10px]">
+            <li className="text-[18px] mt-[15px] lg:w-[476px] font-serif lg:text-[35px] md:text-[25px] font-normal leading-[120%] box-border">
               {item.header}
             </li>
             <li>
@@ -40,9 +49,10 @@ md:flex  md:gap-[70px] md:mb-[30px] md:px-[60px] md:py-[20px] items-center"
                 width={468.615}
                 height={2}
                 alt="img"
+                className="hidden lg:block "
               />
             </li>
-            <li className="md:w-[574px] md:h-[80px] md:text-[16px] font-sans font-normal leading-[120%]">
+            <li className="text-[14px] w-[100%] md:w-[450px] lg:w-[574px] md:h-[80px] md:text-[16px] font-sans font-normal leading-[120%]">
               {item.desc}
             </li>
           </ul>
@@ -50,9 +60,9 @@ md:flex  md:gap-[70px] md:mb-[30px] md:px-[60px] md:py-[20px] items-center"
             <li>
               <button
                 type="button"
-                className="md:w-[135px] md:h-[40px] md:rounded-[10px] px-[24px] py-[10px] border border-[#A63F0E] text-[#A63F0E] font-sans font-normal leading-[120%]"
+                className="md:w-[135px] md:h-[40px] md:rounded-[10px] px-[14px] py-[10px] md:border md:border-[#A63F0E] text-[#A63F0E] font-sans font-normal leading-[120%] mt-[10px] border-0 ml-[170px] md:ml-[480px] lg:ml-0 md:ml-0"
               >
-                View course
+                {isMobile ? "Read more" : " View course"}
               </button>
             </li>
           </ul>
