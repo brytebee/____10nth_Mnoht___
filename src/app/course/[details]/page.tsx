@@ -30,21 +30,21 @@ const page = () => {
     courses[id];
 
   return (
-    <>
+    <div className="bg-[#F2F2F2]">
       <div className="tablet&_desktop_only md:block hidden">
         <div className="pt-[36px] pl-[26px] lg:pl-[50px]">
           <button
             onClick={handleClick}
-            className="w-[180px] py-[8px] pl-[8px] pr[4px] justify-center text-center bg-[#D97508] text-white text-primary text-md rounded-[10px]"
+            className="w-[180px] md:w-[80px] lg:w-[180px] py-[8px] pl-[8px] justify-center text-center bg-[#D97508] text-white text-primary text-md rounded-[10px]"
           >
             <Image
-              className="inline ml-[-32px] text-white"
+              className="inline md:ml-[-20px] ml-[-32px] text-white"
               width={34}
               height={34}
               src={BackDesk}
               alt="go back"
             />
-            Back to course
+            <span className="hidden lg:inline">Back to course</span>
           </button>
         </div>
         <div className="flex flex-col items-center pt-[48px] pb-[60px] my-8">
@@ -98,7 +98,7 @@ const page = () => {
           </button>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
