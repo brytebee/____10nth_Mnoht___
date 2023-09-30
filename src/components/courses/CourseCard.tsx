@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import useMediaQuery from "../../hooks/useMediaQuery";
-// import CourseData from './CourseData';
 
 interface CourseDataItems {
   img: string;
