@@ -25,7 +25,7 @@ const CourseCard: React.FC<Props> = ({ items }) => {
           key={item.id}
           className="mb-[20px] p-[30px] md:w-[100%]
             md:h-[344px] bg-[#fff] rounded-[10px]
-            md:flex md:flex-col lg:flex lg:flex-row lg:gap-[70px] md:mb-[30px] lg:px-[60px] md:py-[10px] items-center lg:items-center m-auto z-50 md:items-start box-border"
+            md:flex md:flex-col lg:flex lg:flex-row lg:gap-[70px] md:mb-[30px] lg:px-[60px] md:py-[1px] items-center lg:items-center m-auto z-50 md:items-start box-border"
         >
           <ul className="p-0">
             <li>
@@ -51,7 +51,7 @@ const CourseCard: React.FC<Props> = ({ items }) => {
                 className="hidden lg:block "
               />
             </li>
-            <li className="text-[14px] w-[100%] md:w-[450px] lg:w-[574px] md:h-[80px] md:text-[16px] font-sans font-normal leading-[120%]">
+            <li className="text-[14px] w-[100%] md:w-[450px] lg:w-[574px] md:h-[80px] md:text-[16px] font-sans font-normal leading-5 mt-[20px]">
               {item.desc}
             </li>
           </ul>
