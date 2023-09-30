@@ -4,15 +4,19 @@
 
 :root {
   --primary-color: #D97508;
+  --hero-bg-color: #B8653D;
+  --hero-header-color: #A63F0E;
   --secondary-color: #E6C09C;
   --body-text-color: #333333;
   --testimonials-bg-color: #F2F2F2;
+  --mobile-bg-color: #F2F2F2;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* border: 1px solid red; */
 }
 
 body {
