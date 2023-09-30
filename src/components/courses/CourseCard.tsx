@@ -1,7 +1,7 @@
-'use client'
-import React from 'react';
-import Image from 'next/image';
-import useMediaQuery  from "../../hooks/useMediaQuery";
+"use client";
+import React from "react";
+import Image from "next/image";
+import useMediaQuery from "../../hooks/useMediaQuery";
 // import CourseData from './CourseData';
 
 interface CourseDataItems {
@@ -9,24 +9,23 @@ interface CourseDataItems {
   line: string;
   header: string;
   desc: string;
-  id:number;
+  id: number;
 }
 
 interface Props {
-  
   items: CourseDataItems[];
 }
 
 const CourseCard: React.FC<Props> = ({ items }) => {
-  const isMobile = useMediaQuery('(max-width: 768px)');
+  const isMobile = useMediaQuery("(max-width: 768px)");
   return (
     <div>
       {items.map((item: any) => (
         <div
           key={item.id}
           className="mb-[20px] p-[30px] md:w-[100%]
-md:h-[344px] bg-[#fff] rounded-[10px]
-md:flex md:flex-col lg:flex lg:flex-row lg:gap-[70px] md:mb-[30px] lg:px-[60px] md:py-[10px] items-center lg:items-center m-auto z-50 md:items-start box-border"
+            md:h-[344px] bg-[#fff] rounded-[10px]
+            md:flex md:flex-col lg:flex lg:flex-row lg:gap-[70px] md:mb-[30px] lg:px-[60px] md:py-[10px] items-center lg:items-center m-auto z-50 md:items-start box-border"
         >
           <ul className="p-0">
             <li>
@@ -60,7 +59,7 @@ md:flex md:flex-col lg:flex lg:flex-row lg:gap-[70px] md:mb-[30px] lg:px-[60px] 
             <li>
               <button
                 type="button"
-                className="md:w-[135px] md:h-[40px] md:rounded-[10px] px-[14px] py-[10px] md:border md:border-[#A63F0E] text-[#A63F0E] font-sans font-normal leading-[120%] mt-[10px] border-0 ml-[170px] md:ml-[480px] lg:ml-0 md:ml-0"
+                className="md:w-[135px] md:h-[40px] md:rounded-[10px]  py-[10px] md:border md:border-[#A63F0E] text-[#A63F0E] font-sans font-normal leading-[120%] mt-[10px] border-0 ml-[170px] md:ml-[480px] lg:ml-0 md:ml-0"
               >
                 {isMobile ? "Read more" : " View course"}
               </button>
