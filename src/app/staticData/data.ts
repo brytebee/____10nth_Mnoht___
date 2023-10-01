@@ -124,25 +124,25 @@ export const courses: Course[] = [
       "Upon completion of this course, you will have the skills and confidence to create professional-quality websites and web applications. Whether you're pursuing a career as a web developer, looking to build your portfolio, or aiming to enhance your current skill set, this course will set you on the path to success in the fast-paced world of web development.",
   },
   {
-    name: 'Mobile development',
+    name: 'Mobile Development',
 
     image: Images[5],
 
     description:
-      "This comprehensive Mobile Development course covers the fundamentals and advanced aspects of web development, including front-end and back-end technologies. You will learn how to create responsive, visually appealing websites and web applications using industry-standard tools and techniques. Whether you're a beginner or an experienced coder looking to expand your skills, this course will empower you to build web solutions effectively.",
+      'Our Mobile Development course is designed to provide participants with a comprehensive understanding of mobile app development for both iOS and Android platforms. Whether you are a beginner or an experienced developer, this course will equip you with the knowledge and practical skills needed to design, build, and launch mobile applications.',
 
     eligibility:
-      'This course is open to individuals of all levels, including beginners with little to no coding experience and experienced developers seeking to broaden their skill set. A basic understanding of computer operations and a passion for web technologies are beneficial but not mandatory.',
+      'This course is open to individuals from diverse backgrounds, including aspiring app developers, software engineers, web developers, and entrepreneurs. While no prior coding experience is required, a basic understanding of programming concepts will be beneficial. This course is for anyone with a passion for creating innovative mobile experiences.',
 
     learnings: {
       intro:
-        'Welcome to our mobile Development course, where you will embark on an exciting journey to become a proficient mobile developer. In this rapidly evolving digital age, the ability to create dynamic and user-friendly websites is a valuable skill. This course is designed to equip you with the knowledge and tools needed to excel in the world of mobile development.',
+        "Welcome to our Mobile Development course, where we explore the dynamic and ever-evolving world of creating mobile applications. This course is your gateway to mastering the skills required to develop cutting-edge mobile apps that cater to the needs of today's tech-savvy users.",
       listings:
-        'Front-End Development: Gain proficiency in HTML, CSS, and JavaScript to create interactive and visually appealing user interfaces. Back-End Development: Learn server-side scripting languages (such as Python or Node.js) and database management to create dynamic mobile applications. Responsive Design: Master the art of designing websites that adapt seamlessly to various screen sizes and devices. Mobile Development Frameworks: Explore popular frameworks like React, NextJS, TailwindCSS, BootstrapCSS, NestJS, MongoDB, Mongoose, PostgreSQL, Ruby on Rail to streamline development and enhance productivity. Version Control: Learn how to use Git for collaborative coding and version control. Mobile Security: Understand best practices for securing mobile applications and protecting user data. Mobile Hosting and Deployment: Explore hosting options and deploy your projects online for public access.',
+        'Fundamentals of Mobile App Development: Explore the basics of mobile app development, including app architecture, user interfaces, and navigation. Programming Languages: Gain proficiency in programming languages such as Swift (for iOS) and Java/Kotlin (for Android). User Experience (UX) Design: Learn the principles of designing user-friendly and visually appealing mobile interfaces. API Integration: Understand how to integrate APIs to access data and services for your mobile app. Testing and Debugging: Master the art of testing and debugging your mobile applications to ensure they run smoothly. Deployment and App Stores: Discover the process of deploying your app to app stores like Apple App Store and Google Play. Cross-Platform Development: Explore cross-platform development tools like Flutter or React Native for building apps that work on multiple platforms.',
     },
 
     conclusion:
-      "Upon completion of this course, you will have the skills and confidence to create professional-quality websites and mobile applications. Whether you're pursuing a career as a mobile developer, looking to build your portfolio, or aiming to enhance your current skill set, this course will set you on the path to success in the fast-paced world of mobile development.",
+      'Upon completing this course, you will have the skills and confidence to embark on a successful career in mobile app development. Whether you dream of creating your own startup app or joining a mobile development team, this course will empower you to turn your ideas into functional, user-friendly mobile applications.',
   },
 
   {
