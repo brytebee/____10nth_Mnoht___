@@ -4,6 +4,7 @@ import Image from 'next/image';
 import useMediaQuery from '../../hooks/useMediaQuery';
 import { courses } from '@/app/staticData/data';
 import hline from '../../../public/svgs/underline.svg';
+import Link from 'next/link';
 
 const CourseCard = () => {
   const isMobile = useMediaQuery('(max-width: 768px)');
@@ -46,12 +47,14 @@ const CourseCard = () => {
           </ul>
           <ul className="p-0">
             <li>
-              <button
-                type="button"
-                className="md:w-[135px] md:h-[40px] md:rounded-[10px]  py-[10px] md:border md:border-[#A63F0E] text-[#A63F0E] font-sans font-normal leading-[120%] mt-[10px] border-0 ml-[170px] md:ml-[480px] lg:ml-0 md:ml-0"
-              >
-                {isMobile ? 'Read more' : ' View course'}
-              </button>
+              <Link href={`/courses/${i + 1}`}>
+                <button
+                  type="button"
+                  className="md:w-[135px] md:h-[40px] md:rounded-[10px]  py-[10px] md:border md:border-[#A63F0E] text-[#A63F0E] font-sans font-normal leading-[120%] mt-[10px] border-0 ml-[170px] md:ml-[480px] lg:ml-0 md:ml-0"
+                >
+                  {isMobile ? 'Read more' : ' View course'}
+                </button>
+              </Link>
             </li>
           </ul>
         </div>
