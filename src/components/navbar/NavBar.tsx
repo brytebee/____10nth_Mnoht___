@@ -12,7 +12,7 @@ const NavBar = () => {
   const pathname = usePathname();
   const navMenus = [
     { name: 'Home', path: '/' },
-    { name: 'Courses', path: '/course' },
+    { name: 'Courses', path: '/courses' },
     { name: 'Our Community', path: '/community' },
     { name: 'About', path: '/about' },
     { name: 'Contact Us', path: '/contact' },
