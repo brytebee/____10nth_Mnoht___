@@ -8,6 +8,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 import { courses } from '@/app/staticData/data';
+import Link from 'next/link';
 
 const Details = () => {
   const router = useRouter();
@@ -93,9 +94,15 @@ const Details = () => {
         </div>
 
         <div className="text-center pt-[52px]">
-          <button className="w-[150px] py-[10px] px-[24px] justify-center text-center bg-[#D97508] text-white text-primary text-lg rounded-[10px]">
-            Enroll now
-          </button>
+          <Link
+            target="_blank"
+            className="text-none"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeJBFggDSCgE35rA19W1gjqddo8jlXprs6002C_1L3lYqPDzw/viewform"
+          >
+            <button className="w-[150px] py-[10px] px-[24px] justify-center text-center bg-[#D97508] text-white text-primary text-lg rounded-[10px]">
+              Enroll now
+            </button>
+          </Link>
         </div>
       </div>
     </div>

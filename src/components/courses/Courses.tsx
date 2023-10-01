@@ -1,14 +1,15 @@
-import React from "react";
-import Image from "next/image";
-import line from "../../../public/svgs/Line-7.svg";
-import polygon1 from "../../../public/svgs/Polygon-1.svg";
-import polygon2 from "../../../public/svgs/Polygon-2.svg";
-import polygon4 from "../../../public/svgs/Polygon-4.svg";
-import polygon5 from "../../../public/svgs/Polygon-5.svg";
-import polygon12 from "../../../public/svgs/Polygon-12.svg";
-import Carousel from "./coursesCourasel/CoursesCourasel";
-import CourseData from "./CourseData";
-import CourseCard from "./CourseCard";
+import React from 'react';
+import Image from 'next/image';
+import line from '../../../public/svgs/Line-7.svg';
+import polygon1 from '../../../public/svgs/Polygon-1.svg';
+import polygon2 from '../../../public/svgs/Polygon-2.svg';
+import polygon4 from '../../../public/svgs/Polygon-4.svg';
+import polygon5 from '../../../public/svgs/Polygon-5.svg';
+import polygon12 from '../../../public/svgs/Polygon-12.svg';
+import Carousel from './coursesCourasel/CoursesCourasel';
+import CourseData from './CourseData';
+import CourseCard from './CourseCard';
+import Link from 'next/link';
 
 interface Props {
   // Add props here
@@ -31,14 +32,20 @@ h-[173px] bg-[#A63F0E1A] md:bg-[#F2F2F2]
               Learning paths designed for you
             </li>
             <li>
-              <Image src={line} width={468.615} height={2} alt="line" className="hidden md:block"/>
+              <Image
+                src={line}
+                width={468.615}
+                height={2}
+                alt="line"
+                className="hidden md:block"
+              />
             </li>
             <li className="text-[#333] text-[16px] md:text-[#A63F0E] font-Poppins md:text-[20px] font-normal leading-[120%]">
               All the best courses, ready when you are
             </li>
           </ul>
           <ul className="hidden md:block">
-            {" "}
+            {' '}
             <Image
               src={polygon1}
               height={50}
@@ -92,12 +99,18 @@ h-[173px] bg-[#A63F0E1A] md:bg-[#F2F2F2]
         <CourseCard items={CourseData} />
       </div>
       <div className="flex items-center justify-center md:m-[70px]">
-        <button
-          type="button"
-          className="md:w-[235px] md:h-[48px] rounded-[10px] bg-[#D97508] py-[12px] px-[25px] text-[#fff] font-sans font-normal leading-[120%] text-[20px] hidden md:block"
+        <Link
+          target="_blank"
+          className="text-none"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeJBFggDSCgE35rA19W1gjqddo8jlXprs6002C_1L3lYqPDzw/viewform"
         >
-          Enroll now
-        </button>
+          <button
+            type="button"
+            className="md:w-[235px] md:h-[48px] rounded-[10px] bg-[#D97508] py-[12px] px-[25px] text-[#fff] font-sans font-normal leading-[120%] text-[20px] hidden md:block"
+          >
+            Enroll now
+          </button>
+        </Link>
       </div>
     </div>
   );

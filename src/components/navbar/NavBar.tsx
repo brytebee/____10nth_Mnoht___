@@ -63,14 +63,26 @@ const NavBar = () => {
                 </Link>
               </li>
             ))}
-            <button className="w-[150px] py-[10px] px-[24px] justify-center items-center bg-white text-primary rounded-[10px] md:hidden">
-              Get Started
-            </button>
+            <Link
+              target="_blank"
+              className="text-none"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeJBFggDSCgE35rA19W1gjqddo8jlXprs6002C_1L3lYqPDzw/viewform"
+            >
+              <button className="w-[150px] py-[10px] px-[24px] justify-center items-center bg-white text-primary rounded-[10px] md:hidden">
+                Get Started
+              </button>
+            </Link>
           </ul>
         </div>
-        <button className="md:flex py-[10px] px-[24px] md:px-[20px] justify-center items-center bg-primary text-white rounded-[10px] hidden">
-          Get Started
-        </button>
+        <Link
+          target="_blank"
+          className="text-none"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSeJBFggDSCgE35rA19W1gjqddo8jlXprs6002C_1L3lYqPDzw/viewform"
+        >
+          <button className="md:flex py-[10px] px-[24px] md:px-[20px] justify-center items-center bg-primary text-white rounded-[10px] hidden">
+            Get Started
+          </button>
+        </Link>
       </div>
     </nav>
   );
