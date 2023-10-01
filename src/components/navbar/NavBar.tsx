@@ -58,6 +58,7 @@ const NavBar = () => {
                       : 'text-white md:text-body md:text-sm lg:text-lg'
                   } hover:bg-gray-100 hover:text-primary md:hover:bg-transparent md:p-0`}
                   aria-current={pathname === path ? 'page' : undefined}
+                  onClick={() => setOpenNavbar(false)}
                 >
                   {name}
                 </Link>
@@ -65,23 +66,19 @@ const NavBar = () => {
             ))}
             <Link
               target="_blank"
-              className="text-none"
+              className="w-[150px] py-[10px] px-[24px] justify-center items-center bg-white text-primary rounded-[10px] md:hidden"
               href="https://docs.google.com/forms/d/e/1FAIpQLSeJBFggDSCgE35rA19W1gjqddo8jlXprs6002C_1L3lYqPDzw/viewform"
             >
-              <button className="w-[150px] py-[10px] px-[24px] justify-center items-center bg-white text-primary rounded-[10px] md:hidden">
                 Get Started
-              </button>
             </Link>
           </ul>
         </div>
         <Link
           target="_blank"
-          className="text-none"
+          className="md:flex py-[10px] px-[24px] md:px-[20px] justify-center items-center bg-primary text-white rounded-[10px] hidden"
           href="https://docs.google.com/forms/d/e/1FAIpQLSeJBFggDSCgE35rA19W1gjqddo8jlXprs6002C_1L3lYqPDzw/viewform"
         >
-          <button className="md:flex py-[10px] px-[24px] md:px-[20px] justify-center items-center bg-primary text-white rounded-[10px] hidden">
             Get Started
-          </button>
         </Link>
       </div>
     </nav>
