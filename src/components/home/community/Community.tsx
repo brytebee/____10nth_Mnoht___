@@ -11,7 +11,7 @@ import InstructorImg from '../../../../public/svgs/instructor.svg';
 import ChevronRight from '../../../../public/svgs/chevron_right.svg';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import WorkingMan from '../../../../public/svgs/office-worker.svg';
-import MobileCarousel from './MobileCarousel';
+import { reviews } from '@/app/staticData/data';
 
 type Props = {};
 
@@ -98,7 +98,7 @@ export default function OurCommunitySection({}: Props) {
           borderRadius: '13px',
         }}
       >
-        {['1', '2', '3', '4'].map((testimony, index) => (
+        {reviews.map((testimony, index) => (
           <div
             key={index}
             className={`relative lg:w-[340px] md:w-[300px] h-[150px] rounded-[21px] bg-testimonial lg:pt-11 md:pt-6 pl-10 pb-6 pr-3 ${
@@ -117,11 +117,7 @@ export default function OurCommunitySection({}: Props) {
               alt="right quote"
               className="absolute -top-2 right-4 w-[14px] h-[14px]"
             />
-            <p className="font-light text-sm">
-              Lorem ipsum dolor sit amet consectetur. Ornare sed mattis nunc
-              turpis enim. In justo molestie in a. Ac aliquam malesuada feugiat
-              vitae pharetra.
-            </p>
+            <p className="font-light text-sm">{testimony}</p>
           </div>
         ))}
       </div>

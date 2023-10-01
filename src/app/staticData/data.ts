@@ -188,3 +188,13 @@ export const courses: Course[] = [
       "Upon completing this course, participants will be well-equipped to navigate the complex and ever-evolving landscape of cybersecurity. Whether you aim to pursue a career in cybersecurity, enhance your organization's security posture, or simply stay informed about digital threats, this course provides a solid foundation for success.",
   },
 ];
+
+export const reviews = [
+  "Finally, a course that lives up to its claims! It's been a game-changer for me. I'm so impressed with how well it works.",
+
+  "This course exceeded my expectations. It's reliable, efficient, and has simplified my daily routine. I'm one satisfied customer!",
+
+  "I was skeptical at first, but this course proved me wrong. It's been a fantastic addition to my life, and I'm thrilled with the results.",
+
+  "Kudos to the makers of this course! It's rare to find something that delivers on its promises. I'm genuinely impressed and grateful.",
+];

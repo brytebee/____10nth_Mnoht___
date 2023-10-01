@@ -64,7 +64,7 @@ export default function Hero({}: Props) {
               </h2>
               <p className="lg:w-[650px] md:w-[350px] lg:text-lg md:text-xs md:text-justify lg:text-left font-normal text-white">
                 Welcome to TechVerse Academy, your gateway to unlocking the
-                world of cutting-edge technology! Whether you're a curious
+                world of cutting-edge technology! Whether you&apos;re a curious
                 beginner or an aspiring tech enthusiast, our online platform
                 offers an unparalleled learning experience tailored to your
                 needs.
