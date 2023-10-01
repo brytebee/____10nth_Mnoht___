@@ -6,7 +6,7 @@ import digital from '../../../public/svgs/digital-marketing.svg';
 import graphic from '../../../public/svgs/graphic-designs.svg';
 import data from '../../../public/svgs/data-science.svg';
 import mobile from '../../../public/svgs/mobile-development.svg';
-import underline from '../../../public/svgs/Line-7.svg';
+import underline from '../../../public/svgs/underline.svg';
 
 const CourseData = [
   {

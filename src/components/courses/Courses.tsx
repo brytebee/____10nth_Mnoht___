@@ -1,13 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
-import line from '../../../public/svgs/Line-7.svg';
+import line from '../../../public/svgs/underline.svg';
 import polygon1 from '../../../public/svgs/Polygon-1.svg';
 import polygon2 from '../../../public/svgs/Polygon-2.svg';
 import polygon4 from '../../../public/svgs/Polygon-4.svg';
 import polygon5 from '../../../public/svgs/Polygon-5.svg';
 import polygon12 from '../../../public/svgs/Polygon-12.svg';
 import Carousel from './coursesCourasel/CoursesCourasel';
-import CourseData from './CourseData';
 import CourseCard from './CourseCard';
 import Link from 'next/link';
 
@@ -96,7 +95,7 @@ h-[173px] bg-[#A63F0E1A] md:bg-[#F2F2F2]
         />
       </div>
       <div className="mb-[100px] md:mb-0">
-        <CourseCard items={CourseData} />
+        <CourseCard />
       </div>
       <div className="flex items-center justify-center md:m-[70px]">
         <Link
