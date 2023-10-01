@@ -43,7 +43,7 @@ const NavBar = () => {
         <div
           className={`w-full md:block md:w-auto ${
             openNavbar
-              ? 'w-full z-20 bg-primary block absolute top-16 right-0 md:relative'
+              ? 'w-full flex flex-col gap-3 z-20 pb-7 bg-primary absolute top-16 right-0 md:relative'
               : 'hidden'
           }`}
         >
@@ -64,14 +64,14 @@ const NavBar = () => {
                 </Link>
               </li>
             ))}
+          </ul>
             <Link
               target="_blank"
-              className="w-[150px] py-[10px] px-[24px] justify-center items-center bg-white text-primary rounded-[10px] md:hidden"
+              className="ml-5 w-[150px] py-[10px] px-[24px] justify-center items-center bg-white text-primary rounded-[10px] md:hidden"
               href="https://docs.google.com/forms/d/e/1FAIpQLSeJBFggDSCgE35rA19W1gjqddo8jlXprs6002C_1L3lYqPDzw/viewform"
             >
                 Get Started
             </Link>
-          </ul>
         </div>
         <Link
           target="_blank"
