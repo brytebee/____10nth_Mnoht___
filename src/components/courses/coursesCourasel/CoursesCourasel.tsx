@@ -1,13 +1,12 @@
-"use client";
-import React, { useState, useEffect, useRef } from "react";
-import Image from "next/image";
-import leftArrow from "../../../../public/svgs/arrow-circle-broken-left.svg";
-import rightArrow from "../../../../public/svgs/arrow-circle-broken-right.svg";
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+'use client';
+import React, { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
+import leftArrow from '../../../../public/svgs/arrow-circle-broken-left.svg';
+import rightArrow from '../../../../public/svgs/arrow-circle-broken-right.svg';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import data from '../coursesCourasel/data';
-import styles from "./CoursesCourasel.module.scss";
+import styles from './CoursesCourasel.module.scss';
 
 const responsive = {
   desktop: {
@@ -26,7 +25,6 @@ const responsive = {
     slidesToSlide: 1,
   },
 };
-
 
 const CustomCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
@@ -62,7 +60,9 @@ const CustomCarousel = () => {
 
   return (
     <>
-      <div className={`${styles.container_cont} overflow-hidden md:my-2 bg-white px-2 pb-2 hidden md:block`}>
+      <div
+        className={`${styles.container_cont} overflow-hidden md:my-2 bg-white px-2 pb-2 hidden md:block`}
+      >
         <Carousel
           swipeable
           draggable
