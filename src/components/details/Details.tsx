@@ -84,7 +84,7 @@ const Details = () => {
           <h3 className="pt-[28px] text-lg font-semibold">What you’ll learn</h3>
           <p className="leading-7 pt-[10px]">{learnings.intro}</p>
           <ul className="pt-[18px] list-disc list-inside pl-1">
-            {learnings.listings.split(',').map((list) => (
+            {learnings.listings.split('. ').map((list) => (
               <li className="leading-7 pt-[2px] font-semibold" key={list}>
                 {list}
               </li>
