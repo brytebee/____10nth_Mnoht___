@@ -17,20 +17,23 @@ const Details = () => {
     return <div className="text-success font-extrabold">Loading...</div>;
   }
   const splitPath = path.split('/');
-  console.log(splitPath);
 
-  const id = +splitPath?.[splitPath.length - 1] - 1;
+  const courseName = splitPath?.[splitPath.length - 1];
 
-  if (isNaN(id) || id < 0 || id >= courses.length) {
-    return <p>Course not found</p>;
-  }
+  // if (isNaN(id) || id < 0 || id >= courses.length) {
+  //   return <p>Course not found</p>;
+  // }
 
   const handleClick = () => {
     router.back();
   };
 
+  const [filterCourse] = courses.filter(
+    (course) => course.name.replaceAll(' ', '-').toLowerCase() === courseName
+  );
+
   const { image, name, description, eligibility, learnings, conclusion } =
-    courses[id];
+    filterCourse;
 
   return (
     <div className="bg-[#F2F2F2]">
