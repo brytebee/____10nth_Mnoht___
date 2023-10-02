@@ -5,6 +5,7 @@ import PRODMGT from '../../../public/svgs/product-management.svg';
 import DATASCI from '../../../public/svgs/data-science.svg';
 import DIGIMKT from '../../../public/svgs/digital-marketing.svg';
 import GRAPD from '../../../public/svgs/graphic-designs.svg';
+import CYBER from '../../../public/svgs/cybersecurity.svg';
 
 type Img = HTMLImageElement;
 
@@ -16,7 +17,7 @@ const Images: Img[] = [
   DEV,
   MOBDEV,
   GRAPD,
-  PRODMGT,
+  CYBER,
 ];
 
 export default Images;

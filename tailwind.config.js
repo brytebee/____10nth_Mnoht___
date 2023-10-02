@@ -15,7 +15,11 @@ module.exports = {
         body: 'var(--body-text-color)',
         testimonial: 'var(--testimonials-bg-color)',
         'mobile-bg': 'var(--mobile-bg-color)',
-      }
+      },
+
+       backgroundImage: {
+        'hero-pattern': "url('../../public/svgs/globe.svg')",
+        }
     },
     fontFamily: {
       'serif': ['Georgia', 'Cambria', 'Tiempos Headline'],
