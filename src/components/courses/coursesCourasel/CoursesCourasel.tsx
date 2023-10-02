@@ -95,7 +95,7 @@ const CustomCarousel = () => {
           ))}
         </Carousel>
       </div>
-      <div className="md:flex justify-between w-100% md:px-2 hidden md:block">
+      <div className="md:flex justify-between w-100% md:px-2 hidden md:block md:mt-[50px]">
         <button onClick={handlePrevClick} className={styles.btn}>
           <Image src={leftArrow} alt="Previous" width={48} height={48} />
         </button>

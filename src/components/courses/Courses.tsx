@@ -17,7 +17,7 @@ interface Props {
 const Courses: React.FC<Props> = (props) => {
   return (
     <div className=" px-[20px] bg-[#F2F2F2] md:px-16 py-1 lg:px[16px]">
-      <div className="static z-30">
+      <div className="static z-10 mt-[100px]">
         <Carousel />
       </div>
       <div className="w-[100%] md:mt-6 mb-[70px] lg:h-[350px] ">

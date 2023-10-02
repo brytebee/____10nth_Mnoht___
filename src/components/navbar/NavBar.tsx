@@ -19,8 +19,8 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="bg-inherit w-full relative">
-      <div className="flex items-center justify-between mx-auto py-3 px-2 md:px-1 lg:mx-0 lg:px-8">
+    <nav className="bg-inherit w-full relative fixed">
+      <div className="flex items-center justify-between mx-auto py-3 px-2 md:px-1 lg:mx-0 lg:px-8 fixed bg-[#fff] z-10 w-full top-0">
         <Link href="/" className="flex items-center">
           <Image
             src={TechverseLogo}
