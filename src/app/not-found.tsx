@@ -30,7 +30,7 @@ const NotFoundTabPage = () => {
   const routeExists = appRoutes.includes(path);
 
   return (
-    <div className={routeExists ? 'lg:h-[70vh]' : 'lg:h-[50vh]'}>
+    <div className={routeExists ? 'lg:h-[85vh]' : 'lg:h-[50vh]'}>
       <main
         className={
           routeExists
