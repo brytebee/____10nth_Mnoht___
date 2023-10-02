@@ -13,27 +13,24 @@ import Link from 'next/link';
 const Details = () => {
   const router = useRouter();
   const path = usePathname();
+
   if (!path) {
     return <div className="text-success font-extrabold">Loading...</div>;
   }
+
   const splitPath = path.split('/');
-
   const courseName = splitPath?.[splitPath.length - 1];
-
-  // if (isNaN(id) || id < 0 || id >= courses.length) {
-  //   return <p>Course not found</p>;
-  // }
 
   const handleClick = () => {
     router.back();
   };
 
-  const [filterCourse] = courses.filter(
-    (course) => course.name.replaceAll(' ', '-').toLowerCase() === courseName
+  const filterCourse = courses?.filter(
+    (course) => course?.name?.replaceAll(' ', '-').toLowerCase() === courseName
   );
 
   const { image, name, description, eligibility, learnings, conclusion } =
-    filterCourse;
+    filterCourse?.[0];
 
   return (
     <div className="bg-[#F2F2F2]">
@@ -86,7 +83,9 @@ const Details = () => {
             Program Eligibility
           </h3>
           <p className="leading-7 pt-[10px]">{eligibility}</p>
-          <h3 className="pt-[28px] text-lg font-semibold">What you’ll learn</h3>
+          <h3 className="pt-[28px] text-lg font-semibold">
+            What you&apos;ll learn
+          </h3>
           <p className="leading-7 pt-[10px]">{learnings.intro}</p>
           <ul className="pt-[18px] list-disc list-inside pl-1">
             {learnings.listings.split('. ').map((list) => (
