@@ -47,7 +47,9 @@ const CourseCard = () => {
           </ul>
           <ul className="p-0">
             <li>
-              <Link href={`/courses/${i + 1}`}>
+              <Link
+                href={`/courses/${name.replaceAll(' ', '_').toLowerCase()}`}
+              >
                 <button
                   type="button"
                   className="md:w-[135px] md:h-[40px] md:rounded-[10px]  py-[10px] md:border md:border-[#A63F0E] text-[#A63F0E] font-sans font-normal leading-[120%] mt-[10px] border-0 ml-[170px] md:ml-[480px] lg:ml-0 md:ml-0"

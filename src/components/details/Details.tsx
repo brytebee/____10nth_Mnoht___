@@ -17,6 +17,8 @@ const Details = () => {
     return <div className="text-success font-extrabold">Loading...</div>;
   }
   const splitPath = path.split('/');
+  console.log(splitPath);
+
   const id = +splitPath?.[splitPath.length - 1] - 1;
 
   if (isNaN(id) || id < 0 || id >= courses.length) {
