@@ -14,6 +14,25 @@ export interface Course {
 
 export const courses: Course[] = [
   {
+    name: 'Computer Appreciation',
+    image: Images[8],
+
+    description: `The "Computer Appreciation" course provides a comprehensive intro to the world of computers and digital technology. Participants will gain a practical understanding of computer hardware, software, and essential applications. From basic computer operation to file management and online communication, this course covers a wide spectrum of topics aimed at building confidence and competence in computer usage.`,
+
+    eligibility:
+      "This course is open to individuals of all backgrounds and experience levels. Whether you're a student, a professional, a senior citizen, or simply someone curious about computers, you're welcome to join. No prior computer knowledge is required, making it suitable for absolute beginners and those seeking to refresh their skills.",
+
+    learnings: {
+      intro: `In today's digital age, computer literacy is not just an asset; it's a fundamental necessity. The "Computer Appreciation" course is designed to empower individuals with the foundational knowledge and skills required to navigate and utilize computers effectively. Whether you're a newcomer to the digital world or looking to enhance your existing computer skills, this course will equip you with the essential know-how to thrive in our increasingly technology-driven society.`,
+      listings:
+        'Computer Fundamentals: Gain insights into the core components of a computer, including hardware and software, and understand how they work together. Operating Systems: Learn how to navigate popular operating systems (e.g., Windows or macOS) and perform basic tasks like file management and customization. Productivity Software: Explore essential productivity applications, such as word processing, spreadsheets, and presentation software, to enhance your personal and professional tasks. Internet and Email: Discover the online world, including web browsing, email communication, and online safety practices. Digital Communication: Familiarize yourself with instant messaging, social media, and video conferencing tools to stay connected with friends, family, and colleagues. Troubleshooting: Develop problem-solving skills to address common computer issues and perform basic maintenance.',
+    },
+
+    conclusion:
+      'By the end of this course, you will have the confidence and competence to use computers effectively in various personal and professional contexts. Whether you aim to enhance your employability, stay connected with loved ones, or simply become more self-reliant in the digital age, this course will empower you to achieve your goals.',
+  },
+
+  {
     name: 'Web development',
 
     image: Images[4],
@@ -188,6 +207,25 @@ export const courses: Course[] = [
 
     conclusion:
       "Upon completing this course, participants will be well-equipped to navigate the complex and ever-evolving landscape of cybersecurity. Whether you aim to pursue a career in cybersecurity, enhance your organization's security posture, or simply stay informed about digital threats, this course provides a solid foundation for success.",
+  },
+
+  {
+    name: 'Smartphone graphics design',
+    image: Images[9],
+
+    description: `The "Graphic Design on Mobile Phone" course is designed to empower individuals to become proficient graphic designers using their smartphones or tablets. Participants will explore a range of mobile design applications and techniques, enabling them to create visually captivating graphics for personal projects, social media, or professional endeavors. From basic design principles to advanced mobile editing tools, this course covers it all.`,
+
+    eligibility:
+      "This course welcomes participants of all backgrounds, whether you're a budding artist, a social media enthusiast, a small business owner, or anyone interested in graphic design. No prior design experience is required, and the course is tailored to beginners looking to harness the creative potential of their mobile devices.",
+
+    learnings: {
+      intro: `In an era where creativity knows no boundaries, the "Graphic Design on Mobile Phone" course opens the doors to unleash your artistic potential right from your fingertips. With the power of mobile technology, you can now create stunning graphics, illustrations, and designs on the go. This course is your gateway to mastering the art of graphic design using just your mobile device, making design accessible to everyone, everywhere.`,
+      listings:
+        'Design Fundamentals: Learn the core principles of graphic design, including layout, color theory, typography, and composition. Mobile Design Apps: Explore a variety of mobile design applications, such as Adobe Spark, Canva, Procreate, and more, to create stunning visuals. Image Editing: Master photo editing techniques on your mobile device, including retouching, filters, and special effects. Vector Graphics: Create scalable and customizable vector graphics using mobile tools for logos, icons, and illustrations. Typography: Enhance your understanding of fonts, text manipulation, and typography design for impactful visuals. Social Media Graphics: Craft eye-catching graphics tailored for social media platforms to boost your online presence.',
+    },
+
+    conclusion:
+      'By the end of this course, you will have the skills and confidence to embark on your graphic design journey using your mobile device as a powerful creative tool. Whether you want to create stunning visuals for personal projects, enhance your social media presence, or explore graphic design as a potential career path, this course will equip you with the knowledge and techniques to achieve your goals.',
   },
 ];
 
