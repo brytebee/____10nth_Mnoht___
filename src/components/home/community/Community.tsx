@@ -175,7 +175,7 @@ export default function OurCommunitySection({}: Props) {
           height={50}
           width={50}
           alt="polygon"
-          className="absolute lg:ml-[-60px] md:ml-[450px] md:mt-[200px] hidden md:block "
+          className="absolute lg:ml-[-60px] md:ml-[-80px] md:mt-[200px] hidden md:block "
         />
             {courseTitles.map((title, index) => (
               <li key={index} className="flex items-center gap-2">
@@ -196,7 +196,7 @@ export default function OurCommunitySection({}: Props) {
           height={100}
           width={100}
           alt="polygon"
-          className="absolute lg:ml-[800px] md:ml-[450px] md:mt-[200px] hidden md:block "
+          className="absolute lg:ml-[800px] md:ml-[50px] md:mt-[-50px] lg:mt-[200px] hidden md:block "
         />
         <Image
           src={WorkingMan}
@@ -216,7 +216,7 @@ export default function OurCommunitySection({}: Props) {
           height={100}
           width={100}
           alt="polygon"
-          className="absolute lg:ml-[1250px] md:ml-[450px] md:mt-[100px] hidden md:block "
+          className="absolute lg:ml-[1250px] md:ml-[700px] md:mt-[-10px] lg:mt-[100px] hidden md:block "
         />
       </div>
       <Link
@@ -238,7 +238,7 @@ export default function OurCommunitySection({}: Props) {
           height={80}
           width={80}
           alt="polygon"
-          className="absolute lg:ml-[450px] md:ml-[450px] md:mt-[450px] hidden md:block "
+          className="absolute lg:ml-[450px] md:ml-[250px] md:mt-[350px] lg:mt-[450px] hidden md:block "
         />
         <div className="flex flex-col gap-3 items-center md:items-start">
           <h3 className="text-center text-body text-xl font-bold md:text-3xl">
@@ -259,7 +259,7 @@ export default function OurCommunitySection({}: Props) {
           height={100}
           width={100}
           alt="polygon"
-          className="absolute lg:ml-[550px] md:ml-[50px] md:mt-[200px] hidden md:block "
+          className="absolute lg:ml-[550px] md:ml-[270px] md:mt-[200px] hidden md:block "
         />
         </div>
       </div>
