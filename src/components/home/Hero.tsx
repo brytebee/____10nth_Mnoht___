@@ -2,6 +2,8 @@ import React from 'react';
 import Image from 'next/image';
 import HeroImage from '../../../public/svgs/hero-img.svg';
 import DesktopHeroBg from '../../../public/svgs/hero_bg.svg';
+import polygon1 from '../../../public/svgs/Polygon-1.svg';
+import polygon2 from '../../../public/svgs/Polygon-2.svg';
 import Link from 'next/link';
 
 type Props = {};
@@ -20,9 +22,25 @@ export default function Hero({}: Props) {
           </div>
         </div>
         <div className="flex flex-col gap-6 pl-3">
-          <h1 className="text-hero-header w-[296px] text-3xl font-semibold">
+          <h1 className="text-hero-header w-[296px] text-3xl font-semibold border-box">
             Online Tech Classes From The Best Instructors
           </h1>
+          <ul className=" md:hidden ml-[86%] absolute">
+            {' '}
+            <Image
+              src={polygon1}
+              height={40}
+              width={40}
+              alt="polygon"
+            />
+            <Image
+              src={polygon2}
+              height={40}
+              width={40}
+              alt="polygon"
+              className=" mt-[-110px]"
+            />
+          </ul>
           <div className="flex flex-col gap-2">
             <h2 className="text-primary text-xl font-semibold">Introduction</h2>
             <p className="w-[95%] text-lg text-body font-light">
