@@ -60,7 +60,7 @@ const Details = () => {
           <h1 className="text-xl font-bold">{name.toUpperCase()}</h1>
         </div>
       </div>
-      <div className="text-left px-[26px] lg:px-[50px] pb-[62px] md:pt-[75px]">
+      <div className="text-left px-[26px] lg:px-[50px] pb-[62px] md:pt-[75px] pt-[20px]">
         <button className="md:hidden" onClick={handleClick}>
           <Image
             className="ml-[-9px]"
