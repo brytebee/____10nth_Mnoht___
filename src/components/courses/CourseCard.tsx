@@ -14,7 +14,7 @@ const CourseCard = () => {
         <div
           key={i}
           className="mb-[20px] p-[30px] md:w-[100%]
-            md:h-[344px] bg-[#fff] rounded-[10px]
+            md:h-[400px] lg:h-[344px] bg-[#fff] rounded-[10px]
             md:flex md:flex-col lg:flex lg:flex-row lg:gap-[70px] md:mb-[30px] lg:px-[60px] md:py-[1px] items-center lg:items-center m-auto z-50 md:items-start box-border"
         >
           <ul className="p-0">

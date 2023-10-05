@@ -19,8 +19,8 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="bg-inherit w-full relative fixed">
-      <div className="flex items-center justify-between mx-auto py-3 px-2 md:px-1 lg:mx-0 lg:px-8 fixed bg-[#fff] z-10 w-full top-0">
+    <nav className="bg-inherit w-full relative fixed lg:mb-[80px] mb-[50px]">
+      <div className="flex items-center justify-between mx-auto py-3 px-2 md:px-1 lg:mx-0 lg:px-8 fixed bg-[#fff] z-10 w-full top-0 ">
         <Link href="/" className="flex items-center">
           <Image
             src={TechverseLogo}
@@ -65,20 +65,20 @@ const NavBar = () => {
               </li>
             ))}
           </ul>
-            <Link
-              target="_blank"
-              className="ml-5 w-[150px] py-[10px] px-[24px] justify-center items-center bg-white text-primary rounded-[10px] md:hidden"
-              href="https://docs.google.com/forms/d/e/1FAIpQLSeJBFggDSCgE35rA19W1gjqddo8jlXprs6002C_1L3lYqPDzw/viewform"
-            >
-                Get Started
-            </Link>
+          <Link
+            target="_blank"
+            className="ml-5 w-[150px] py-[10px] px-[24px] justify-center items-center bg-white text-primary rounded-[10px] md:hidden"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeJBFggDSCgE35rA19W1gjqddo8jlXprs6002C_1L3lYqPDzw/viewform"
+          >
+            Get Started
+          </Link>
         </div>
         <Link
           target="_blank"
           className="md:flex py-[10px] px-[24px] md:px-[20px] justify-center items-center bg-primary text-white rounded-[10px] hidden"
           href="https://docs.google.com/forms/d/e/1FAIpQLSeJBFggDSCgE35rA19W1gjqddo8jlXprs6002C_1L3lYqPDzw/viewform"
         >
-            Get Started
+          Get Started
         </Link>
       </div>
     </nav>
