@@ -2,37 +2,11 @@ import React from 'react';
 import CoursesMobile from './CoursesMobile';
 import CoursesLargeScreens from './CoursesLarge';
 import Link from 'next/link';
+import { courses } from '@/app/staticData/data';
 
 type Props = {};
 
 export default function Courses({}: Props) {
-  const courses = [
-    {
-      name: 'Web Development',
-      description:
-        'Learn how to build websites and web applications using HTML, CSS, JavaScript, React, and more.',
-    },
-    {
-      name: 'Product Management',
-      description:
-        'Learn how to build websites and web applications using HTML, CSS, JavaScript, React, and more.',
-    },
-    {
-      name: 'UI/UX Design',
-      description:
-        'Learn how to build websites and web applications using HTML, CSS, JavaScript, React, and more.',
-    },
-    {
-      name: 'Digital Marketing',
-      description:
-        'Learn how to build websites and web applications using HTML, CSS, JavaScript, React, and more.',
-    },
-    {
-      name: 'Graphics Design',
-      description:
-        'Learn how to build websites and web applications using HTML, CSS, JavaScript, React, and more.',
-    },
-  ];
   return (
     <section className="w-full bg-mobile-bg-color mt-10 pb-10 px-4 flex flex-col gap-6 lg:bg-mobile-bg md:bg-mobile-bg lg:pt-12 md:pt-11 md:px-8 lg:px-32">
       <div className="flex flex-col gap-4 lg:gap-5 lg:items-center lg:justify-center md:items-center md:mb-20">
