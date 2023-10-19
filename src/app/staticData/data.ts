@@ -229,12 +229,36 @@ export const courses: Course[] = [
   },
 ];
 
-export const reviews = [
-  "Finally, a course that lives up to its claims! It's been a game-changer for me. I'm so impressed with how well it works.",
+type Review = {
+  comment: String;
+  name: String;
+  image: HTMLImageElement;
+  course?: String;
+};
 
-  "This course exceeded my expectations. It's reliable, efficient, and has simplified my daily routine. I'm one satisfied customer!",
+export const reviews: Review[] = [
+  {
+    comment: "Finally, a course that lives up to its claims! It's been a game-changer for me. I'm so impressed with how well it works.",
+    name: 'Joseph D',
+    image: Images[10],
+    course: 'Computer Appreciation',
+  },
 
-  "I was skeptical at first, but this course proved me wrong. It's been a fantastic addition to my life, and I'm thrilled with the results.",
+  {
+    comment: "This course exceeded my expectations. It's reliable, efficient, and has simplified my daily routine. I'm one satisfied customer!",
+    name: 'Kolawole M',
+    image: Images[11],
+  },
 
-  "Kudos to the makers of this course! It's rare to find something that delivers on its promises. I'm genuinely impressed and grateful.",
+  {
+    comment: "I was skeptical at first, but this course proved me wrong. It's been a fantastic addition to my life, and I'm thrilled with the results.",
+    name: 'Moses E',
+    image: Images[12],
+  },
+
+  {
+    comment: "Kudos to the makers of this course! It's rare to find something that delivers on its promises. I'm genuinely impressed and grateful.",
+    name: 'Samuel O',
+    image: Images[13],
+  },
 ];

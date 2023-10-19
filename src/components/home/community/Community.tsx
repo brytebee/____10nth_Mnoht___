@@ -23,10 +23,11 @@ import polygon12 from '../../../../public/svgs/Polygon-12.svg';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import WorkingMan from '../../../../public/svgs/office-worker.svg';
 import { reviews } from '@/app/staticData/data';
+import MobileCarousel from './MobileCarousel';
 
 type Props = {};
 
-export default function OurCommunitySection({}: Props) {
+export default function OurCommunitySection({ }: Props) {
   const isSmallMobile = useMediaQuery('(max-width: 320px)');
   const courseTitles = [
     'Product Management',
@@ -60,9 +61,8 @@ export default function OurCommunitySection({}: Props) {
           />
         </ul>
         <div
-          className={`w-[320px] lg:w-[600px] lg:items-center md:w-[550px] mx-auto flex items-center gap-2 ${
-            isSmallMobile && 'w-[95%]'
-          }`}
+          className={`w-[320px] lg:w-[600px] lg:items-center md:w-[550px] mx-auto flex items-center gap-2 ${isSmallMobile && 'w-[95%]'
+            }`}
         >
           <Image src={AcademicIcon} alt="academic icon" />
           <h2 className="text-center text-xl md:text-3xl font-bold text-body">
@@ -71,9 +71,8 @@ export default function OurCommunitySection({}: Props) {
           <Image src={AcademicIcon} alt="academic icon" />
         </div>
         <p
-          className={`w-[347px] md:w-[700px] lg:w-[878px] mx-auto text-center font-light ${
-            isSmallMobile && 'w-[95%]'
-          }`}
+          className={`w-[347px] md:w-[700px] lg:w-[878px] mx-auto text-center font-light ${isSmallMobile && 'w-[95%]'
+            }`}
         >
           Embarking on a learning journey with our online tech academy is an
           investment in your future. Empower yourself with the skills and
@@ -84,39 +83,39 @@ export default function OurCommunitySection({}: Props) {
       </div>
       {/* <MobileCarousel> */}
       <div className="flex gap-9">
-        <div className="md:hidden bg-white px-7 pt-7 pb-6 w-72 mx-auto rounded-md border[1px solid #ECECEC] mb-10">
-          <div className="mb-5">
-            <div className="w-[200px] relative">
-              <Image
-                src={LeftQuote}
-                alt="left quote"
-                className="absolute -left-4 -top-1"
-              />
-              <Image
-                src={RightQuote}
-                alt="right quote"
-                className="absolute -right-8 -top-1"
-              />
-              <p className="w-full font-normal text-base mx-auto">
-                Lorem ipsum dolor sit amet consectetur. Ornare sed mattis nunc
-                turpis enim. In justo molestie in a. Ac aliquam malesuada
-                feugiat vitae pharetra.
-              </p>
-            </div>
-          </div>
-          <div className="flex gap-3 items-center">
-            <Image src={TestimonialImg} alt="testimonial image" />
-            <div className="flex flex-col gap-7 mb-7">
-              <div>
-                <h3 className="text-sm font-semibold">Alice stern</h3>
-                <p className="text-[13px]">Student of social science unilag</p>
+        {reviews.slice(0, 1).map(({ comment, image, name, course }, index) => (
+          <div className="md:hidden bg-white px-3 pt-7 pb-6 w-72 mx-auto rounded-md border[1px solid #ECECEC] mb-10" key={index}>
+            <div className="mb-5">
+              <div className="w-[230px] relative">
+                <Image
+                  src={LeftQuote}
+                  alt="left quote"
+                  className="absolute -left-4 -top-1"
+                />
+                <Image
+                  src={RightQuote}
+                  alt="right quote"
+                  className="absolute -right-8 -top-1"
+                />
+                <p className="w-full font-normal text-base mx-auto">
+                  {comment}
+                </p>
               </div>
             </div>
+            <div className="flex flex-col gap-3">
+              <Image src={image} alt="testimonial image" className='rounded-md object-cover' />
+              <div className="flex flex-col gap-7 mb-7">
+                <div>
+                  <h3 className="text-sm font-semibold">{name}</h3>
+                  <p className="text-sm">{`Student of ${course}`}</p>
+                </div>
+              </div>
+            </div>
+            <Link href="#" className="font-semibold text-hero underline">
+              Read full story
+            </Link>
           </div>
-          <Link href="#" className="font-semibold text-hero underline">
-            Read full story
-          </Link>
-        </div>
+        ))}
       </div>
       {/* </MobileCarousel> */}
       <div
@@ -126,26 +125,26 @@ export default function OurCommunitySection({}: Props) {
           borderRadius: '13px',
         }}
       >
-        {reviews.map((testimony, index) => (
+        {reviews.map(({ comment, image }, index) => (
           <div
             key={index}
-            className={`relative lg:w-[340px] md:w-[300px] h-[150px] rounded-[21px] bg-testimonial lg:pt-11 md:pt-6 pl-10 pb-6 pr-3 z-10 ${
-              (index === 0 || index === 2) && 'mt-20'
-            } ${index === 0 && 'lg:ml-[80px] lg:mb-16 md:ml-5'} ${
-              index === 1 && 'lg:ml-[60px] md:ml-4'
-            } ${(index === 0 || index === 1) && 'gap-8'}`}
+            className={`relative lg:w-[340px] md:w-[300px] h-[150px] rounded-[21px] bg-testimonial lg:pt-11 md:pt-6 pl-10 pb-6 pr-3 z-10 ${(index === 0 || index === 2) && 'mt-20'
+              } ${index === 0 && 'lg:ml-[80px] lg:mb-16 md:ml-5'} ${index === 1 && 'lg:ml-[60px] md:ml-4'
+              } ${(index === 0 || index === 1) && 'gap-8'}`}
           >
             <Image
-              src={TestimonialImg}
+              src={image}
               alt="testimonial image"
-              className="absolute -top-9 -left-6 md:w-[60px] md:h-[60px] lg:w-[84px] lg:h-[84px]"
+              className="absolute -top-9 -left-6 md:w-[60px] md:h-[60px] lg:w-[84px] lg:h-[84px] rounded-full object-cover"
+              width={60}
+              height={60}
             />
             <Image
               src={RightQuote}
               alt="right quote"
               className="absolute -top-2 right-4 w-[14px] h-[14px]"
             />
-            <p className="font-light text-sm">{testimony}</p>
+            <p className="font-light text-sm">{comment}</p>
           </div>
         ))}
 
@@ -170,13 +169,13 @@ export default function OurCommunitySection({}: Props) {
             Our course catalogue
           </h2>
           <ul className="flex flex-col gap-4 pl-48">
-             <Image
-          src={polygon3}
-          height={50}
-          width={50}
-          alt="polygon"
-          className="absolute lg:ml-[-60px] md:ml-[-80px] md:mt-[200px] hidden md:block "
-        />
+            <Image
+              src={polygon3}
+              height={50}
+              width={50}
+              alt="polygon"
+              className="absolute lg:ml-[-60px] md:ml-[-80px] md:mt-[200px] hidden md:block "
+            />
             {courseTitles.map((title, index) => (
               <li key={index} className="flex items-center gap-2">
                 <div className="w-[15px] h-[15px] bg-hero rounded-full" />
@@ -191,7 +190,7 @@ export default function OurCommunitySection({}: Props) {
             See all <Image src={ChevronRight} alt="chevron right" />
           </Link>
         </div>
-         <Image
+        <Image
           src={leftPolygon5}
           height={100}
           width={100}
@@ -211,7 +210,7 @@ export default function OurCommunitySection({}: Props) {
           className="absolute lg:ml-[1050px] md:ml-[450px] md:mt-[500px] hidden md:block "
         />
 
-         <Image
+        <Image
           src={leftPolygon8}
           height={100}
           width={100}
@@ -233,7 +232,7 @@ export default function OurCommunitySection({}: Props) {
           alt="instructor image"
           className="md:w-[503px]"
         />
-         <Image
+        <Image
           src={polygon10}
           height={80}
           width={80}
@@ -254,13 +253,13 @@ export default function OurCommunitySection({}: Props) {
           >
             Join our team
           </Link>
-           <Image
-          src={leftPolygon12}
-          height={100}
-          width={100}
-          alt="polygon"
-          className="absolute lg:ml-[550px] md:ml-[270px] md:mt-[200px] hidden md:block "
-        />
+          <Image
+            src={leftPolygon12}
+            height={100}
+            width={100}
+            alt="polygon"
+            className="absolute lg:ml-[550px] md:ml-[270px] md:mt-[200px] hidden md:block "
+          />
         </div>
       </div>
     </section>
