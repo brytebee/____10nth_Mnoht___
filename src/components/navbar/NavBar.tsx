@@ -19,8 +19,8 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="bg-inherit w-full relative fixed lg:mb-[80px] mb-[50px]">
-      <div className={` ${pathname === '/about' ? 'bg-about-linear' : 'bg-[#fff]'} flex items-center justify-between mx-auto py-3 px-2 md:px-1 lg:mx-0 lg:px-8 fixed  z-10 w-full top-0 `}>
+    <nav className="bg-inherit w-full relative fixed lg:mb-[84px] mb-[50px]">
+      <div className={` ${pathname === '/about' ? 'bg-transparent' : 'bg-[#fff]'} flex items-center justify-between mx-auto py-3 px-2 md:px-1 lg:mx-0 lg:px-8 ${pathname === '/about' ? 'relative' : 'fixed'}   z-10 w-full top-0 `}>
         <Link href="/" className="flex items-center">
           <Image
             src={TechverseLogo}
@@ -59,7 +59,6 @@ const NavBar = () => {
                   } hover:bg-gray-100 hover:text-primary md:hover:bg-transparent md:p-0`}
                   aria-current={pathname === path ? 'page' : undefined}
                   onClick={() => setOpenNavbar(false)}
-                  // id={`${pathname === '/about' ? 'text-white' : 'text-black'}`}
                 >
                   {name}
                 </Link>
