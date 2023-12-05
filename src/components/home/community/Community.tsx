@@ -195,7 +195,7 @@ export default function OurCommunitySection({ }: Props) {
           height={100}
           width={100}
           alt="polygon"
-          className="absolute lg:ml-[800px] md:ml-[50px] md:mt-[-50px] lg:mt-[200px] hidden md:block "
+          className="absolute lg:ml-[700px] md:ml-[50px] md:mt-[-50px] lg:mt-[200px] hidden md:block "
         />
         <Image
           src={WorkingMan}
@@ -215,7 +215,7 @@ export default function OurCommunitySection({ }: Props) {
           height={100}
           width={100}
           alt="polygon"
-          className="absolute lg:ml-[1250px] md:ml-[700px] md:mt-[-10px] lg:mt-[100px] hidden md:block "
+          className="absolute lg:ml-[1180px] md:ml-[700px] md:mt-[-10px] lg:mt-[100px] hidden md:block "
         />
       </div>
       <Link
