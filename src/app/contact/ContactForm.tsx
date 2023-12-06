@@ -23,7 +23,7 @@ export default function ContactForm() {
   }
   const { name, email, message } = contactDetails
   return (
-    <form className='flex flex-col gap-5' onSubmit={handleSubmit}>
+    <form className='flex flex-col gap-5 md:w-[450px]' onSubmit={handleSubmit}>
       <label style={{ display: 'none' }} htmlFor="name">Name</label>
       <input type="text" name="name" id="name" placeholder='email'
         className='py-3 px-2 w-full border border-none rounded-[5px] bg-[#d9d9dc]'
@@ -41,7 +41,7 @@ export default function ContactForm() {
         value={message}
         onChange={handleChange}
       ></textarea>
-      <button type="submit" className='self-center mt-3 w-28 py-3 px-6 flex items-center bg-[#D97508] rounded-[10px] text-white mb-12'>Submit</button>
+      <button type="submit" className='self-center md:self-start mt-3 w-28 md:w-[200px] py-3 px-6 flex items-center bg-[#D97508] rounded-[10px] text-white mb-12 md:mb-0 justify-center'>Submit</button>
     </form>
   )
 }
