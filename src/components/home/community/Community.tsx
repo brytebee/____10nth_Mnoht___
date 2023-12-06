@@ -128,7 +128,7 @@ export default function OurCommunitySection({ }: Props) {
         {reviews.map(({ comment, image }, index) => (
           <div
             key={index}
-            className={`relative lg:w-[340px] md:w-[300px] h-[150px] rounded-[21px] bg-testimonial lg:pt-11 md:pt-6 pl-10 pb-6 pr-3 z-10 ${(index === 0 || index === 2) && 'mt-20'
+            className={`relative lg:w-[340px] md:w-[300px] h-[150px] rounded-[21px] bg-testimonial lg:pt-11 md:pt-6 pl-10 pb-6 pr-3 z-0 ${(index === 0 || index === 2) && 'mt-20'
               } ${index === 0 && 'lg:ml-[80px] lg:mb-16 md:ml-5'} ${index === 1 && 'lg:ml-[60px] md:ml-4'
               } ${(index === 0 || index === 1) && 'gap-8'}`}
           >
