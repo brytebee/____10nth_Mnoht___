@@ -6,7 +6,6 @@ import Image from 'next/image';
 import AcademicIcon from '../../../../public/svgs/academic.svg';
 import LeftQuote from '../../../../public/svgs/left-quote.svg';
 import RightQuote from '../../../../public/svgs/right-quote.svg';
-import TestimonialImg from '../../../../public/svgs/customer.svg';
 import InstructorImg from '../../../../public/svgs/instructor.svg';
 import ChevronRight from '../../../../public/svgs/chevron_right.svg';
 import leftPolygon from '../../../../public/svgs/left-polygon.svg';
@@ -14,16 +13,14 @@ import leftPolygon2 from '../../../../public/svgs/left-polygon2.svg';
 import polygon4 from '../../../../public/svgs/Polygon-4.svg';
 import polygon5 from '../../../../public/svgs/Polygon-5.svg';
 import leftPolygon5 from '../../../../public/images/polygon5.png';
-import leftPolygon4 from '../../../../public/svgs/left-polygon4.svg';
 import leftPolygon8 from '../../../../public/svgs/left-polygon8.svg';
 import leftPolygon12 from '../../../../public/svgs/left-polygon12.svg';
 import polygon3 from '../../../../public/svgs/polygon3.svg';
 import polygon10 from '../../../../public/svgs/polygon10.svg';
 import polygon12 from '../../../../public/svgs/Polygon-12.svg';
 import useMediaQuery from '@/hooks/useMediaQuery';
-import WorkingMan from '../../../../public/svgs/office-worker.svg';
+import WorkingMan from '../../../../public/svgs/remote-man.svg';
 import { reviews } from '@/app/staticData/data';
-import MobileCarousel from './MobileCarousel';
 
 type Props = {};
 
@@ -163,12 +160,12 @@ export default function OurCommunitySection({ }: Props) {
           className="absolute lg:ml-[200px] md:ml[140px] hidden md:block lg:mt-[480px] md:mt-[-100px] md:h-[120px] md:w-[120px] lg:h-[150px] lg:w-[150px]"
         />
       </div>
-      <div className="hidden md:flex lg:flex-row md:flex-col-reverse justify-between w-[90%] mx-auto my-16 bg-inherit">
+      <div className="hidden md:flex lg:flex-row md:flex-col-reverse justify-between w-[75%] gap-20 mx-auto my-16 bg-inherit">
         <div className="flex flex-col gap-5 flex-1">
-          <h2 className="md:text-4xl lg:text-3xl text-body font-bold text-center">
+          <h2 className="md:text-4xl lg:text-3xl text-body font-bold text-centered">
             Our course catalogue
           </h2>
-          <ul className="flex flex-col gap-4 pl-48">
+          <ul className="flex flex-col gap-4 pl-12">
             <Image
               src={polygon3}
               height={50}
@@ -195,12 +192,12 @@ export default function OurCommunitySection({ }: Props) {
           height={100}
           width={100}
           alt="polygon"
-          className="absolute lg:ml-[800px] md:ml-[50px] md:mt-[-50px] lg:mt-[200px] hidden md:block "
+          className="absolute lg:ml-[500px] md:ml-[50px] md:mt-[-50px] lg:mt-[200px] hidden md:block "
         />
         <Image
           src={WorkingMan}
           alt="man working in office"
-          className="h-[600px] flex-1"
+          className="w-[500px]"
         />
         <Image
           src={polygon4}
