@@ -20,7 +20,7 @@ const NavBar = () => {
 
   return (
     <nav className="bg-inherit w-full relative fixed lg:mb-[84px] mb-[50px]">
-      <div className={` ${pathname === '/about' ? 'bg-transparent' : 'bg-[#fff]'} flex items-center justify-between mx-auto py-3 px-2 md:px-1 lg:mx-0 lg:px-8 ${pathname === '/about' ? 'relative' : 'fixed'}   z-10 w-full top-0 `}>
+      <div className={` ${pathname === '/about' ? 'md:bg-transparent bg-[#fff]' : 'bg-[#fff]'} flex items-center justify-between mx-auto py-3 px-2 md:px-1 lg:mx-0 lg:px-8 ${pathname === '/about' ? 'md:relative fixed' : 'fixed'}   z-20 w-full top-0 `}>
         <Link href="/" className="flex items-center">
           <Image
             src={TechverseLogo}
