@@ -2,7 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import Link from 'next/link'
 
-const email = 'techverse@mailer.com';
+const email = 'techverseacademy23@gmail.com';
 
 const MobileContactDetails = () => (
   <div className='md:hidden'>
