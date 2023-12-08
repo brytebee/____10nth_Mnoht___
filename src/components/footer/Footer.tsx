@@ -12,7 +12,7 @@ const Footer = () => {
     {
       title: "Company", links: [
         { name: "About Us", path: "/about" },
-        { name: "Our Services", path: "/services" },
+        { name: "Our Services", path: "/courses" },
         { name: "Privacy Policy", path: "/privacy-policy" },
         { name: "Terms and Conditions", path: "/terms-and-conditions" }
       ]
@@ -20,16 +20,16 @@ const Footer = () => {
     {
       title: "Quick links", links: [
         { name: "Resources", path: "/resources" },
-        { name: "Join Us", path: "/join" },
+        { name: "Join Us", path: "/community" },
         { name: "FAQs", path: "/faqs" },
 
       ]
     },
     {
       title: "Contact Us", links: [
-        { name: "Email", path: "#" },
-        { name: "Phone number", path: "#" },
-        { name: "WhatsApp", path: "#" },
+        { name: "Email", path: "mailto:techverseacademy23@gmail.com" },
+        { name: "+2347066324306", path: "#" },
+        { name: "WhatsApp", path: "https://wa.me/2347066324306" },
       ]
     },
   ]
