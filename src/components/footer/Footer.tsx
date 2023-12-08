@@ -34,7 +34,7 @@ const Footer = () => {
     },
   ]
   return (
-    <footer className="pt-[32px] bg-body w-full md:pt-20">
+    <footer className="pt-[32px] bg-body w-full md:pt-20 relative">
       <section className="px-5 md:flex justify-between md:pb-32 md:w-full md:mx-auto md:px-3 lg:px-4 lg:w-10/12 lg:mx-0 lg:ml-10">
         <section className="flex flex-col gap-10">
           <div className="relative">
