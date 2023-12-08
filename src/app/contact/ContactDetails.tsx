@@ -55,9 +55,9 @@ export default function ContactDetails() {
           @TecVerseAcademy
         </Link>
 
-        <Link href='whatsapp://send?text=Hello' target='_blank' className='flex gap items-center gap-2 hover:text-[#D97508]'>
+        <Link href='https://wa.me/2347066324306' target='_blank' className='flex gap items-center gap-2 hover:text-[#D97508]'>
           <Image src='/svgs/whatsapp.svg' width={30} height={30} alt='whatsapp' />
-          +2348103456789
+          +2347066324306
         </Link>
       </div>
       <MobileContactDetails />
