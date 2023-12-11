@@ -10,7 +10,7 @@ export default function ContactForm() {
   return (
     <form className='flex flex-col gap-5 md:w-[450px]' onSubmit={handleSubmit(onSubmit)}>
       <label htmlFor="name">
-        <input type="text" id="name" placeholder='name'
+        <input type="text" id="name" placeholder='Name'
           className='py-3 px-2 w-full border border-none rounded-[5px] bg-[#d9d9dc]'
           {...register("name")}
           style={errors.name && errorStyles}
@@ -18,7 +18,7 @@ export default function ContactForm() {
         {errors.name && <p className='text-red-700'>{errors.name.message}</p>}
       </label>
       <label htmlFor="email">
-        <input type="email" id="email" placeholder='email'
+        <input type="email" id="email" placeholder='Email'
           className='py-3 px-2 w-full border border-none rounded-[5px] bg-[#d9d9dc]'
           {...register("email")}
           style={errors.email && errorStyles}
@@ -26,13 +26,13 @@ export default function ContactForm() {
         {errors.email && <p className='text-red-700'>{errors.email.message}</p>}
       </label>
       <label htmlFor="message">
-        <textarea id="message" cols={30} rows={10} placeholder='message' className='py-3 px-2 w-full border border-none rounded-[5px] bg-[#d9d9dc]'
+        <textarea id="message" cols={30} rows={10} placeholder='Type in your message' className='py-3 px-2 w-full border border-none rounded-[5px] bg-[#d9d9dc]'
           {...register("message")}
           style={errors.message && errorStyles}
         ></textarea>
         {errors.message && <p className='text-red-700'>{errors.message.message}</p>}
       </label>
-      <button type="submit" className='self-center md:self-start mt-3 w-28 md:w-[200px] py-3 px-6 flex items-center bg-[#D97508] rounded-[10px] text-white mb-12 md:mb-0 justify-center'
+      <button type="submit" className='self-center md:self-start mt-3 w-28 md:w-[200px] py-3 px-6 flex items-center bg-[#D97508] rounded-[10px] text-white mb-3 md:mb-0 justify-center'
         disabled={isSubmitting}
       >
         {isSubmitting ? 'Submitting...' : 'Submit'}
