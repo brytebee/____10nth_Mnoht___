@@ -26,7 +26,7 @@ export default function ContactForm() {
         {errors.email && <p className='text-red-700'>{errors.email.message}</p>}
       </label>
       <label htmlFor="message">
-        <textarea id="message" cols={30} rows={10} placeholder='Type in your message' className='py-3 px-2 w-full border border-none rounded-[5px] bg-[#d9d9dc]'
+        <textarea id="message" cols={30} rows={6} placeholder='Type in your message' className='py-3 px-2 w-full border border-none rounded-[5px] bg-[#d9d9dc]'
           {...register("message")}
           style={errors.message && errorStyles}
         ></textarea>
