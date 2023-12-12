@@ -1,15 +1,36 @@
-import NavBar from "@/components/navbar/NavBar";
-import "./globals.css";
-import Head from "next/head";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import Footer from "@/components/footer/Footer";
+import NavBar from '@/components/navbar/NavBar';
+import './globals.css';
+import Head from 'next/head';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import Footer from '@/components/footer/Footer';
+import Script from 'next/script';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: "TechVerse",
-  description: "Unblocking Potentials",
+  title: 'TechVerse Academy',
+  description: 'Unblocking Potentials',
+};
+
+const GTM = () => {
+  return (
+    <>
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-JHQPQM03GG"
+      />
+      <Script id="google-tag-manager">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-JHQPQM03GG');
+        `}
+      </Script>
+    </>
+  );
 };
 
 export default function RootLayout({
@@ -19,6 +40,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <GTM />
       <Head>
         <link rel="icon" href="./../../public/favicon_io/favicon.ico" />
         <link

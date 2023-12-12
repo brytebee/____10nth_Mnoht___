@@ -2,6 +2,9 @@ import React from 'react';
 import Image from 'next/image';
 import HeroImage from '../../../public/svgs/hero-img.svg';
 import DesktopHeroBg from '../../../public/svgs/hero_bg.svg';
+import polygon1 from '../../../public/svgs/Polygon-1.svg';
+import polygon2 from '../../../public/svgs/Polygon-2.svg';
+import Link from 'next/link';
 
 type Props = {};
 
@@ -19,24 +22,46 @@ export default function Hero({}: Props) {
           </div>
         </div>
         <div className="flex flex-col gap-6 pl-3">
-          <h1 className="text-hero-header w-[296px] text-3xl font-semibold">
+          <h1 className="text-hero-header w-[296px] text-3xl font-semibold border-box">
             Online Tech Classes From The Best Instructors
           </h1>
+          <ul className=" md:hidden ml-[86%] absolute">
+            {' '}
+            <Image
+              src={polygon1}
+              height={40}
+              width={40}
+              alt="polygon"
+            />
+            <Image
+              src={polygon2}
+              height={40}
+              width={40}
+              alt="polygon"
+              className=" mt-[-110px]"
+            />
+          </ul>
           <div className="flex flex-col gap-2">
             <h2 className="text-primary text-xl font-semibold">Introduction</h2>
             <p className="w-[95%] text-lg text-body font-light">
               Welcome to <strong>TechVerse</strong> Academy, your gateway to
-              unlocking the world of cutting-edge technology! Whether you're a
-              curious beginner or an aspiring tech enthusiast, our online
-              platform offers an unparalleled learning experience tailored to
-              your needs.
+              unlocking the world of cutting-edge technology! Whether
+              you&apos;re a curious beginner or an aspiring tech enthusiast, our
+              online platform offers an unparalleled learning experience
+              tailored to your needs.
             </p>
-            <button
-              type="button"
-              className="border-none w-[140px] flex justify-center items-center px-[15px] py-3 rounded-[10px] text-white text-lg bg-primary mx-auto mt-4 mb-8"
+            <Link
+              target="_blank"
+              className="text-none"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSeJBFggDSCgE35rA19W1gjqddo8jlXprs6002C_1L3lYqPDzw/viewform"
             >
-              Enroll now
-            </button>
+              <button
+                type="button"
+                className="border-none w-[140px] flex justify-center items-center px-[15px] py-3 rounded-[10px] text-white text-lg bg-primary mx-auto mt-4 mb-8"
+              >
+                Enroll now
+              </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -52,29 +77,41 @@ export default function Hero({}: Props) {
               Online Tech Classes From The Best Instructors
             </h1>
             <div className="flex flex-col lg:gap-2 md:gap-1 md:pl-4 lg:pl-6">
-              <h2 className="text-primary text-xl font-semibold">
+              <h2 className="text-primary md:text-[#f2f2f2] text-xl font-semibold">
                 Introduction
               </h2>
               <p className="lg:w-[650px] md:w-[350px] lg:text-lg md:text-xs md:text-justify lg:text-left font-normal text-white">
                 Welcome to TechVerse Academy, your gateway to unlocking the
-                world of cutting-edge technology! Whether you're a curious
+                world of cutting-edge technology! Whether you&apos;re a curious
                 beginner or an aspiring tech enthusiast, our online platform
                 offers an unparalleled learning experience tailored to your
                 needs.
               </p>
               <div className="lg:mt-8 md:mt-2 flex gap-5">
-                <button
-                  type="button"
-                  className="border-none py-3 px-6 text-primary bg-white rounded-[10px]"
+                <Link
+                  target="_blank"
+                  className="text-none"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSeJBFggDSCgE35rA19W1gjqddo8jlXprs6002C_1L3lYqPDzw/viewform"
                 >
-                  Enroll as student
-                </button>
-                <button
-                  type="button"
-                  className="py-3 px-6 text-white rounded-[10px] border"
+                  <button
+                    type="button"
+                    className="border-none py-3 px-6 text-primary bg-white rounded-[10px]"
+                  >
+                    Enroll as student
+                  </button>
+                </Link>
+                <Link
+                  target="_blank"
+                  className="text-none"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLScxmLpdM08APFELCOPZO_LBHldZuHrb5PNhNK6G7CXtVp3gag/viewform"
                 >
-                  Join our team
-                </button>
+                  <button
+                    type="button"
+                    className="py-3 px-6 text-white rounded-[10px] border"
+                  >
+                    Join our team
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
