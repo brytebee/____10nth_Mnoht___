@@ -249,76 +249,6 @@ leading-[32px] font-serif "
             className="absolute  mt-[-80px]"
           />
         </ul>
-        {/* <div className="md:hidden flex flex-col justify-center items-center mt-[-50px]">
-          <ul className="flex flex-col justify-center items-center gap-[20px]">
-            <li className="flex flex-col justify-center items-center gap-[10px]">
-              <span
-                className="text-[#333]
-text-center
-font-black
-md:text-[40px] text-[20px]
-leading-[120%] font-serif "
-              >
-                Our Programs
-              </span>
-              <span>
-                {' '}
-                <Image
-                  src={line}
-                  height={2}
-                  width={250}
-                  alt="line"
-                  className="md:w-[250px] w-[125px]"
-                />
-              </span>
-            </li>
-            <li
-              className="w-[248px]
- text-[#333]
-font-semibold
-text-[18px]
-text-center
-leading-[32px] font-serif "
-            >
-              At Techverse, we offer a wide range of programs in areas like
-            </li>
-            <li
-              className="w-[228px]
- text-[#333]
-font-bold
-text-[18px]
-text-center
-leading-[32px] font-serif "
-            >
-              Web Development Computer Appreciation Graphic Design Data Science
-              and Analytics UI UX Design Product Management Digital Marketing
-              and <span className="text-[#A63F0E]">more!</span>
-            </li>
-            <li>
-              <Link
-                href="https://docs.google.com/forms/d/e/1FAIpQLScxmLpdM08APFELCOPZO_LBHldZuHrb5PNhNK6G7CXtVp3gag/viewform"
-                target="_blank"
-              >
-                <button
-                  className="text-[#FFF]
-font-serif
-text-[18px]
-font-normal
-leading-[120%]
-              rounded-[10px]
-bg-[#D97508] flex
-w-[157px]
-py-[12px] px-[25px]
-justify-center
-items-center
-gap-[4px]"
-                >
-                  Enroll now
-                </button>
-              </Link>
-            </li>
-          </ul>
-        </div> */}
       </div>
       <div className="flex md:my-[100px] my-[40px] flex-col justify-center items-center md:gap-[50px] gap-[20px]">
         <ul className="flex flex-col gap-[20px] justify-center items-center">
@@ -528,10 +458,19 @@ leading-[32px]"
               Senior full-stack developer
             </span>
             <span className="flex gap-[5px]">
-              <Image src={insta} height={20} width={20} alt="line" />{' '}
-              <Image src={twitter} height={20} width={20} alt="line" />{' '}
+            <Link href="https://www.instagram.com/olaishola05/" target="_blank">
+              <Image src={insta} height={20} width={20} alt="line" /></Link>
+                            <Link
+                href="https://twitter.com/@olaishola05?t=1v6gVd9yOPNOhXvwHbKLSA&s=09"
+                target="_blank"
+              >
+              <Image src={twitter} height={20} width={20} alt="line" /></Link>
               <Image src={linkedIn} height={20} width={20} alt="line" />{' '}
-              <Image src={facebook} height={20} width={20} alt="line" />
+               <Link
+                href="https://www.facebook.com/olaishola05?mibextid=ZbWKwL"
+                target="_blank"
+              >
+              <Image src={facebook} height={20} width={20} alt="line" /></Link>
             </span>
           </li>
           <li className="flex flex-col justify-center items-center">
@@ -563,10 +502,23 @@ leading-[32px]"
               Product Manager
             </span>
             <span className="flex gap-[5px]">
-              <Image src={insta} height={20} width={20} alt="line" />{' '}
-              <Image src={twitter} height={20} width={20} alt="line" />{' '}
-              <Image src={linkedIn} height={20} width={20} alt="line" />{' '}
-              <Image src={facebook} height={20} width={20} alt="line" />
+            <Link href="https://www.instagram.com/oluwasegunoke/" target="_blank">
+              <Image src={insta} height={20} width={20} alt="line" /></Link>
+                            <Link
+                href="https://twitter.com/oluwasegunoke?t=1v6gVd9yOPNOhXvwHbKLSA&s=09"
+                target="_blank"
+              >
+              <Image src={twitter} height={20} width={20} alt="line" /></Link>
+               <Link
+                href="https://www.linkedin.com/in/oluwasegunoke"
+                target="_blank"
+              >{' '}
+              <Image src={linkedIn} height={20} width={20} alt="line" /></Link>
+               <Link
+                href="https://www.facebook.com/oluwasegunoke?mibextid=ZbWKwL"
+                target="_blank"
+              >
+              <Image src={facebook} height={20} width={20} alt="line" /></Link>
             </span>
           </li>
         </ul>
