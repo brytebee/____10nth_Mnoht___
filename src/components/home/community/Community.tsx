@@ -41,7 +41,7 @@ export default function OurCommunitySection({ }: Props) {
     'Data Science',
   ];
   return (
-    <section className="mt-10 w-full pb-20 md:mt-20 md:pb-32 bg-hero-pattern  bg-left-top">
+    <section className="mt-10 w-full pb-20 md:mt-20 md:pb-32 bg-hero-pattern bg-no-repeat bg-top ">
       <div className="flex flex-col gap-5 mb-10">
         <ul className="hidden md:block">
           {' '}
@@ -61,8 +61,9 @@ export default function OurCommunitySection({ }: Props) {
           />
         </ul>
         <div
-          className={`w-[320px] lg:w-[600px] lg:items-center md:w-[550px] mx-auto flex items-center gap-2 ${isSmallMobile && 'w-[95%]'
-            }`}
+          className={`w-[320px] lg:w-[600px] lg:items-center md:w-[550px] mx-auto flex items-center gap-2 ${
+            isSmallMobile && 'w-[95%]'
+          }`}
         >
           <Image src={AcademicIcon} alt="academic icon" />
           <h2 className="text-center text-xl md:text-3xl font-bold text-body">
@@ -71,8 +72,9 @@ export default function OurCommunitySection({ }: Props) {
           <Image src={AcademicIcon} alt="academic icon" />
         </div>
         <p
-          className={`w-[347px] md:w-[700px] lg:w-[878px] mx-auto text-center font-light ${isSmallMobile && 'w-[95%]'
-            }`}
+          className={`w-[347px] md:w-[700px] lg:w-[878px] mx-auto text-center font-light ${
+            isSmallMobile && 'w-[95%]'
+          }`}
         >
           Embarking on a learning journey with our online tech academy is an
           investment in your future. Empower yourself with the skills and
@@ -84,7 +86,10 @@ export default function OurCommunitySection({ }: Props) {
       {/* <MobileCarousel> */}
       <div className="flex gap-9">
         {reviews.slice(0, 1).map(({ comment, image, name, course }, index) => (
-          <div className="md:hidden bg-white px-3 pt-7 pb-6 w-72 mx-auto rounded-md border[1px solid #ECECEC] mb-10" key={index}>
+          <div
+            className="md:hidden bg-white px-3 pt-7 pb-6 w-72 mx-auto rounded-md border[1px solid #ECECEC] mb-10"
+            key={index}
+          >
             <div className="mb-5">
               <div className="w-[230px] relative">
                 <Image
@@ -103,7 +108,11 @@ export default function OurCommunitySection({ }: Props) {
               </div>
             </div>
             <div className="flex flex-col gap-3">
-              <Image src={image} alt="testimonial image" className='rounded-md object-cover' />
+              <Image
+                src={image}
+                alt="testimonial image"
+                className="rounded-md object-cover"
+              />
               <div className="flex flex-col gap-7 mb-7">
                 <div>
                   <h3 className="text-sm font-semibold">{name}</h3>
@@ -128,9 +137,11 @@ export default function OurCommunitySection({ }: Props) {
         {reviews.map(({ comment, image }, index) => (
           <div
             key={index}
-            className={`relative lg:w-[340px] md:w-[300px] h-[150px] rounded-[21px] bg-testimonial lg:pt-11 md:pt-6 pl-10 pb-6 pr-3 z-10 ${(index === 0 || index === 2) && 'mt-20'
-              } ${index === 0 && 'lg:ml-[80px] lg:mb-16 md:ml-5'} ${index === 1 && 'lg:ml-[60px] md:ml-4'
-              } ${(index === 0 || index === 1) && 'gap-8'}`}
+            className={`relative lg:w-[340px] md:w-[300px] h-[150px] rounded-[21px] bg-testimonial lg:pt-11 md:pt-6 pl-10 pb-6 pr-3 z-10 ${
+              (index === 0 || index === 2) && 'mt-20'
+            } ${index === 0 && 'lg:ml-[80px] lg:mb-16 md:ml-5'} ${
+              index === 1 && 'lg:ml-[60px] md:ml-4'
+            } ${(index === 0 || index === 1) && 'gap-8'}`}
           >
             <Image
               src={image}
@@ -166,7 +177,7 @@ export default function OurCommunitySection({ }: Props) {
       <div className="hidden md:flex lg:flex-row md:flex-col-reverse justify-between w-[90%] mx-auto my-16 bg-inherit">
         <div className="flex flex-col gap-5 flex-1">
           <h2 className="md:text-4xl lg:text-3xl text-body font-bold text-center">
-            Our course catalogue
+            Our Course Catalogue
           </h2>
           <ul className="flex flex-col gap-4 pl-48">
             <Image

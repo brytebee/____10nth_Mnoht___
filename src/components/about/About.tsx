@@ -249,7 +249,7 @@ leading-[32px] font-serif "
             className="absolute  mt-[-80px]"
           />
         </ul>
-        <div className="md:hidden flex flex-col justify-center items-center mt-[-50px]">
+        {/* <div className="md:hidden flex flex-col justify-center items-center mt-[-50px]">
           <ul className="flex flex-col justify-center items-center gap-[20px]">
             <li className="flex flex-col justify-center items-center gap-[10px]">
               <span
@@ -318,42 +318,54 @@ gap-[4px]"
               </Link>
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
-      <div className="hidden md:flex my-[100px] flex-col justify-center items-center gap-[50px]">
+      <div className="flex md:my-[100px] my-[40px] flex-col justify-center items-center md:gap-[50px] gap-[20px]">
         <ul className="flex flex-col gap-[20px] justify-center items-center">
           <li
             className="text-[#333]
 text-center
 font-black
-text-[30px]
+md:text-[30px] text-[20px]
 leading-[120%] font-serif "
           >
-            Meet our team
+            Meet Our Team
           </li>
           <li>
-            <Image src={line} height={2} width={214} alt="line" />
+            <Image
+              src={line}
+              height={2}
+              width={214}
+              alt="line"
+              className="md:w-[214px] w-[200px]"
+            />
           </li>
           <li
             className="
  text-[#333]
 font-normal
-text-[22px]
+md:text-[22px] text-[18px]
 leading-[32px] font-serif "
           >
-            At Techverse, we offer a wide range of programs in areas such as:
+            Meet our team of professionals
           </li>
         </ul>
-        <ul className="flex gap-[100px] items-center">
+        <ul className="flex flex-col md:flex-row md:gap-[100px] gap-[20px] items-center">
           <li className="flex flex-col justify-center items-center">
             <span>
-              <Image src={Bright} height={100} width={100} alt="line" />
+              <Image
+                src={Bright}
+                height={100}
+                width={100}
+                alt="line"
+                className="md:h-[100px] h-[80px] md:w-[100px] w-[80px]"
+              />
             </span>
             <span
               className="text-[#333]
 text-center
 font-medium
-text-[18px]
+md:text-[18px] text-[16px]
 leading-[32px]"
             >
               Bright Atsighi
@@ -362,7 +374,7 @@ leading-[32px]"
               className="text-[#333]
 text-center
 font-semibold italic
-text-[20px]
+md:text-[20px] text-[18px]
 leading-[32px]"
             >
               Senior full-stack developer
@@ -390,13 +402,19 @@ leading-[32px]"
           </li>
           <li className="flex flex-col justify-center items-center">
             <span>
-              <Image src={ab} height={100} width={100} alt="line" />
+              <Image
+                src={ab}
+                height={100}
+                width={100}
+                alt="line"
+                className="md:h-[100px] h-[80px] md:w-[100px] w-[80px]"
+              />
             </span>
             <span
               className="text-[#333]
 text-center
 font-medium
-text-[18px]
+md:text-[18px] text-[16px]
 leading-[32px]"
             >
               Success whyte
@@ -405,27 +423,43 @@ leading-[32px]"
               className="text-[#333]
 text-center
 font-semibold italic
-text-[20px]
+md:text-[20px] text-[18px]
 leading-[32px]"
             >
               UI/UX designer
             </span>
             <span className="flex gap-[5px]">
               <Image src={insta} height={20} width={20} alt="line" />{' '}
-              <Image src={twitter} height={20} width={20} alt="line" />{' '}
-              <Image src={linkedIn} height={20} width={20} alt="line" />{' '}
-              <Image src={facebook} height={20} width={20} alt="line" />
+              <Image src={twitter} height={20} width={20} alt="line" />
+              <Link
+                href="https://www.linkedin.com/in/abraham-udoh?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BaFkAAGnRTjaW3q2H3dCO1g%3D%3D"
+                target="_blank"
+              >
+                <Image src={linkedIn} height={20} width={20} alt="line" />
+              </Link>
+              <Link
+                href="https://www.facebook.com/Abrahamwhyte"
+                target="_blank"
+              >
+                <Image src={facebook} height={20} width={20} alt="line" />
+              </Link>
             </span>
           </li>
           <li className="flex flex-col justify-center items-center">
             <span>
-              <Image src={anny} height={100} width={100} alt="line" />
+              <Image
+                src={anny}
+                height={100}
+                width={100}
+                alt="line"
+                className="md:h-[100px] h-[80px] md:w-[100px] w-[80px]"
+              />
             </span>
             <span
               className="text-[#333]
 text-center
 font-medium
-text-[18px]
+md:text-[18px] text-[16px]
 leading-[32px]"
             >
               Anny Udo
@@ -434,7 +468,7 @@ leading-[32px]"
               className="text-[#333]
 text-center
 font-semibold italic
-text-[20px]
+md:text-[20px] text-[18px]
 leading-[32px]"
             >
               Senior full-stack developer
@@ -464,25 +498,31 @@ leading-[32px]"
             </span>
           </li>
         </ul>
-        <ul className="flex gap-[100px] items-center pl-0">
+        <ul className="flex flex-col md:flex-row md:gap-[100px] gap-[20px] items-center pl-0">
           <li className="flex flex-col justify-center items-center">
             <span>
-              <Image src={Bright} height={100} width={100} alt="line" />
+              <Image
+                src={Bright}
+                height={100}
+                width={100}
+                alt="line"
+                className="md:h-[100px] h-[80px] md:w-[100px] w-[80px]"
+              />
             </span>
             <span
               className="text-[#333]
 text-center
 font-medium
-text-[18px]
+md:text-[18px] text-[16px]
 leading-[32px]"
             >
-              Ola Ishola
+              Oladipupo Ishola
             </span>
             <span
               className="text-[#333]
 text-center
 font-semibold italic
-text-[20px]
+md:text-[20px] text-[18px]
 leading-[32px]"
             >
               Senior full-stack developer
@@ -496,13 +536,19 @@ leading-[32px]"
           </li>
           <li className="flex flex-col justify-center items-center">
             <span>
-              <Image src={Bright} height={100} width={100} alt="line" />
+              <Image
+                src={Bright}
+                height={100}
+                width={100}
+                alt="line"
+                className="md:h-[100px] h-[80px] md:w-[100px] w-[80px]"
+              />
             </span>
             <span
               className="text-[#333]
 text-center
 font-medium
-text-[18px]
+md:text-[18px] text-[16px]
 leading-[32px]"
             >
               Oke Oluwasegun
@@ -511,7 +557,7 @@ leading-[32px]"
               className="text-[#333]
 text-center
 font-semibold italic
-text-[20px]
+md:text-[20px] text-[18px]
 leading-[32px]"
             >
               Product Manager
@@ -524,7 +570,7 @@ leading-[32px]"
             </span>
           </li>
         </ul>
-        <ul className="flex flex-col items-center justify-center">
+        <ul className="hidden md:flex flex-col items-center justify-center">
           <li
             className="w-[612px] text-[#333]
 text-center
@@ -540,8 +586,8 @@ leading-[32px]
           </li>
         </ul>
       </div>
-      <div className="flex flex-col justify-center items-center gap-[30px] bg-[#F2F2F2] md:p-[100px] p-[30px]">
-        <ul className="flex flex-col justify-center items-center md:gap-[50px] gap-[10px]">
+      <div className="flex flex-col justify-center items-center gap-[30px] bg-[#F2F2F2] md:p-[100px] p-[30px] pb-[100px]">
+        <ul className="flex flex-col justify-center items-center md:gap-[50px] gap-[30px]">
           <li
             className="md:w-[1019px] w-[348px]
 text-[#333]
@@ -587,6 +633,29 @@ leading-[32px] font-serif"
           >
             Join us at Techverse, where the future is yours to create. Your tech
             journey starts here.
+          </li>
+          <li className="md:hidden flex">
+            <Link
+              href="https://docs.google.com/forms/d/e/1FAIpQLScxmLpdM08APFELCOPZO_LBHldZuHrb5PNhNK6G7CXtVp3gag/viewform"
+              target="_blank"
+            >
+              <button
+                className="text-[#FFF]
+font-serif
+text-[18px]
+font-normal
+leading-[120%]
+              rounded-[10px]
+bg-[#D97508] flex
+w-[157px]
+py-[12px] px-[25px]
+justify-center
+items-center
+gap-[4px]"
+              >
+                Enroll now
+              </button>
+            </Link>
           </li>
         </ul>
       </div>
