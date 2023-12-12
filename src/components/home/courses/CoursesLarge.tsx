@@ -35,7 +35,7 @@ export default function CoursesLargeScreens({ }: Props) {
     }
   ]
   return (
-    <div className='hidden md:grid md:grid-cols-2 md:gap-8 lg:gap-24 md:mb-12 w-full'>
+    <div className='hidden md:grid md:grid-cols-2 md:gap-8 lg:flex lg:justify-between lg:flex-wrap lg:gap-24 md:mb-12 w-full'>
       {courses.map(({ name, description }, index) => (
         <CourseWithBar key={index} title={name} description={description} index={index} />
       ))}
