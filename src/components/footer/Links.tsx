@@ -12,13 +12,13 @@ type Props = {
 
 export default function Links({ data, heading }: Props) {
   return (
-    <div className="flex flex-col gap-5 md:items-center">
+    <div className="flex flex-col gap-5 md:items-start">
       <h4 className="text-[20px] text-white font-semibold leading-6 md:text-lg lg:text-xl">{heading}</h4>
-      <ul className='flex flex-col gap-1 md:items-center md:gap-6'>
+      <ul className='flex flex-col gap-1 md:items-start md:gap-6'>
         {data.map(({ name, path }, index) => (
           <li key={index}>
             <Link href={path} target={name === 'WhatsApp' ? '_blank' : undefined} className="block py-3 pr-4 leading-5 rounded text-white md:text-body md:text-base lg:text-lg hover:pl-2 hover:bg-gray-100 hover:text-primary md:hover:bg-transparent md:p-0 md:text-white md:hover:pl-0" aria-current={path === path ? 'page' : undefined}>
-              {name}
+              {name === 'Phone' ? `${name}: +2347066324306` : name}
             </Link>
           </li>
         ))}
