@@ -17,13 +17,16 @@ module.exports = {
         'mobile-bg': 'var(--mobile-bg-color)',
       },
 
-       backgroundImage: {
+      backgroundImage: {
         'hero-pattern': "url('../../public/svgs/globe.svg')",
-        }
+      }
     },
     fontFamily: {
       'serif': ['Georgia', 'Cambria', 'Tiempos Headline'],
     }
+  },
+  variants: {
+    fill: ['hover', 'focus'],
   },
   plugins: [],
 }
