@@ -27,9 +27,9 @@ export default function ContactDetails() {
           @tecverseacademy
         </Link>
 
-        <Link href='https://instagram.com/tecverseacademy' target='_blank' className='flex gap items-center gap-2 hover:text-[#D97508]'>
+        <Link href='https://www.instagram.com/techverseacademy/' target='_blank' className='flex gap items-center gap-2 hover:text-[#D97508]'>
           <Image src='/svgs/instagram.svg' width={30} height={30} alt='instagram' />
-          @tecverseacademy
+          @techverseacademy
         </Link>
 
         <Link href='https://twitter.com/TecVerseAcademy' target='_blank' className='flex gap items-center gap-2 hover:text-[#D97508]'>
