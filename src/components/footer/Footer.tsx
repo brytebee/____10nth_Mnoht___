@@ -26,7 +26,7 @@ const Footer = () => {
       title: "Contact Us", links: [
         { name: "Email", path: "mailto:techverseacademy23@gmail.com" },
         { name: "Phone", path: "#" },
-        { name: "WhatsApp", path: "https://wa.me/2347066324306" },
+        { name: "WhatsApp", path: "https://wa.me/+2347085665133" },
       ]
     },
   ]
