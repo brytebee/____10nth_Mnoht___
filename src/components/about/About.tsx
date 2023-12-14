@@ -69,7 +69,7 @@ md:h-[82px] h-[200px] font-serif
             className="absolute  mt-[160px]"
           />
         </ul>
-        <ul className="flex flex-col md:gap-[20px] items-center gap-[10px]">
+        <ul className="flex flex-col md:gap-0 items-center gap-5px]">
           <li
             className="text-[#333]
 text-center
@@ -85,7 +85,7 @@ leading-[120%] font-serif "
               height={2}
               width={200}
               alt="line"
-              className="w-[100px] md:w-[200px]"
+              className="w-[120px] md:w-[250px]"
             />
           </li>
         </ul>
@@ -93,7 +93,7 @@ leading-[120%] font-serif "
           <li
             className="md:w-[753px] w-[358px] text-[#333]
 font-normal text-center md:text-left
-md:text-[22px] text-[18px]
+md:text-[20px] text-[16px]
 leading-[32px] font-serif"
           >
             Our vision is to be a leading institution in technology education,
@@ -124,9 +124,9 @@ leading-[120%] font-serif "
             <Image
               src={line}
               height={2}
-              width={250}
+              width={300}
               alt="line"
-              className="md:w-[250px] w-[125px]"
+              className="md:w-[300px] w-[185px]"
             />
           </li>
         </ul>
@@ -135,7 +135,7 @@ leading-[120%] font-serif "
             {chooseUsData.map((item) => (
               <li
                 key={item.id}
-                className="md:w-[550px] w-[320px] text-[#333] font-normal md:text-[22px] text-[18px] leading-[32px] font-serif "
+                className="md:w-[550px] w-[320px] text-[#333] font-normal md:text-[20px] text-[16px] leading-[32px] font-serif "
               >
                 <span className="font-extrabold">{item.bullet}</span>{item.text}
               </li>
@@ -157,7 +157,7 @@ h-[208px] md:w-[499px] md:h-[333px]
               className="md:w-[540px] w-[320px]
  text-[#333]
 font-normal
-md:text-[22px] text-[18px]
+md:text-[20px] text-[16px]
 leading-[32px] font-serif "
             >
               <span className="font-extrabold">Hands-On Learning:</span> We
@@ -204,7 +204,7 @@ leading-[32px] font-serif "
         </ul>
       </div>
       <div className="flex md:my-[100px] my-[40px] flex-col justify-center items-center md:gap-[50px] gap-[20px]">
-        <ul className="flex flex-col gap-[20px] justify-center items-center">
+        <ul className="flex flex-col gap-[10px] justify-center items-center">
           <li
             className="text-[#333]
 text-center
@@ -220,7 +220,7 @@ leading-[120%] font-serif "
               height={2}
               width={214}
               alt="line"
-              className="md:w-[214px] w-[200px]"
+              className="md:w-[246px] w-[200px]"
             />
           </li>
           <li
@@ -370,7 +370,7 @@ leading-[32px]
             className="md:w-[1019px] w-[348px]
 text-[#333]
 font-normal
-text-[22px]
+md:text-[20px] text-[16px]
 text-center
 leading-[32px] font-serif"
           >
@@ -405,7 +405,7 @@ gap-[4px] border-0"
           <li
             className="text-[#333]
 font-semibold
-md:text-[22px] text-[20px]
+md:text-[20px] text-[18px]
 text-center
 leading-[32px] font-serif"
           >
