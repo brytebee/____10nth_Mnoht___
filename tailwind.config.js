@@ -29,5 +29,8 @@ module.exports = {
       serif: ['Georgia', 'Cambria', 'Tiempos Headline'],
     },
   },
+  variants: {
+    fill: ['hover', 'focus'],
+  },
   plugins: [],
 };

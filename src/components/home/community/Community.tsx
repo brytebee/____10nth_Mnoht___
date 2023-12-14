@@ -6,7 +6,6 @@ import Image from 'next/image';
 import AcademicIcon from '../../../../public/svgs/academic.svg';
 import LeftQuote from '../../../../public/svgs/left-quote.svg';
 import RightQuote from '../../../../public/svgs/right-quote.svg';
-import TestimonialImg from '../../../../public/svgs/customer.svg';
 import InstructorImg from '../../../../public/svgs/instructor.svg';
 import ChevronRight from '../../../../public/svgs/chevron_right.svg';
 import leftPolygon from '../../../../public/svgs/left-polygon.svg';
@@ -14,16 +13,14 @@ import leftPolygon2 from '../../../../public/svgs/left-polygon2.svg';
 import polygon4 from '../../../../public/svgs/Polygon-4.svg';
 import polygon5 from '../../../../public/svgs/Polygon-5.svg';
 import leftPolygon5 from '../../../../public/images/polygon5.png';
-import leftPolygon4 from '../../../../public/svgs/left-polygon4.svg';
 import leftPolygon8 from '../../../../public/svgs/left-polygon8.svg';
 import leftPolygon12 from '../../../../public/svgs/left-polygon12.svg';
 import polygon3 from '../../../../public/svgs/polygon3.svg';
 import polygon10 from '../../../../public/svgs/polygon10.svg';
 import polygon12 from '../../../../public/svgs/Polygon-12.svg';
 import useMediaQuery from '@/hooks/useMediaQuery';
-import WorkingMan from '../../../../public/svgs/office-worker.svg';
+import WorkingMan from '../../../../public/svgs/remote-man.svg';
 import { reviews } from '@/app/staticData/data';
-import MobileCarousel from './MobileCarousel';
 
 type Props = {};
 
@@ -137,11 +134,9 @@ export default function OurCommunitySection({ }: Props) {
         {reviews.map(({ comment, image }, index) => (
           <div
             key={index}
-            className={`relative lg:w-[340px] md:w-[300px] h-[150px] rounded-[21px] bg-testimonial lg:pt-11 md:pt-6 pl-10 pb-6 pr-3 z-10 ${
-              (index === 0 || index === 2) && 'mt-20'
-            } ${index === 0 && 'lg:ml-[80px] lg:mb-16 md:ml-5'} ${
-              index === 1 && 'lg:ml-[60px] md:ml-4'
-            } ${(index === 0 || index === 1) && 'gap-8'}`}
+            className={`relative lg:w-[340px] md:w-[300px] h-[150px] rounded-[21px] bg-testimonial lg:pt-11 md:pt-6 pl-10 pb-6 pr-3 z-0 ${(index === 0 || index === 2) && 'mt-20'
+              } ${index === 0 && 'lg:ml-[80px] lg:mb-16 md:ml-5'} ${index === 1 && 'lg:ml-[60px] md:ml-4'
+              } ${(index === 0 || index === 1) && 'gap-8'}`}
           >
             <Image
               src={image}
@@ -174,12 +169,12 @@ export default function OurCommunitySection({ }: Props) {
           className="absolute lg:ml-[200px] md:ml[140px] hidden md:block lg:mt-[480px] md:mt-[-100px] md:h-[120px] md:w-[120px] lg:h-[150px] lg:w-[150px]"
         />
       </div>
-      <div className="hidden md:flex lg:flex-row md:flex-col-reverse justify-between w-[90%] mx-auto my-16 bg-inherit">
+      <div className="hidden md:flex lg:flex-row md:flex-col-reverse justify-between w-[75%] gap-20 mx-auto my-16 bg-inherit">
         <div className="flex flex-col gap-5 flex-1">
-          <h2 className="md:text-4xl lg:text-3xl text-body font-bold text-center">
+          <h2 className="md:text-4xl lg:text-3xl text-body font-bold text-center font-serif">
             Our Course Catalogue
           </h2>
-          <ul className="flex flex-col gap-4 pl-48">
+          <ul className="flex flex-col gap-4 pl-12">
             <Image
               src={polygon3}
               height={50}
@@ -188,7 +183,7 @@ export default function OurCommunitySection({ }: Props) {
               className="absolute lg:ml-[-60px] md:ml-[-80px] md:mt-[200px] hidden md:block "
             />
             {courseTitles.map((title, index) => (
-              <li key={index} className="flex items-center gap-2">
+              <li key={index} className="flex items-center gap-2 lg:ml-[20px]">
                 <div className="w-[15px] h-[15px] bg-hero rounded-full" />
                 <p className="font-semibold text-xl text-body">{title}</p>
               </li>
@@ -206,12 +201,12 @@ export default function OurCommunitySection({ }: Props) {
           height={100}
           width={100}
           alt="polygon"
-          className="absolute lg:ml-[700px] md:ml-[50px] md:mt-[-50px] lg:mt-[200px] hidden md:block "
+          className="absolute lg:ml-[580px] md:ml-[50px] md:mt-[-50px] lg:mt-[150px] hidden md:block "
         />
         <Image
           src={WorkingMan}
           alt="man working in office"
-          className="h-[600px] flex-1"
+          className="w-[500px]"
         />
         <Image
           src={polygon4}
@@ -226,7 +221,7 @@ export default function OurCommunitySection({ }: Props) {
           height={100}
           width={100}
           alt="polygon"
-          className="absolute lg:ml-[1180px] md:ml-[700px] md:mt-[-10px] lg:mt-[100px] hidden md:block "
+          className="absolute lg:ml-[1080px] md:ml-[700px] md:mt-[-10px] lg:mt-[100px] hidden md:block "
         />
       </div>
       <Link
@@ -256,7 +251,7 @@ export default function OurCommunitySection({ }: Props) {
           </h3>
           <p className="w-[317px] md:w-[362px] font-light text-base mx-auto text-center md:text-left">
             Instructors from around the world teach millions of students on
-            techverse, we provide the tools and skills to teach what you love.
+            techVerse, we provide the tools and skills to teach what you love.
           </p>
           <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLScxmLpdM08APFELCOPZO_LBHldZuHrb5PNhNK6G7CXtVp3gag/viewform"
