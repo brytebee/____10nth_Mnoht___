@@ -10,6 +10,8 @@ import polygon2 from '../../../public/svgs/Polygon-2.svg';
 import Bright from '../../../public/svgs/Bright.svg';
 import ab from '../../../public/svgs/ab.svg';
 import anny from '../../../public/svgs/anny.svg';
+import ola from '../../../public/images/ola.jpg';
+import okey from '../../../public/images/okey.png';
 import polygon4 from '../../../public/svgs/Polygon-4.svg';
 import polygon12 from '../../../public/svgs/Polygon-12.svg';
 import insta from '../../../public/svgs/instagram.svg';
@@ -33,7 +35,7 @@ md:h-[504px] h-[350px] flex flex-col justify-center items-center text-center md:
 md:h-[82px] h-[200px] font-serif 
 "
         >
-          At Techverse, we are passionate about technology and education. We
+          At TechVerse, we are passionate about technology and education. We
           believe that the future belongs to those who can harness the power of
           technology to create, innovate, and solve complex problems. Our
           mission is to empower individuals with the knowledge and skills they
@@ -432,11 +434,11 @@ leading-[32px]"
           <li className="flex flex-col justify-center items-center">
             <span>
               <Image
-                src={Bright}
+                src={ola}
                 height={100}
                 width={100}
                 alt="line"
-                className="md:h-[100px] h-[80px] md:w-[100px] w-[80px]"
+                className="md:h-[100px] h-[80px] md:w-[100px] w-[80px] rounded-full"
               />
             </span>
             <span
@@ -458,29 +460,35 @@ leading-[32px]"
               Senior full-stack developer
             </span>
             <span className="flex gap-[5px]">
-            <Link href="https://www.instagram.com/olaishola05/" target="_blank">
-              <Image src={insta} height={20} width={20} alt="line" /></Link>
-                            <Link
+              <Link
+                href="https://www.instagram.com/olaishola05/"
+                target="_blank"
+              >
+                <Image src={insta} height={20} width={20} alt="line" />
+              </Link>
+              <Link
                 href="https://twitter.com/@olaishola05?t=1v6gVd9yOPNOhXvwHbKLSA&s=09"
                 target="_blank"
               >
-              <Image src={twitter} height={20} width={20} alt="line" /></Link>
+                <Image src={twitter} height={20} width={20} alt="line" />
+              </Link>
               <Image src={linkedIn} height={20} width={20} alt="line" />{' '}
-               <Link
+              <Link
                 href="https://www.facebook.com/olaishola05?mibextid=ZbWKwL"
                 target="_blank"
               >
-              <Image src={facebook} height={20} width={20} alt="line" /></Link>
+                <Image src={facebook} height={20} width={20} alt="line" />
+              </Link>
             </span>
           </li>
           <li className="flex flex-col justify-center items-center">
             <span>
               <Image
-                src={Bright}
+                src={okey}
                 height={100}
                 width={100}
                 alt="line"
-                className="md:h-[100px] h-[80px] md:w-[100px] w-[80px]"
+                className="md:h-[100px] h-[80px] md:w-[100px] w-[80px] rounded-full"
               />
             </span>
             <span
@@ -502,39 +510,49 @@ leading-[32px]"
               Product Manager
             </span>
             <span className="flex gap-[5px]">
-            <Link href="https://www.instagram.com/oluwasegunoke/" target="_blank">
-              <Image src={insta} height={20} width={20} alt="line" /></Link>
-                            <Link
+              <Link
+                href="https://www.instagram.com/oluwasegunoke/"
+                target="_blank"
+              >
+                <Image src={insta} height={20} width={20} alt="line" />
+              </Link>
+              <Link
                 href="https://twitter.com/oluwasegunoke?t=1v6gVd9yOPNOhXvwHbKLSA&s=09"
                 target="_blank"
               >
-              <Image src={twitter} height={20} width={20} alt="line" /></Link>
-               <Link
+                <Image src={twitter} height={20} width={20} alt="line" />
+              </Link>
+              <Link
                 href="https://www.linkedin.com/in/oluwasegunoke"
                 target="_blank"
-              >{' '}
-              <Image src={linkedIn} height={20} width={20} alt="line" /></Link>
-               <Link
+              >
+                {' '}
+                <Image src={linkedIn} height={20} width={20} alt="line" />
+              </Link>
+              <Link
                 href="https://www.facebook.com/oluwasegunoke?mibextid=ZbWKwL"
                 target="_blank"
               >
-              <Image src={facebook} height={20} width={20} alt="line" /></Link>
+                <Image src={facebook} height={20} width={20} alt="line" />
+              </Link>
             </span>
           </li>
         </ul>
         <ul className="hidden md:flex flex-col items-center justify-center">
           <li
-            className="w-[612px] text-[#333]
+            className="w-[620px] text-[#333]
 text-center
 font-normal
 text-[18px]
 leading-[32px]
 "
           >
-            “Lorem ipsum dolor sit amet consectetur. Vulputate cum neque
-            sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna
-            pretium ullamcorper. Elementum consequat non tempus aliquam.
-            Adipiscing diam donec a scelerisque scelerisque mauris amet.”
+            “At TechVerse, audacity is our shared trait. We are a united group
+            of bold pioneers unafraid to challenge norms. Continually pushing
+            boundaries and defying limits, we aspire to achieve the
+            extraordinary. Our team is a dynamic mix of diverse talents and
+            backgrounds, working together seamlessly to innovate and make a
+            meaningful impact on the world.”
           </li>
         </ul>
       </div>
@@ -583,7 +601,7 @@ md:text-[22px] text-[20px]
 text-center
 leading-[32px] font-serif"
           >
-            Join us at Techverse, where the future is yours to create. Your tech
+            Join us at TechVerse, where the future is yours to create. Your tech
             journey starts here.
           </li>
           <li className="md:hidden flex">
