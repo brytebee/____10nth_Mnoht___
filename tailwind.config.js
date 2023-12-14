@@ -19,14 +19,18 @@ module.exports = {
 
       backgroundImage: {
         'hero-pattern': "url('../../public/svgs/globe.svg')",
-      }
+        'about-bg': "url('../../public/svgs/about-bg.svg')",
+        'about-bg-mobile': "url('../../public/svgs/about-bg-mobile.svg')",
+        'about-linear':
+          'linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%)',
+      },
     },
     fontFamily: {
-      'serif': ['Georgia', 'Cambria', 'Tiempos Headline'],
-    }
+      serif: ['Georgia', 'Cambria', 'Tiempos Headline'],
+    },
   },
   variants: {
     fill: ['hover', 'focus'],
   },
   plugins: [],
-}
+};

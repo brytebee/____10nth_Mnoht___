@@ -38,7 +38,7 @@ export default function OurCommunitySection({ }: Props) {
     'Data Science',
   ];
   return (
-    <section className="mt-10 w-full pb-20 md:mt-20 md:pb-32 bg-hero-pattern  bg-left-top">
+    <section className="mt-10 w-full pb-20 md:mt-20 md:pb-32 bg-hero-pattern bg-no-repeat bg-top ">
       <div className="flex flex-col gap-5 mb-10">
         <ul className="hidden md:block">
           {' '}
@@ -58,8 +58,9 @@ export default function OurCommunitySection({ }: Props) {
           />
         </ul>
         <div
-          className={`w-[320px] lg:w-[600px] lg:items-center md:w-[550px] mx-auto flex items-center gap-2 ${isSmallMobile && 'w-[95%]'
-            }`}
+          className={`w-[320px] lg:w-[600px] lg:items-center md:w-[550px] mx-auto flex items-center gap-2 ${
+            isSmallMobile && 'w-[95%]'
+          }`}
         >
           <Image src={AcademicIcon} alt="academic icon" />
           <h2 className="text-center text-xl md:text-3xl font-bold text-body">
@@ -68,8 +69,9 @@ export default function OurCommunitySection({ }: Props) {
           <Image src={AcademicIcon} alt="academic icon" />
         </div>
         <p
-          className={`w-[347px] md:w-[700px] lg:w-[878px] mx-auto text-center font-light ${isSmallMobile && 'w-[95%]'
-            }`}
+          className={`w-[347px] md:w-[700px] lg:w-[878px] mx-auto text-center font-light ${
+            isSmallMobile && 'w-[95%]'
+          }`}
         >
           Embarking on a learning journey with our online tech academy is an
           investment in your future. Empower yourself with the skills and
@@ -81,7 +83,10 @@ export default function OurCommunitySection({ }: Props) {
       {/* <MobileCarousel> */}
       <div className="flex gap-9">
         {reviews.slice(0, 1).map(({ comment, image, name, course }, index) => (
-          <div className="md:hidden bg-white px-3 pt-7 pb-6 w-72 mx-auto rounded-md border[1px solid #ECECEC] mb-10" key={index}>
+          <div
+            className="md:hidden bg-white px-3 pt-7 pb-6 w-72 mx-auto rounded-md border[1px solid #ECECEC] mb-10"
+            key={index}
+          >
             <div className="mb-5">
               <div className="w-[230px] relative">
                 <Image
@@ -100,7 +105,11 @@ export default function OurCommunitySection({ }: Props) {
               </div>
             </div>
             <div className="flex flex-col gap-3">
-              <Image src={image} alt="testimonial image" className='rounded-md object-cover' />
+              <Image
+                src={image}
+                alt="testimonial image"
+                className="rounded-md object-cover"
+              />
               <div className="flex flex-col gap-7 mb-7">
                 <div>
                   <h3 className="text-sm font-semibold">{name}</h3>
@@ -162,8 +171,8 @@ export default function OurCommunitySection({ }: Props) {
       </div>
       <div className="hidden md:flex lg:flex-row md:flex-col-reverse justify-between w-[75%] gap-20 mx-auto my-16 bg-inherit">
         <div className="flex flex-col gap-5 flex-1">
-          <h2 className="md:text-4xl lg:text-3xl text-body font-bold text-centered">
-            Our course catalogue
+          <h2 className="md:text-4xl lg:text-3xl text-body font-bold text-center font-serif">
+            Our Course Catalogue
           </h2>
           <ul className="flex flex-col gap-4 pl-12">
             <Image
@@ -174,7 +183,7 @@ export default function OurCommunitySection({ }: Props) {
               className="absolute lg:ml-[-60px] md:ml-[-80px] md:mt-[200px] hidden md:block "
             />
             {courseTitles.map((title, index) => (
-              <li key={index} className="flex items-center gap-2">
+              <li key={index} className="flex items-center gap-2 lg:ml-[20px]">
                 <div className="w-[15px] h-[15px] bg-hero rounded-full" />
                 <p className="font-semibold text-xl text-body">{title}</p>
               </li>
@@ -192,7 +201,7 @@ export default function OurCommunitySection({ }: Props) {
           height={100}
           width={100}
           alt="polygon"
-          className="absolute lg:ml-[500px] md:ml-[50px] md:mt-[-50px] lg:mt-[200px] hidden md:block "
+          className="absolute lg:ml-[580px] md:ml-[50px] md:mt-[-50px] lg:mt-[150px] hidden md:block "
         />
         <Image
           src={WorkingMan}
@@ -212,7 +221,7 @@ export default function OurCommunitySection({ }: Props) {
           height={100}
           width={100}
           alt="polygon"
-          className="absolute lg:ml-[1250px] md:ml-[700px] md:mt-[-10px] lg:mt-[100px] hidden md:block "
+          className="absolute lg:ml-[1080px] md:ml-[700px] md:mt-[-10px] lg:mt-[100px] hidden md:block "
         />
       </div>
       <Link
@@ -242,7 +251,7 @@ export default function OurCommunitySection({ }: Props) {
           </h3>
           <p className="w-[317px] md:w-[362px] font-light text-base mx-auto text-center md:text-left">
             Instructors from around the world teach millions of students on
-            techverse, we provide the tools and skills to teach what you love.
+            techVerse, we provide the tools and skills to teach what you love.
           </p>
           <Link
             href="https://docs.google.com/forms/d/e/1FAIpQLScxmLpdM08APFELCOPZO_LBHldZuHrb5PNhNK6G7CXtVp3gag/viewform"
