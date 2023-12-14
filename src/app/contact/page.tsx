@@ -2,6 +2,14 @@ import React from 'react'
 import ContactForm from './ContactForm'
 import ContactDetails from './ContactDetails'
 import Image from 'next/image'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Contact Us - Techverse Academy',
+  description: 'Contact us page',
+  keywords: ['contact', 'contact us', 'contact form', 'contact details'],
+  robots: 'follow, index',
+}
 
 export default function ContactUsPage() {
   return (

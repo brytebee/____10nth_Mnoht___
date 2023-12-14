@@ -27,9 +27,9 @@ export default function ContactDetails() {
           @tecverseacademy
         </Link>
 
-        <Link href='https://instagram.com/tecverseacademy' target='_blank' className='flex gap items-center gap-2 hover:text-[#D97508]'>
+        <Link href='https://www.instagram.com/techverseacademy/' target='_blank' className='flex gap items-center gap-2 hover:text-[#D97508]'>
           <Image src='/svgs/instagram.svg' width={30} height={30} alt='instagram' />
-          @tecverseacademy
+          @techverseacademy
         </Link>
 
         <Link href='https://twitter.com/TecVerseAcademy' target='_blank' className='flex gap items-center gap-2 hover:text-[#D97508]'>
@@ -37,9 +37,9 @@ export default function ContactDetails() {
           @TecVerseAcademy
         </Link>
 
-        <Link href='https://wa.me/2347066324306' target='_blank' className='flex gap items-center gap-2 hover:text-[#D97508]'>
+        <Link href='https://wa.me/+2347085665133' target='_blank' className='flex gap items-center gap-2 hover:text-[#D97508]'>
           <Image src='/svgs/whatsapp.svg' width={30} height={30} alt='whatsapp' />
-          +2347066324306
+          +2347085665133
         </Link>
       </div>
     </div>
