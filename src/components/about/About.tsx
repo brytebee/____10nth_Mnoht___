@@ -7,17 +7,9 @@ import leftPolygon2 from '../../../public/svgs/left-polygon2.svg';
 import choose from '../../../public/svgs/about-choose.svg';
 import polygon1 from '../../../public/svgs/Polygon-1.svg';
 import polygon2 from '../../../public/svgs/Polygon-2.svg';
-import Bright from '../../../public/svgs/Bright.svg';
-import ab from '../../../public/svgs/ab.svg';
-import anny from '../../../public/svgs/anny.svg';
-import ola from '../../../public/images/ola.jpg';
-import okey from '../../../public/images/okey.png';
 import polygon4 from '../../../public/svgs/Polygon-4.svg';
 import polygon12 from '../../../public/svgs/Polygon-12.svg';
-import insta from '../../../public/svgs/instagram.svg';
-import twitter from '../../../public/svgs/twitter.svg';
-import linkedIn from '../../../public/svgs/linkedin.svg';
-import facebook from '../../../public/svgs/facebook.svg';
+import { team, team2, chooseUsData } from './aboutUsData';
 
 interface Props {
   // Add props here
@@ -140,55 +132,14 @@ leading-[120%] font-serif "
         </ul>
         <div className="flex md:flex-row flex-col-reverse md:gap-[100px] gap-[20px] my-[70px] mx-[50px]">
           <ul className="flex flex-col gap-[20px]">
-            <li
-              className="md:w-[500px] w-[320px]
- text-[#333]
-font-normal
-md:text-[22px] text-[18px]
-leading-[32px] font-serif "
-            >
-              <span className="font-extrabold">Small Class Sizes:</span> We keep
-              our class sizes small to ensure that you receive personalized
-              attention and support from your instructors
-            </li>
-            <li
-              className="md:w-[540px] w-[320px]
- text-[#333]
-font-normal
-md:text-[22px] text-[18px]
-leading-[32px] font-serif "
-            >
-              <span className="font-extrabold">
-                Strong Industry Connections:
-              </span>{' '}
-              We have established partnerships with leading tech companies and
-              organizations to provide you with networking opportunities, job
-              placement assistance, and real-world projects.
-            </li>
-            <li
-              className="md:w-[540px] w-[320px]
- text-[#333]
-font-normal
-md:text-[22px] text-[18px]
-leading-[32px] font-serif "
-            >
-              <span className="font-extrabold">Diverse Community:</span> We
-              welcome students from all backgrounds, fostering a diverse and
-              inclusive learning environment that encourages collaboration and
-              innovation
-            </li>
-            <li
-              className="md:w-[550px] w-[320px]
- text-[#333]
-font-normal
-md:text-[22px] text-[18px]
-leading-[32px] font-serif "
-            >
-              <span className="font-extrabold">Career Support:</span> Our career
-              services team is dedicated to helping you achieve your
-              professional goals. From resume building to interview preparation,
-              we are here to support your career journey.
-            </li>
+            {chooseUsData.map((item) => (
+              <li
+                key={item.id}
+                className="md:w-[550px] w-[320px] text-[#333] font-normal md:text-[22px] text-[18px] leading-[32px] font-serif "
+              >
+                <span className="font-extrabold">{item.bullet}</span>{item.text}
+              </li>
+            ))}
           </ul>
           <ul className="flex flex-col justify-center items-center md:items-start md:justify-start gap-[20px]">
             <li>
@@ -283,260 +234,117 @@ leading-[32px] font-serif "
           </li>
         </ul>
         <ul className="flex flex-col md:flex-row md:gap-[100px] gap-[20px] items-center">
-          <li className="flex flex-col justify-center items-center">
-            <span>
-              <Image
-                src={Bright}
-                height={100}
-                width={100}
-                alt="line"
-                className="md:h-[100px] h-[80px] md:w-[100px] w-[80px]"
-              />
-            </span>
-            <span
-              className="text-[#333]
+          {team.map((item) => (
+            <li
+              className="flex flex-col justify-center items-center"
+              key={item.id}
+            >
+              <span>
+                <Image
+                  src={item.img}
+                  height={100}
+                  width={100}
+                  alt="line"
+                  className="md:h-[100px] h-[80px] md:w-[100px] w-[80px]"
+                />
+              </span>
+              <span
+                className="text-[#333]
 text-center
 font-medium
 md:text-[18px] text-[16px]
 leading-[32px]"
-            >
-              Bright Atsighi
-            </span>
-            <span
-              className="text-[#333]
+              >
+                {item.name}
+              </span>
+              <span
+                className="text-[#333]
 text-center
 font-semibold italic
 md:text-[20px] text-[18px]
 leading-[32px]"
-            >
-              Senior full-stack developer
-            </span>
-            <span className="flex gap-[5px]">
-              <Link href="https://www.instagram.com/bryte_bee/" target="_blank">
-                <Image src={insta} height={20} width={20} alt="line" />
-              </Link>
-              <Link
-                href="https://twitter.com/brytebee?t=1v6gVd9yOPNOhXvwHbKLSA&s=09"
-                target="_blank"
               >
-                <Image src={twitter} height={20} width={20} alt="line" />
-              </Link>
-              <Link href="https://www.linkedin.com/in/brytebee" target="_blank">
-                <Image src={linkedIn} height={20} width={20} alt="line" />
-              </Link>
-              <Link
-                href="https://www.facebook.com/brytebee?mibextid=ZbWKwL"
-                target="_blank"
-              >
-                <Image src={facebook} height={20} width={20} alt="line" />
-              </Link>
-            </span>
-          </li>
-          <li className="flex flex-col justify-center items-center">
-            <span>
-              <Image
-                src={ab}
-                height={100}
-                width={100}
-                alt="line"
-                className="md:h-[100px] h-[80px] md:w-[100px] w-[80px]"
-              />
-            </span>
-            <span
-              className="text-[#333]
-text-center
-font-medium
-md:text-[18px] text-[16px]
-leading-[32px]"
-            >
-              Success whyte
-            </span>
-            <span
-              className="text-[#333]
-text-center
-font-semibold italic
-md:text-[20px] text-[18px]
-leading-[32px]"
-            >
-              UI/UX designer
-            </span>
-            <span className="flex gap-[5px]">
-              <Image src={insta} height={20} width={20} alt="line" />{' '}
-              <Image src={twitter} height={20} width={20} alt="line" />
-              <Link
-                href="https://www.linkedin.com/in/abraham-udoh?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BaFkAAGnRTjaW3q2H3dCO1g%3D%3D"
-                target="_blank"
-              >
-                <Image src={linkedIn} height={20} width={20} alt="line" />
-              </Link>
-              <Link
-                href="https://www.facebook.com/Abrahamwhyte"
-                target="_blank"
-              >
-                <Image src={facebook} height={20} width={20} alt="line" />
-              </Link>
-            </span>
-          </li>
-          <li className="flex flex-col justify-center items-center">
-            <span>
-              <Image
-                src={anny}
-                height={100}
-                width={100}
-                alt="line"
-                className="md:h-[100px] h-[80px] md:w-[100px] w-[80px]"
-              />
-            </span>
-            <span
-              className="text-[#333]
-text-center
-font-medium
-md:text-[18px] text-[16px]
-leading-[32px]"
-            >
-              Anny Udo
-            </span>
-            <span
-              className="text-[#333]
-text-center
-font-semibold italic
-md:text-[20px] text-[18px]
-leading-[32px]"
-            >
-              Senior full-stack developer
-            </span>
-            <span className="flex gap-[5px]">
-              <Link href="https://www.instagram.com/udoanny/" target="_blank">
-                <Image src={insta} height={20} width={20} alt="line" />
-              </Link>
-              <Link
-                href="https://twitter.com/Annyudo8?t=1v6gVd9yOPNOhXvwHbKLSA&s=09"
-                target="_blank"
-              >
-                <Image src={twitter} height={20} width={20} alt="line" />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/in/aniekan-udo"
-                target="_blank"
-              >
-                <Image src={linkedIn} height={20} width={20} alt="line" />
-              </Link>
-              <Link
-                href="https://www.facebook.com/aniekan.udo1?mibextid=ZbWKwL"
-                target="_blank"
-              >
-                <Image src={facebook} height={20} width={20} alt="line" />
-              </Link>
-            </span>
-          </li>
+                {item.designation}
+              </span>
+              <span className="flex gap-[5px]">
+                <Link href={item.instaLink} target="_blank">
+                  <Image src={item.insta} height={20} width={20} alt="line" />
+                </Link>
+                <Link href={item.twitterLink} target="_blank">
+                  <Image src={item.twitter} height={20} width={20} alt="line" />
+                </Link>
+                <Link href={item.linkedInLink} target="_blank">
+                  <Image
+                    src={item.linkedIn}
+                    height={20}
+                    width={20}
+                    alt="line"
+                  />
+                </Link>
+                <Link href={item.facebookLink} target="_blank">
+                  <Image
+                    src={item.facebook}
+                    height={20}
+                    width={20}
+                    alt="line"
+                  />
+                </Link>
+              </span>
+            </li>
+          ))}
         </ul>
         <ul className="flex flex-col md:flex-row md:gap-[100px] gap-[20px] items-center pl-0">
-          <li className="flex flex-col justify-center items-center">
-            <span>
-              <Image
-                src={ola}
-                height={100}
-                width={100}
-                alt="line"
-                className="md:h-[100px] h-[80px] md:w-[100px] w-[80px] rounded-full"
-              />
-            </span>
-            <span
-              className="text-[#333]
+          {team2.map((item) => (
+            <li
+              key={item.id}
+              className="flex flex-col justify-center items-center"
+            >
+              <span>
+                <Image
+                  src={item.img}
+                  height={100}
+                  width={100}
+                  alt="line"
+                  className="md:h-[100px] h-[80px] md:w-[100px] w-[80px] rounded-full"
+                />
+              </span>
+              <span
+                className="text-[#333]
 text-center
 font-medium
 md:text-[18px] text-[16px]
 leading-[32px]"
-            >
-              Oladipupo Ishola
-            </span>
-            <span
-              className="text-[#333]
+              >
+                {item.name}
+              </span>
+              <span
+                className="text-[#333]
 text-center
 font-semibold italic
 md:text-[20px] text-[18px]
 leading-[32px]"
-            >
-              Senior full-stack developer
-            </span>
-            <span className="flex gap-[5px]">
-              <Link
-                href="https://www.instagram.com/olaishola05/"
-                target="_blank"
               >
-                <Image src={insta} height={20} width={20} alt="line" />
-              </Link>
-              <Link
-                href="https://twitter.com/@olaishola05?t=1v6gVd9yOPNOhXvwHbKLSA&s=09"
-                target="_blank"
-              >
-                <Image src={twitter} height={20} width={20} alt="line" />
-              </Link>
-              <Image src={linkedIn} height={20} width={20} alt="line" />{' '}
-              <Link
-                href="https://www.facebook.com/olaishola05?mibextid=ZbWKwL"
-                target="_blank"
-              >
-                <Image src={facebook} height={20} width={20} alt="line" />
-              </Link>
-            </span>
-          </li>
-          <li className="flex flex-col justify-center items-center">
-            <span>
-              <Image
-                src={okey}
-                height={100}
-                width={100}
-                alt="line"
-                className="md:h-[100px] h-[80px] md:w-[100px] w-[80px] rounded-full"
-              />
-            </span>
-            <span
-              className="text-[#333]
-text-center
-font-medium
-md:text-[18px] text-[16px]
-leading-[32px]"
-            >
-              Oke Oluwasegun
-            </span>
-            <span
-              className="text-[#333]
-text-center
-font-semibold italic
-md:text-[20px] text-[18px]
-leading-[32px]"
-            >
-              Product Manager
-            </span>
-            <span className="flex gap-[5px]">
-              <Link
-                href="https://www.instagram.com/oluwasegunoke/"
-                target="_blank"
-              >
-                <Image src={insta} height={20} width={20} alt="line" />
-              </Link>
-              <Link
-                href="https://twitter.com/oluwasegunoke?t=1v6gVd9yOPNOhXvwHbKLSA&s=09"
-                target="_blank"
-              >
-                <Image src={twitter} height={20} width={20} alt="line" />
-              </Link>
-              <Link
-                href="https://www.linkedin.com/in/oluwasegunoke"
-                target="_blank"
-              >
-                {' '}
-                <Image src={linkedIn} height={20} width={20} alt="line" />
-              </Link>
-              <Link
-                href="https://www.facebook.com/oluwasegunoke?mibextid=ZbWKwL"
-                target="_blank"
-              >
-                <Image src={facebook} height={20} width={20} alt="line" />
-              </Link>
-            </span>
-          </li>
+                {item.designation}
+              </span>
+              <span className="flex gap-[5px]">
+                <Link href={item.instaLink} target="_blank">
+                  <Image src={item.insta} height={20} width={20} alt="line" />
+                </Link>
+                <Link href={item.twitterLink} target="_blank">
+                  <Image src={item.twitter} height={20} width={20} alt="line" />
+                </Link>
+                <Image src={item.linkedIn} height={20} width={20} alt="line" />{' '}
+                <Link href={item.facebookLink} target="_blank">
+                  <Image
+                    src={item.facebook}
+                    height={20}
+                    width={20}
+                    alt="line"
+                  />
+                </Link>
+              </span>
+            </li>
+          ))}
         </ul>
         <ul className="hidden md:flex flex-col items-center justify-center">
           <li
