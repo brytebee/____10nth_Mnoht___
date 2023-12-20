@@ -14,6 +14,24 @@ const MidSection = () => {
       likes: 356,
       comments: 101,
     },
+    {
+      image: Avatar,
+      title: 'Overcoming academic fears',
+      username: 'Jinsing lau',
+      description:
+        'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+      likes: 356,
+      comments: 101,
+    },
+    {
+      image: Avatar,
+      title: 'Overcoming academic fears',
+      username: 'Jinsing lau',
+      description:
+        'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+      likes: 356,
+      comments: 101,
+    },
   ];
 
   const events = [
@@ -23,67 +41,109 @@ const MidSection = () => {
       description:
         'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed ',
       venue: 'Zoom platform',
+      color: 'd97508',
+      time: '8:15pm',
     },
     {
-      date: '24 Jan',
+      date: '27 May',
       title: 'Embracing technology and its help to mankind',
       description:
         'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed ',
       venue: 'Zoom platform',
+      color: '333333',
+      time: '8:15pm',
+    },
+    {
+      date: '31 Jan',
+      title: 'Embracing technology and its help to mankind',
+      description:
+        'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed ',
+      venue: 'Zoom platform',
+      color: 'ff3b30',
+      time: '8:15pm',
+    },
+    {
+      date: '18 April',
+      title: 'Embracing technology and its help to mankind',
+      description:
+        'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed ',
+      venue: 'Zoom platform',
+      color: 'ffd426',
+      time: '8:15pm',
     },
   ];
 
   return (
     <div>
-      <section className="fst-section bg-[A63F0E]-500">
-        <h3>Whats on your mind?</h3>
-        <p>
-          You have something thats bothering you or a question to ask? Share
-          with us the community is always there to help
-        </p>
-        <input
-          type="text"
-          placeholder="write your story"
-          minLength={20}
-          maxLength={500}
-        />
+      <section className="fst-section bg-[#A63F0E] py-14 text-center">
+        <div className="text-white">
+          <h3 className="font-medium text-lg">Whats on your mind?</h3>
+          <p className="text-sm leading-7">
+            Share your thoughts with the community
+          </p>
+        </div>
+        <div className="what-on-your-mind py-4">
+          <input
+            type="text"
+            className="w-[80%] p-5 rounded-3xl text-center text-sm"
+            placeholder="write your story"
+            minLength={20}
+            maxLength={500}
+          />
+        </div>
       </section>
-      <section className="scd-section">
-        <h3>Active discussions</h3>
-        <p>Read about others stories and share your thoughts</p>
-      </section>
-      <section className="cards">
-        {cardDets.map(
-          ({ image, username, title, description, likes, comments }) => (
-            <Card
-              image={image}
-              username={username}
+      <div className="bg-[#F2F2F2] text-center">
+        <section className="scd-section py-14 text-center">
+          <h3 className="font-semibold text-xl pb-2">Active discussions</h3>
+          <p className="px-14">
+            Read about others stories and share your thoughts
+          </p>
+        </section>
+        <section className="text-center">
+          {cardDets.map(
+            ({ image, username, title, description, likes, comments }) => (
+              <Card
+                image={image}
+                username={username}
+                title={title}
+                description={description}
+                likes={likes}
+                comments={comments}
+              />
+            )
+          )}
+          <div className="pt-4 pb-16">
+            <button className="w-[134px] lg:w-[267px] py-[10px] px-[24px text-[#D97508] outline rounded-[10px] self-center">
+              View more
+            </button>
+          </div>
+        </section>
+        <section className="text-center">
+          <h3 className="font-semibold text-xl pb-4">Upcoming Events</h3>
+          <p className="text-sm leading-7">
+            Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis
+            sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium
+            ullamcorper. Elementum consequat non
+          </p>
+        </section>
+        <section className="upcoming grid grid-cols-2 gap-2 px-8 pt-6">
+          {events.map(({ date, time, title, description, venue, color }) => (
+            <ECard
+              date={date}
               title={title}
               description={description}
-              likes={likes}
-              comments={comments}
+              venue={venue}
+              color={color}
+              time={time}
             />
-          )
-        )}
-      </section>
-      <section>
-        <h3>Upcoming Events</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis
-          sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium
-          ullamcorper. Elementum consequat non
-        </p>
-      </section>
-      <section className="upcoming">
-        {events.map(({ date, title, description, venue }) => (
-          <ECard
-            date={date}
-            title={title}
-            description={description}
-            venue={venue}
-          />
-        ))}
-      </section>
+          ))}
+        </section>
+        <div className="py-10">
+          <button className="w-[134px] lg:w-[267px] py-[10px] px-[24px] bg-[#D97508] text-white text-primary rounded-[10px]">
+            See more
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

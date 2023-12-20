@@ -13,29 +13,43 @@ type Props = {
   comments: number;
 };
 
-const Card = (props: Props) => {
-  const { image, title, username, description, likes, comments } = props;
+const Card = ({
+  image,
+  title,
+  username,
+  description,
+  likes,
+  comments,
+}: Props) => {
   return (
-    <section>
-      <header>
+    <section className="box-border shadow-lg m-8 p-4 bg-white rounded-[20px] text-center flex flex-col items-center">
+      <header className="flex flex-col items-center">
         <Image src={image} alt={`${title} photo`} />
-        <div>
-          <h3>{title}</h3>
+        <div className="flex flex-col-reverse">
+          <h3 className="font-normal text-lg pb-4">{title}</h3>
           <Image src={Line} alt="line" />
-          <p>{username}</p>
+          <p className="text-sm leading-7">{username}</p>
         </div>
       </header>
-      <p>{description}</p>
-      <footer>
-        <div>
+      <p className="text-sm leading-7">{description}</p>
+      <footer className="mt-auto">
+        <div className="md:flex justify-between hidden md:block">
           <div>
-            <Image src={Like} alt="likes" />+{likes}k
+            <div className="flex items-center">
+              <Image src={Like} alt="likes" />
+              <span className="ml-1 text-sm leading-7">+{likes}k</span>
+            </div>
           </div>
           <div>
-            <Image src={Comment} alt="likes" />+{comments}k
+            <div className="flex items-center">
+              <Image src={Comment} alt="likes" />
+              <span className="ml-1 text-sm leading-7">+{comments}k</span>
+            </div>
           </div>
         </div>
-        <button type="button">View discussion</button>
+        <button className="text-[#D97508] underline py-2" type="button">
+          View discussion
+        </button>
       </footer>
     </section>
   );

@@ -10,15 +10,17 @@ type Props = {};
 const TopSection = (props: Props) => {
   return (
     <div className="p-4">
-      <section className="flex flex-col-reverse lg:flex-col pb-8">
+      <section className="flex flex-col-reverse lg:flex-col pb-8 text-center">
         <div className="ts-left">
-          <p className="text-[25px] lg:text-[45px] w-80 pb-2 font-semibold">
+          <p className="text-[25px] lg:text-[45px] pb-2 font-bold leading-9">
             We bring a wealth of skills and experience from a wide range of
             background
           </p>
-          <button className="w-[134px] lg:w-[267px] py-[10px] px-[24px] justify-center text-center bg-[#D97508] text-white text-primary rounded-[10px]">
-            Get Started
-          </button>
+          <div className="py-6">
+            <button className="w-[134px] lg:w-[267px] py-[10px] px-[24px] bg-[#D97508] text-white text-primary rounded-[10px]">
+              Get Started
+            </button>
+          </div>
         </div>
         <Image src={CommGroup} alt="rotating image" />
       </section>
@@ -52,7 +54,8 @@ const TopSection = (props: Props) => {
             <Image src={CommGroup} alt="community" />
           </div>
           <p className="text-sm">
-            We provide an enabling environment for you to grow.
+            “A place where your technology journey is not merely an education –
+            it's an exhilarating adventure!”
           </p>
           <div className="py-7">
             <button className="w-[134px] lg:w-[267px] py-[10px] px-[24px text-[#D97508] outline rounded-[10px] self-center">
