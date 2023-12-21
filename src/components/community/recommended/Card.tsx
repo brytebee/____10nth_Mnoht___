@@ -15,17 +15,17 @@ const Card = ({ title, rating, image, student }: Props) => {
       <section className="image">
         <Image src={image} width={200} height={200} alt="course" />
       </section>
-      <section className="w-full px-3 py-2">
+      <section className="w-full px-6 pt-4">
         <section className="info flex justify-between">
           <h3 className="font-medium text-[18px]">{title}</h3>
           <RatingStars rating={rating} />
         </section>
-        <section className="review flex justify-between">
+        <section className="review flex justify-between pt-2">
           <a className="underline font-medium" href="">
             Reviews
           </a>
-          <span>Students enrolled</span>
-          {student}+
+          <span className="font-thin">Students enrolled</span>
+          <span className="font-medium">{student}+</span>
         </section>
       </section>
     </section>

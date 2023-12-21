@@ -61,18 +61,25 @@ const Recommended = () => {
         <div className="video">
           <Image src={WEB} alt="photo" />
         </div>
-        <div className="info">
-          <h3>Web development masterclass, front and backend devs.</h3>
+        <div className="info p-4 bg-[#A63F0E] text-white">
+          <h3 className="font-bold text-[20px] py-4">
+            Web development masterclass, front and backend devs.
+          </h3>
           <p>
             Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis
             sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium
             ullamcorper. Elementum consequat non tempus aliquam. Adipiscing diam
             donec a scelerisque scelerisque mauris amet.
           </p>
-          <button type="button">Learn more</button>
+          <div className="py-8 text-center">
+            <button className="w-[134px] lg:w-[267px] py-[10px] px-[24px] bg-[#D97508] text-white text-primary rounded-[10px]">
+              See more
+            </button>
+          </div>
         </div>
       </section>
-      <section className="metrics">
+      {/* Can't find this section anymore */}
+      <section className="metrics hidden md:hidden lg:hidden">
         {metrics.map(({ courses, students, instructors, certified }) => (
           <Metrics
             course={courses}
