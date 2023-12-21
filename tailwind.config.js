@@ -22,6 +22,7 @@ module.exports = {
         'about-bg': "url('../../public/svgs/about-bg.svg')",
         'about-bg-mobile': "url('../../public/svgs/about-bg-mobile.svg')",
         'com-about-us': "url('../../public/svgs/fst-section-bg.svg')",
+        'recom-cross-bg': "url('../../public/svgs/recom-cross-bg.svg')",
         'about-linear':
           'linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%)',
       },

@@ -2,6 +2,7 @@ import React from 'react';
 import UIUX from '../../../../public/svgs/uiux.svg';
 import WEB from '../../../../public/svgs/web-development.svg';
 import DATA from '../../../../public/svgs/data-science.svg';
+import ArrowRight from '../../../../public/svgs/arrow-right2.svg';
 import Card from './Card';
 import Image from 'next/image';
 import Metrics from '../metrics/Metrics';
@@ -39,8 +40,19 @@ const metrics = [
 const Recommended = () => {
   return (
     <div>
-      <section>
-        <h3>Top Recommended Courses</h3>
+      <section className="bg-[#F2F2F2] p-4">
+        <h3 className="text-[25px] lg:text-[45px] pb-2 font-bold leading-9">
+          Top Recommended <br />
+          Courses
+        </h3>
+        <div className="flex justify-end pr-4 mb-[-8px]">
+          <button className="flex text-justify" type="button">
+            <span>Swipe</span>
+            <span className="mt-1">
+              <Image src={ArrowRight} alt="arrow right" />
+            </span>
+          </button>
+        </div>
         {courses.map(({ title, image, rating, student }) => (
           <Card title={title} image={image} rating={rating} student={student} />
         ))}

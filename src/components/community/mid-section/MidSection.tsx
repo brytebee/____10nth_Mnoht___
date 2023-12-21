@@ -112,13 +112,13 @@ const MidSection = () => {
               />
             )
           )}
-          <div className="pt-4 pb-16">
+          <div className="pt-4 pb-14">
             <button className="w-[134px] lg:w-[267px] py-[10px] px-[24px text-[#D97508] outline rounded-[10px] self-center">
               View more
             </button>
           </div>
         </section>
-        <section className="text-center">
+        <section className="text-center p-4">
           <h3 className="font-semibold text-xl pb-4">Upcoming Events</h3>
           <p className="text-sm leading-7">
             Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis
