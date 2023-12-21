@@ -11,7 +11,7 @@ const Community = (props: Props) => {
       <TopSection />
       <MidSection />
       <BottomSection />
-      <div className="foot-note">
+      <div className="foot-note hidden">
         <p>
           Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis
           sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium

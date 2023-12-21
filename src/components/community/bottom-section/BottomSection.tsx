@@ -40,7 +40,8 @@ const BottomSection = () => {
   return (
     <div>
       <Recommended />
-      <section className="blogs">
+      <section className="blogs p-4 text-center">
+        <h3 className="font-bold text-[24px] py-4 mb-8">News Blog</h3>
         {blogs.map(({ title, user, image, description }) => (
           <Blog
             title={title}
