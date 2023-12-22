@@ -4,27 +4,33 @@ import DevsGroup from '../../../../public/svgs/devs.svg';
 import Events from '../../../../public/svgs/events.svg';
 import Stories from '../../../../public/svgs/stories.svg';
 import Image from 'next/image';
+import Animation from '../animation/Animation';
 
 type Props = {};
 
 const TopSection = (props: Props) => {
   return (
     <div className="p-4">
-      <section className="flex flex-col-reverse lg:flex-col pb-8 text-center">
-        <div className="ts-left">
-          <p className="text-[25px] lg:text-[45px] pb-2 font-bold leading-9">
-            We bring a wealth of skills and experience from a wide range of
-            background
-          </p>
-          <div className="py-6">
-            <button className="w-[134px] lg:w-[267px] py-[10px] px-[24px] bg-[#D97508] text-white text-primary rounded-[10px]">
-              Get Started
-            </button>
+      <section className="flex flex-col-reverse lg:flex-row pb-8 text-center justify-around lg:py-32">
+        <div className="lg:w-1/2 lg:flex lg:flex-col lg:justify-center lg:px-6">
+          <div className="lg:text-left">
+            <p className="text-[25px] lg:text-[45px] pb-2 font-bold leading-9 lg:leading-[60px]">
+              We bring a wealth of skills and experience from a wide range of
+              background
+            </p>
+            <div className="py-6">
+              <button className="w-[134px] lg:text-[24px] lg:w-[267px] py-[10px] px-[24px] bg-[#D97508] text-white text-primary rounded-[10px]">
+                Get Started
+              </button>
+            </div>
           </div>
         </div>
-        <Image src={CommGroup} alt="rotating image" />
+        <Image className="lg:hidden" src={CommGroup} alt="rotating image" />
+        <div className="hidden lg:block lg:pt-8">
+          <Animation />
+        </div>
       </section>
-      <section className="md:block hidden">
+      <section className="lg:block hidden">
         <div className="flex flex-col-reverse text-center bg-com-about-us bg-cover w-full">
           <Image src={CommGroup} alt="community" />
           <div className="ss-right">
@@ -41,7 +47,7 @@ const TopSection = (props: Props) => {
           </div>
         </div>
       </section>
-      <section className="md:hidden">
+      <section className="lg:hidden">
         <div className="flex flex-col text-center bg-com-about-us bg-no-repeat w-full pt-12 pb-24">
           <h2 className="font-medium text-lg pb-4">About Our community</h2>
           <p className="text-sm leading-7">

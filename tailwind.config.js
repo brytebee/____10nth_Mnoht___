@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        spot: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+      },
+
       colors: {
         primary: 'var(--primary-color)',
         hero: 'var(--hero-bg-color)',
@@ -25,6 +32,10 @@ module.exports = {
         'recom-cross-bg': "url('../../public/svgs/recom-cross-bg.svg')",
         'about-linear':
           'linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%)',
+      },
+
+      animation: {
+        'com-hero-anim': 'spot 35s linear infinite',
       },
     },
     fontFamily: {

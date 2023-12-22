@@ -1,12 +1,12 @@
 import React from 'react';
 import CentralImage from './CentralImage';
+import OtherImages from './OtherImages';
 
-type Props = {};
-
-const Animation = (props: Props) => {
+const Animation = () => {
   return (
-    <div>
+    <div className="hidden lg:block">
       <CentralImage />
+      <OtherImages />
     </div>
   );
 };

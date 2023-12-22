@@ -1,10 +1,8 @@
 import React from 'react';
 
-type Props = {};
-
-const CentralImage = (props: Props) => {
+const CentralImage = () => {
   return (
-    <div>
+    <div className="px-36 relative -top-10 -left-2">
       <svg
         width="250"
         height="250"
