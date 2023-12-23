@@ -25,8 +25,7 @@ const TopSection = (props: Props) => {
             </div>
           </div>
         </div>
-        <Image className="lg:hidden" src={CommGroup} alt="rotating image" />
-        <div className="hidden lg:block lg:pt-8">
+        <div className="pt-16 lg:pt-8">
           <Animation />
         </div>
       </section>

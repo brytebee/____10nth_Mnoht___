@@ -9,8 +9,8 @@ module.exports = {
     extend: {
       keyframes: {
         spot: {
-          '0%': { transform: 'rotate(0deg)' },
-          '100%': { transform: 'rotate(360deg)' },
+          '0%': { transform: 'rotateY(0deg)' },
+          '100%': { transform: 'rotateY(360deg)' },
         },
       },
 
@@ -35,7 +35,7 @@ module.exports = {
       },
 
       animation: {
-        'com-hero-anim': 'spot 35s linear infinite',
+        'com-hero-anim': 'spot 15s ease-out infinite',
       },
     },
     fontFamily: {

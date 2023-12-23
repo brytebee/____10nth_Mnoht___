@@ -36,7 +36,7 @@ const MidSection = () => {
 
   const events = [
     {
-      date: '14 April',
+      date: '13 April',
       title: 'Embracing technology and its help to mankind',
       description:
         'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed ',

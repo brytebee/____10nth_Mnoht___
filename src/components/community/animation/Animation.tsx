@@ -4,7 +4,7 @@ import OtherImages from './OtherImages';
 
 const Animation = () => {
   return (
-    <div className="hidden lg:block">
+    <div className="container flex items-center justify-center mb-40">
       <CentralImage />
       <OtherImages />
     </div>

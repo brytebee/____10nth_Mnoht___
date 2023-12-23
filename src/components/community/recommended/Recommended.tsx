@@ -11,7 +11,7 @@ const courses = [
   {
     image: UIUX,
     title: 'UI & UX DESIGN',
-    rating: 4,
+    rating: 5,
     student: 308,
   },
   {
@@ -23,7 +23,7 @@ const courses = [
   {
     image: DATA,
     title: 'DATA SCIENCE',
-    rating: 3,
+    rating: 5,
     student: 207,
   },
 ];
