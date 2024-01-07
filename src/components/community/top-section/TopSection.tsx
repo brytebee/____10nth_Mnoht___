@@ -30,19 +30,27 @@ const TopSection = (props: Props) => {
         </div>
       </section>
       <section className="lg:block hidden">
-        <div className="flex flex-col-reverse text-center bg-com-about-us bg-cover w-full">
-          <Image src={CommGroup} alt="community" />
-          <div className="ss-right">
-            <h2 className="font-medium text-lg">About Our community</h2>
-            <p className="text-sm">
+        <div className="flex flex-row text-center bg-com-about-us bg-cover bg-no-repeat w-full py-24">
+          <div className="flex-1 flex justify-center">
+            <Image src={CommGroup} alt="community" />
+          </div>
+          <div className="ss-right flex-1 text-left">
+            <h2 className="font-bold text-3xl mt-10">About Our community</h2>
+            <p className="text-xl pt-5 leading-7 pr-6">
               Welcome to the Techverse Community, where diverse experiences
               await, providing numerous opportunities for you to connect,
               interact, and collaborate with both fellow enthusiasts and
               seasoned technical experts.
             </p>
-            <button className="w-[134px] lg:w-[267px] py-[10px] px-[24px] justify-center text-center text-[#D97508] outline rounded-[10px]">
-              Learn More
-            </button>
+            <p className="pt-8 text-xl leading-7 pr-6">
+              “A place where your technology journey is not merely an education
+              – it's an exhilarating adventure!”
+            </p>
+            <div className="pt-[22px]">
+              <button className="w-[134px] lg:w-[159px] py-[10px] px-[24px] justify-center text-center text-[#D97508] outline rounded-[10px]">
+                Learn More
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -70,7 +78,9 @@ const TopSection = (props: Props) => {
         </div>
       </section>
       <section className="text-center">
-        <h4 className="font-medium text-lg pb-4">How we help our students</h4>
+        <h4 className="font-medium text-lg pt-32 pb-4">
+          How we help our students
+        </h4>
         <p className="text-sm leading-7">
           At Techverse Community, feel <br /> less alone in your learning,
           mutual support is the cornerstone of our shared learning journey.
