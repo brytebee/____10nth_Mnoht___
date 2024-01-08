@@ -48,7 +48,7 @@ const Card = ({ date, time, title, description, venue, color }: Props) => {
         </section>
       </section>
       <section className="hidden lg:block">
-        <section className="box-border shadow-lg m-3 bg-amber-950 text-center flex items-center flex-row rounded-2xl">
+        <section className="box-border shadow-lg m-3 bg-[#333333] text-center flex items-center flex-row rounded-2xl">
           <section className="date text-white w-[141px]">
             <div className="pc-day hidden lg:block text-[55px]">{day}</div>
             <div className="month text-[25px] -mt-5">{month}</div>

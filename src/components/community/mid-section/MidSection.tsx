@@ -2,6 +2,9 @@ import React from 'react';
 import Card from '../discussion/Card';
 import Avatar from '../../../../public/svgs/avatar.svg';
 import ECard from '../upcoming-events/Card';
+import Image from 'next/image';
+import LP from '../../../../public/svgs/left-polygon.svg';
+import LP2 from '../../../../public/svgs/left-polygon2.svg';
 
 const MidSection = () => {
   const cardDets = [
@@ -131,8 +134,13 @@ const MidSection = () => {
             Expo 2024! Dive into cutting-edge innovations, hands-on workshops,
             and insightful discussions. Don't miss the chance to connect with
             industry leaders and shape the future of technology. Join us for a
-            day of inspiration and exploration! <br /> #TechverseExpo2024 ✨🚀
+            day of inspiration and exploration! <br />{' '}
+            <strong>#TechverseExpo2024</strong> ✨🚀
           </p>
+        </section>
+        <section className="relative">
+          <Image className="absolute -top-32" src={LP} alt="left polygon" />
+          <Image className="absolute -top-16" src={LP2} alt="left polygon" />
         </section>
         <section className="upcoming px-8 pt-6 lg:py-28 lg:bg-upcoming-event bg-no-repeat lg:bg-cover">
           <section className="grid grid-cols-2 gap-2 lg:mx-14">
