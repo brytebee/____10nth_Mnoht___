@@ -91,7 +91,7 @@ const TopSection = (props: Props) => {
             align with your aspirations and career goals.
           </p>
         </section>
-        <section>
+        <section className="bg-how-we-help bg-cover bg-no-repeat">
           <section className="text-sm lg:flex lg:pt-32">
             <div className="py-10 flex-1">
               <Image src={DevsGroup} alt="devs group" />
