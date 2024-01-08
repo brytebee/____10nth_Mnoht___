@@ -33,7 +33,7 @@ const Card = ({
       </header>
       <p className="text-sm leading-7">{description}</p>
       <footer className="mt-auto lg:flex lg:w-full lg:justify-between">
-        <div className="md:flex justify-between hidden">
+        <div className="lg:flex justify-between hidden">
           <div className="box-border shadow-md rounded-md m-1 p-1 bg-white w-20">
             <div className="flex items-center">
               <Image src={Like} alt="likes" />

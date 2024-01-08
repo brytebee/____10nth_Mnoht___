@@ -119,7 +119,7 @@ const MidSection = () => {
             )}
           </section>
           <div className="pt-4 pb-14">
-            <button className="w-[134px] lg:w-[267px] py-[10px] px-[24px text-[#D97508] outline rounded-[10px] self-center">
+            <button className="w-[134px] lg:w-[159px] py-[10px] px-[24px text-[#D97508] hover:bg-[#D97508] hover:text-white outline rounded-[10px] self-center">
               View more
             </button>
           </div>
@@ -127,25 +127,29 @@ const MidSection = () => {
         <section className="text-center p-4">
           <h3 className="font-semibold text-xl pb-4">Upcoming Events</h3>
           <p className="text-sm leading-7">
-            Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis
-            sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium
-            ullamcorper. Elementum consequat non
+            Get ready for an unparalleled tech experience at the Techverse Tech
+            Expo 2024! Dive into cutting-edge innovations, hands-on workshops,
+            and insightful discussions. Don't miss the chance to connect with
+            industry leaders and shape the future of technology. Join us for a
+            day of inspiration and exploration! <br /> #TechverseExpo2024 ✨🚀
           </p>
         </section>
-        <section className="upcoming grid grid-cols-2 gap-2 px-8 pt-6">
-          {events.map(({ date, time, title, description, venue, color }) => (
-            <ECard
-              date={date}
-              title={title}
-              description={description}
-              venue={venue}
-              color={color}
-              time={time}
-            />
-          ))}
+        <section className="upcoming px-8 pt-6 lg:py-28 lg:bg-upcoming-event bg-no-repeat lg:bg-cover">
+          <section className="grid grid-cols-2 gap-2 lg:mx-14">
+            {events.map(({ date, time, title, description, venue, color }) => (
+              <ECard
+                date={date}
+                title={title}
+                description={description}
+                venue={venue}
+                color={color}
+                time={time}
+              />
+            ))}
+          </section>
         </section>
         <div className="py-10">
-          <button className="w-[134px] lg:w-[267px] py-[10px] px-[24px] bg-[#D97508] text-white text-primary rounded-[10px]">
+          <button className="w-[159px] py-[10px] px-[24px] text-[#D97508] outline hover:bg-[#D97508] hover:text-white text-primary rounded-[10px]">
             See more
           </button>
         </div>

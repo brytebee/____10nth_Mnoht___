@@ -47,7 +47,7 @@ const TopSection = (props: Props) => {
               – it's an exhilarating adventure!”
             </p>
             <div className="pt-[22px]">
-              <button className="w-[134px] lg:w-[159px] py-[10px] px-[24px] justify-center text-center text-[#D97508] outline rounded-[10px]">
+              <button className="w-[134px] lg:w-[159px] py-[10px] px-[24px] justify-center text-center text-[#D97508] outline hover:bg-[#D97508] hover:text-white rounded-[10px]">
                 Learn More
               </button>
             </div>
@@ -91,7 +91,7 @@ const TopSection = (props: Props) => {
             align with your aspirations and career goals.
           </p>
         </section>
-        <section className="bg-how-we-help bg-cover bg-no-repeat">
+        <section className="lg:bg-how-we-help bg-cover bg-no-repeat">
           <section className="text-sm lg:flex lg:pt-32">
             <div className="py-10 flex-1">
               <Image src={DevsGroup} alt="devs group" />

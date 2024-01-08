@@ -30,6 +30,7 @@ module.exports = {
         'about-bg-mobile': "url('../../public/svgs/about-bg-mobile.svg')",
         'com-about-us': "url('../../public/svgs/fst-section-bg.svg')",
         'how-we-help': "url('../../public/svgs/how-we-help.svg')",
+        'upcoming-event': "url('../../public/svgs/upcoming-event.svg')",
         'recom-cross-bg': "url('../../public/svgs/recom-cross-bg.svg')",
         'about-linear':
           'linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%)',
