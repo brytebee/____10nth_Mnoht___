@@ -36,13 +36,13 @@ const TopSection = (props: Props) => {
           </div>
           <div className="ss-right flex-1 text-left">
             <h2 className="font-bold text-3xl mt-10">About Our community</h2>
-            <p className="text-xl pt-5 leading-7 pr-6">
+            <p className="text-xl pt-5 leading-[30px] pr-6">
               Welcome to the Techverse Community, where diverse experiences
               await, providing numerous opportunities for you to connect,
               interact, and collaborate with both fellow enthusiasts and
               seasoned technical experts.
             </p>
-            <p className="pt-8 text-xl leading-7 pr-6">
+            <p className="pt-8 text-xl leading-[30px] pr-6">
               “A place where your technology journey is not merely an education
               – it's an exhilarating adventure!”
             </p>
@@ -77,65 +77,77 @@ const TopSection = (props: Props) => {
           </div>
         </div>
       </section>
-      <section className="text-center">
-        <h4 className="font-medium text-lg pt-32 pb-4">
-          How we help our students
-        </h4>
-        <p className="text-sm leading-7">
-          At Techverse Community, feel <br /> less alone in your learning,
-          mutual support is the cornerstone of our shared learning journey.
-          Here, we believe in fostering an environment that empowers every
-          student to thrive. Through various community engagements, we provide
-          you with abundant opportunities to enhance your expertise in the areas
-          that align with your aspirations and career goals.
-        </p>
-      </section>
-      <section className="text-sm">
-        <div className="py-10">
-          <Image src={DevsGroup} alt="devs group" />
-        </div>
-        <div className="tds-right">
-          <h4 className="font-medium text-lg py-2">Hands on learning</h4>
-          <p className="text-sm leading-7">
-            At Techverse, we believe in the power of hands-on learning to shape
-            proficient tech enthusiasts. Our teaching techniques prioritize
-            practical, experiential engagement over passive instruction. Through
-            hands-on learning, students actively apply theoretical knowledge to
-            real-world scenarios, gaining valuable practical skills and
-            problem-solving abilities
+      <section className="lg:pl-60 lg:pr-32">
+        <section className="text-center lg:text-left">
+          <h4 className="font-medium lg:font-bold text-lg lg:text-2xl lg:pt-32 pb-4">
+            How we help our students
+          </h4>
+          <p className="text-sm lg:text-[18px] leading-8">
+            At Techverse Community, feel less alone in your learning, mutual
+            support is the cornerstone of our shared learning journey. Here, we
+            believe in fostering an environment that empowers every student to
+            thrive. Through various community engagements, we provide you with
+            abundant opportunities to enhance your expertise in the areas that
+            align with your aspirations and career goals.
           </p>
-        </div>
-      </section>
-      <section className="flex flex-col-reverse">
-        <div className="fts-left">
-          <h4 className="font-medium text-lg py-2">Events</h4>
-          <p className="text-sm leading-7">
-            Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis
-            sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium
-            ullamcorper. Elementum consequat non tempus aliquam. Adipiscing diam
-            donec a scelerisque scelerisque mauris amet.
-          </p>
-        </div>
-        <div className="py-10">
-          <Image src={Events} alt="devs group" />
-        </div>
-      </section>
-      <section>
-        <div className="py-10">
-          <Image src={Stories} alt="devs group" />
-        </div>
-        <div className="fts-left">
-          <h4 className="font-medium text-lg py-2">Student Stories</h4>
-          <p className="text-sm leading-7">
-            Thanks to the practical experience provided by Techverse, I could
-            seamlessly translate my theoretical learning into real-life
-            applications. When I sought job referrals, I had tangible evidence
-            to showcase – my portfolio project developed during my time with
-            Techverse. This not only reinforced my skills but also served as a
-            compelling demonstration of the hands-on expertise I gained through
-            the Techverse experience.
-          </p>
-        </div>
+        </section>
+        <section>
+          <section className="text-sm lg:flex lg:pt-32">
+            <div className="py-10 flex-1">
+              <Image src={DevsGroup} alt="devs group" />
+            </div>
+            <div className="tds-right flex-1">
+              <h4 className="font-semibold text-[22px] py-2">
+                Hands on learning
+              </h4>
+              <p className="text-sm lg:text-[18px] leading-8">
+                At Techverse, we believe in the power of hands-on learning to
+                shape proficient tech enthusiasts. Our teaching techniques
+                prioritize practical, experiential engagement over passive
+                instruction. Through hands-on learning, students actively apply
+                theoretical knowledge to real-world scenarios, gaining valuable
+                practical skills and problem-solving abilities.
+              </p>
+            </div>
+          </section>
+          <section className="flex flex-col-reverse lg:flex-row lg:pt-32">
+            <div className="fts-left flex-1">
+              <h4 className="font-semibold text-[22px] py-2">Events</h4>
+              <p className="text-sm lg:text-[18px] leading-8">
+                Elevate your tech prowess at Techverse events! Gain insights
+                from experts, refine your resume and LinkedIn, and upskill for
+                tech roles. With regular online events featuring industry
+                leaders and senior developers, you can sign up for as many as
+                you like. Stay tuned for our major annual conference and
+                physical meetups across different cities – find the one closest
+                to you! Techverse is here to guide your journey into the world
+                of tech excellence.
+              </p>
+            </div>
+            <div className="py-10 flex-1">
+              <Image src={Events} alt="devs group" />
+            </div>
+          </section>
+          <section className="lg:flex lg:pt-32">
+            <div className="py-10 flex-1">
+              <Image src={Stories} alt="devs group" />
+            </div>
+            <div className="fts-left flex-1">
+              <h4 className="font-semibold text-[22px] py-2">
+                Student Stories
+              </h4>
+              <p className="text-sm lg:text-[18px] leading-8">
+                Thanks to the practical experience provided by Techverse, I
+                could seamlessly translate my theoretical learning into
+                real-life applications. When I sought job referrals, I had
+                tangible evidence to showcase – my portfolio project developed
+                during my time with Techverse. This not only reinforced my
+                skills but also served as a compelling demonstration of the
+                hands-on expertise I gained through the Techverse experience.
+              </p>
+            </div>
+          </section>
+        </section>
       </section>
     </div>
   );
