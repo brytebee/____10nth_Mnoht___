@@ -77,7 +77,7 @@ const TopSection = (props: Props) => {
           </div>
         </div>
       </section>
-      <section className="lg:pl-60 lg:pr-32">
+      <section className="lg:pl-60 lg:pr-32 lg:mb-24">
         <section className="text-center lg:text-left">
           <h4 className="font-medium lg:font-bold text-lg lg:text-2xl lg:pt-32 pb-4">
             How we help our students
