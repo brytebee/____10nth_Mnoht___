@@ -1,10 +1,10 @@
-import NavBar from '@/components/navbar/NavBar';
 import './globals.css';
 import Head from 'next/head';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Footer from '@/components/footer/Footer';
 import Script from 'next/script';
+import ConidtionalNavbar from '@/components/navbar/ConidtionalNavbar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -55,7 +55,7 @@ export default function RootLayout({
         />
       </Head>
       <body className={inter.className}>
-        <NavBar />
+        <ConidtionalNavbar />
         {children}
         <Footer />
         <script
