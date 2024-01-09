@@ -11,7 +11,7 @@ type Props = {
 
 const Card = ({ title, rating, image, student }: Props) => {
   return (
-    <section className="box-border m-4 h-[314px] shadow-lg bg-white text-center flex flex-col justify-center items-center bg-recom-cross-bg bg-cover bg-no-repeat">
+    <section className="box-border m-4 lg:w-[364px] h-[314px] lg:h-[419px] shadow-lg bg-white text-center flex flex-col justify-center items-center bg-recom-cross-bg bg-cover bg-no-repeat">
       <section className="image">
         <Image src={image} width={200} height={200} alt="course" />
       </section>

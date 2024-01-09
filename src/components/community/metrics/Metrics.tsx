@@ -9,22 +9,22 @@ type Props = {
 
 const Metrics = ({ course, student, instructor, certified }: Props) => {
   return (
-    <div>
-      <div className="course">
-        <span>Courses</span>
-        <span>{course}</span>
+    <div className="flex justify-around py-[146px]">
+      <div className="course text-center flex flex-col">
+        <span className="text-2xl font-bold">Courses</span>
+        <span className="text-3xl font-black pt-4">{course}</span>
       </div>
-      <div className="student">
-        <span>Students enrolled</span>
-        <span>{student}</span>
+      <div className="student text-center flex flex-col">
+        <span className="text-2xl font-bold">Students enrolled</span>
+        <span className="text-3xl font-black pt-4">{student}</span>
       </div>
-      <div className="instructor">
-        <span>Instructors</span>
-        <span>{instructor}</span>
+      <div className="instructor text-center flex flex-col">
+        <span className="text-2xl font-bold">Instructors</span>
+        <span className="text-3xl font-black pt-4">{instructor}</span>
       </div>
-      <div className="certified">
-        <span>Certified students</span>
-        <span>{certified}</span>
+      <div className="certified text-center flex flex-col">
+        <span className="text-2xl font-bold">Certified students</span>
+        <span className="text-3xl font-black pt-4">{certified}</span>
       </div>
     </div>
   );

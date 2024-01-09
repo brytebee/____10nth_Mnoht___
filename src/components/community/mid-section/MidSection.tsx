@@ -129,7 +129,7 @@ const MidSection = () => {
         </section>
         <section className="text-center p-4">
           <h3 className="font-semibold text-xl pb-4">Upcoming Events</h3>
-          <p className="text-sm leading-7">
+          <p className="text-[14px] leading-[30px] lg:mx-80">
             Get ready for an unparalleled tech experience at the Techverse Tech
             Expo 2024! Dive into cutting-edge innovations, hands-on workshops,
             and insightful discussions. Don't miss the chance to connect with

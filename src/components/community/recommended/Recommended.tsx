@@ -6,6 +6,7 @@ import ArrowRight from '../../../../public/svgs/arrow-right2.svg';
 import Card from './Card';
 import Image from 'next/image';
 import Metrics from '../metrics/Metrics';
+import PrimaryButton from '@/components/utils/components/PrimaryButton';
 
 const courses = [
   {
@@ -40,8 +41,8 @@ const metrics = [
 const Recommended = () => {
   return (
     <div>
-      <section className="bg-[#F2F2F2] p-4">
-        <h3 className="text-[25px] lg:text-[45px] pb-2 font-bold leading-9">
+      <section className="bg-[#F2F2F2] p-4 mb-[72px]">
+        <h3 className="text-[25px] lg:ml-36 lg:text-[45px] pb-2 font-bold leading-9">
           Top Recommended <br />
           Courses
         </h3>
@@ -53,33 +54,42 @@ const Recommended = () => {
             </span>
           </button>
         </div>
-        {courses.map(({ title, image, rating, student }) => (
-          <Card title={title} image={image} rating={rating} student={student} />
-        ))}
+        <section className="lg:flex lg:justify-center pb-10">
+          {courses.map(({ title, image, rating, student }) => (
+            <Card
+              title={title}
+              image={image}
+              rating={rating}
+              student={student}
+            />
+          ))}
+        </section>
       </section>
-      <section className="more-details">
-        <div className="video">
+      <section className="more-details lg:flex mb-2">
+        <div className="video lg:flex-1 pr-16">
           <Image src={WEB} alt="photo" />
         </div>
-        <div className="info p-4 bg-[#A63F0E] text-white">
-          <h3 className="font-bold text-[20px] py-4">
-            Web development masterclass, front and backend devs.
-          </h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis
-            sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium
-            ullamcorper. Elementum consequat non tempus aliquam. Adipiscing diam
-            donec a scelerisque scelerisque mauris amet.
-          </p>
-          <div className="py-8 text-center">
-            <button className="w-[134px] lg:w-[267px] py-[10px] px-[24px] bg-[#D97508] text-white text-primary rounded-[10px]">
-              See more
-            </button>
+        <div className="info p-4 bg-[#A63F0E] text-white lg:flex-1">
+          <div className=" lg:flex lg:flex-col text-left pt-12">
+            <h3 className="font-bold text-[20px] lg:text-[25px] py-4 lg:pt-8 lg:w-[60%]">
+              Web development masterclass, front and backend devs.
+            </h3>
+            <p className="lg:w-[75%]">
+              Lorem ipsum dolor sit amet consectetur. Vulputate cum neque
+              sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet
+              urna pretium ullamcorper. Elementum consequat non tempus aliquam.
+              Adipiscing diam donec a scelerisque scelerisque mauris amet.
+            </p>
+            <PrimaryButton
+              position="left"
+              px="139"
+              pxpc="159"
+              text="See more"
+            />
           </div>
         </div>
       </section>
-      {/* Can't find this section anymore */}
-      <section className="metrics hidden md:hidden lg:hidden">
+      <section className="metrics hidden lg:block bg-[#E6C09CB2] mt-20">
         {metrics.map(({ courses, students, instructors, certified }) => (
           <Metrics
             course={courses}
