@@ -28,7 +28,7 @@ const Blog = ({ image, title, description }: Props) => {
             <p className="text-left text-[18px] leading-8">{description}</p>
           </div>
         </div>
-        <div className="lg:text-right">
+        <div className="p-8 lg:p-0 lg:text-right">
           <SecondaryButton
             position="center"
             positionPC="right"

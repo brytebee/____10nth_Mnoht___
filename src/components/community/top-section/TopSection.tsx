@@ -6,6 +6,7 @@ import Stories from '../../../../public/svgs/stories.svg';
 import Image from 'next/image';
 import Animation from '../animation/Animation';
 import PrimaryButton from '@/components/utils/components/PrimaryButton';
+import SecondaryButton from '@/components/utils/components/SecondaryButton';
 
 type Props = {};
 
@@ -19,12 +20,12 @@ const TopSection = (props: Props) => {
               We bring a wealth of skills and experience from a wide range of
               background
             </p>
-            <div className="py-6 text-xl">
+            <div className="py-6 lg:text-xl">
               <PrimaryButton
-                position=""
-                positionPC=""
+                position="center"
+                positionPC="left"
                 text="Get Started"
-                px="134"
+                px="136"
                 pxpc="267"
               />
             </div>
@@ -52,9 +53,13 @@ const TopSection = (props: Props) => {
               – it's an exhilarating adventure!”
             </p>
             <div className="pt-[22px]">
-              <button className="w-[134px] lg:w-[159px] py-[10px] px-[24px] justify-center text-center text-[#D97508] outline hover:bg-[#D97508] hover:text-white rounded-[10px]">
-                Learn More
-              </button>
+              <SecondaryButton
+                position="center"
+                positionPC="left"
+                px="138"
+                pxpc="159"
+                text="Learn More"
+              />
             </div>
           </div>
         </div>
@@ -76,9 +81,16 @@ const TopSection = (props: Props) => {
             it's an exhilarating adventure!”
           </p>
           <div className="py-7">
-            <button className="w-[134px] lg:w-[267px] py-[10px] px-[24px text-[#D97508] outline rounded-[10px] self-center">
+            {/* <button className="w-[134px] lg:w-[267px] py-[10px] px-[24px text-[#D97508] outline rounded-[10px] self-center">
               Learn More
-            </button>
+            </button> */}
+            <SecondaryButton
+              position="center"
+              positionPC="right"
+              px="138"
+              pxpc="159"
+              text="Read more"
+            />
           </div>
         </div>
       </section>
