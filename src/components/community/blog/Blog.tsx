@@ -1,4 +1,5 @@
 import Images from '@/app/staticData';
+import SecondaryButton from '@/components/utils/components/SecondaryButton';
 import Image from 'next/image';
 import React from 'react';
 
@@ -11,23 +12,31 @@ type Props = {
 
 const Blog = ({ image, title, description }: Props) => {
   return (
-    <section className="lg:flex">
+    <section className="lg:flex lg:px-28 lg:py-8 bg-white">
       <section className="blog-card">
-        <div className="image flex items-center justify-center">
+        <div className="image flex items-center justify-center lg:w-[307px] lg:bg-[#D9D9D9] lg:h-[292px]">
           <Image src={Images[0]} alt="Blog photo" />
         </div>
       </section>
 
-      <div className="py-7">
-        <div className="dets">
-          <h6 className="hidden">{title}</h6>
+      <div className="py-7 px-11 lg:w-full">
+        <div className="dets text-left">
+          <h6 className="hidden lg:block text-[25px] leading-8 font-extrabold">
+            {title}
+          </h6>
           <div className="desc">
-            <p className="text-left">{description}</p>
+            <p className="text-left text-[18px] leading-8">{description}</p>
           </div>
         </div>
-        <button className="w-[134px] lg:w-[267px] py-[10px] px-[24px text-[#D97508] outline rounded-[10px] self-center">
-          Read more
-        </button>
+        <div className="lg:text-right">
+          <SecondaryButton
+            position="center"
+            positionPC="right"
+            px="138"
+            pxpc="159"
+            text="Read more"
+          />
+        </div>
       </div>
     </section>
   );

@@ -70,7 +70,7 @@ const Recommended = () => {
           <Image src={WEB} alt="photo" />
         </div>
         <div className="info p-4 bg-[#A63F0E] text-white lg:flex-1">
-          <div className=" lg:flex lg:flex-col text-left pt-12">
+          <div className=" lg:flex lg:flex-col lg:text-left pt-12">
             <h3 className="font-bold text-[20px] lg:text-[25px] py-4 lg:pt-8 lg:w-[60%]">
               Web development masterclass, front and backend devs.
             </h3>
@@ -81,7 +81,8 @@ const Recommended = () => {
               Adipiscing diam donec a scelerisque scelerisque mauris amet.
             </p>
             <PrimaryButton
-              position="left"
+              position="center"
+              positionPC="left"
               px="139"
               pxpc="159"
               text="See more"
@@ -89,7 +90,7 @@ const Recommended = () => {
           </div>
         </div>
       </section>
-      <section className="metrics hidden lg:block bg-[#E6C09CB2] mt-20">
+      <section className="metrics hidden lg:block bg-[#E6C09CB2] mt-20 px-32">
         {metrics.map(({ courses, students, instructors, certified }) => (
           <Metrics
             course={courses}

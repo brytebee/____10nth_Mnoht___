@@ -138,7 +138,7 @@ const MidSection = () => {
             <strong>#TechverseExpo2024</strong> ✨🚀
           </p>
         </section>
-        <section className="relative">
+        <section className="hidden lg:block relative">
           <Image className="absolute -top-32" src={LP} alt="left polygon" />
           <Image className="absolute -top-16" src={LP2} alt="left polygon" />
         </section>
