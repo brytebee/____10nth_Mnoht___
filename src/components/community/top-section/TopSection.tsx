@@ -5,6 +5,7 @@ import Events from '../../../../public/svgs/events.svg';
 import Stories from '../../../../public/svgs/stories.svg';
 import Image from 'next/image';
 import Animation from '../animation/Animation';
+import PrimaryButton from '@/components/utils/components/PrimaryButton';
 
 type Props = {};
 
@@ -18,10 +19,14 @@ const TopSection = (props: Props) => {
               We bring a wealth of skills and experience from a wide range of
               background
             </p>
-            <div className="py-6">
-              <button className="w-[134px] lg:text-[24px] lg:w-[267px] py-[10px] px-[24px] bg-[#D97508] text-white text-primary rounded-[10px]">
-                Get Started
-              </button>
+            <div className="py-6 text-xl">
+              <PrimaryButton
+                position=""
+                positionPC=""
+                text="Get Started"
+                px="134"
+                pxpc="267"
+              />
             </div>
           </div>
         </div>
