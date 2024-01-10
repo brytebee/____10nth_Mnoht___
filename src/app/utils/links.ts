@@ -40,7 +40,7 @@ export const student = [
   {
     'main-menu': [
       {
-        label: 'Tasks/Assignments',
+        label: 'Tasks',
         href: '/dashboard/student/tasks',
       },
       {
@@ -53,5 +53,72 @@ export const student = [
       },
     ],
   }];
-export const admin = [];
-export const reviewer = [];
+export const admin = [
+  {
+    dashboard: [
+      {
+        label: 'Overview',
+        href: '/dashboard/admin',
+      },
+      {
+        label: 'Applications',
+        href: '/dashboard/admin/applications',
+      },
+    ],
+  },
+  {
+    'main-menu': [
+      {
+        label: 'Students',
+        href: '/dashboard/admin/students',
+      },
+      {
+        label: 'Calendar',
+        href: '/dashboard/admin/calendar',
+      },
+      {
+        label: 'Reviewers',
+        href: '/dashboard/admin/reviewers',
+      },
+      {
+        label: 'Tutors',
+        href: '/dashboard/admin/tutors',
+      },
+
+      {
+        label: 'Courses',
+        href: '/dashboard/admin/courses',
+      },
+      {
+        label: 'Cohorts',
+        href: '/dashboard/admin/cohorts',
+      },
+      {
+        label: 'Community',
+        href: '/dashboard/admin/community',
+      },
+    ],
+  }
+];
+export const reviewer = [
+  {
+    dashboard: [
+      {
+        label: 'Overview',
+        href: '/dashboard/reviewer',
+      },
+      {
+        label: 'Reviews',
+        href: '/dashboard/reviewer/reviews',
+      },
+    ],
+  },
+  {
+    'main-menu': [
+      {
+        label: 'Calendar',
+        href: '/dashboard/reviewer/calendar',
+      },
+    ],
+  }
+];

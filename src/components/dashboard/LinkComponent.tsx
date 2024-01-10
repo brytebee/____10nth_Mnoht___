@@ -15,7 +15,7 @@ function LinksContainer<T>({ links, path }: any): React.ReactElement<T> {
     return path === href;
   }
   const getClassName = (href: string) => {
-    return isActive(href) ? 'px-4 py-1 bg-gray-100 font-bold text-[#333] shadow-sm w-[200px] rounded-[20px]' : 'px-2 py-1 text-base font-bold text-[#333] rounded-[20px] hover:bg-gray-100 hover:text-gray-900 w-[200px]';
+    return isActive(href) ? 'px-4 py-1 bg-gray-100 font-bold text-[#333] shadow-sm w-[148px] rounded-[20px]' : 'px-2 py-1 text-base font-bold text-[#333] rounded-[20px] hover:bg-gray-100 hover:text-gray-900 w-[148px]';
   }
   return (
     <div className='mb-auto' >
@@ -25,13 +25,11 @@ function LinksContainer<T>({ links, path }: any): React.ReactElement<T> {
             <div key={index}>
               <dt className="my-[12px] text-sm font-normal text-[#333] capitalize">{section}</dt>
               <dd>
-                <ul className="flex flex-col gap-1">
+                <div className="flex flex-col gap-1">
                   {sectionLinks.map(({ label, href }: IMapProps) => (
-                    <li key={href} className={getClassName(href)}>
-                      <Link href={href}>{label}</Link>
-                    </li>
+                    <Link key={href} href={href} className={getClassName(href)}>{label}</Link>
                   ))}
-                </ul>
+                </div>
               </dd>
             </div>
           ))
@@ -48,18 +46,14 @@ function LinksContainer<T>({ links, path }: any): React.ReactElement<T> {
           Get Help
         </dt>
         <dd>
-          <ul className="mt-2 flex flex-col gap-1">
-            <li className={`${getClassName('/questions')}`}>
-              <Link href='/questions'>
-                Ask questions
-              </Link>
-            </li>
-            <li className={`${getClassName('/announcement')}`}>
-              <Link href='/annoucement'>
-                Announcement
-              </Link>
-            </li>
-          </ul>
+          <div className="mt-2 flex flex-col gap-1">
+            <Link href='/questions' className={`${getClassName('/questions')}`}>
+              Ask questions
+            </Link>
+            <Link href='/annoucement' className={`${getClassName('/announcement')}`}>
+              Announcement
+            </Link>
+          </div>
         </dd>
       </div>
     </div >
