@@ -12,6 +12,13 @@ export interface Course {
   conclusion: string;
 }
 
+type Review = {
+  comment: String;
+  name: String;
+  image: HTMLImageElement;
+  course?: String;
+};
+
 export const courses: Course[] = [
   {
     name: 'Computer Appreciation',
@@ -228,13 +235,6 @@ export const courses: Course[] = [
       'By the end of this course, you will have the skills and confidence to embark on your graphic design journey using your mobile device as a powerful creative tool. Whether you want to create stunning visuals for personal projects, enhance your social media presence, or explore graphic design as a potential career path, this course will equip you with the knowledge and techniques to achieve your goals.',
   },
 ];
-
-type Review = {
-  comment: String;
-  name: String;
-  image: HTMLImageElement;
-  course?: String;
-};
 
 export const reviews: Review[] = [
   {

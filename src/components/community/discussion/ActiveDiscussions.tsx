@@ -11,7 +11,7 @@ const ActiveDiscussions = () => {
           Read about others stories and share your thoughts
         </p>
       </section>
-      <section className="text-center px-16">
+      <section className="text-center lg:px-16">
         <section className="lg:flex">
           {Discuss.map(
             ({ image, username, title, description, likes, comments }) => (
