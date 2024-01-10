@@ -19,13 +19,15 @@ const Blog = ({ image, title, description }: Props) => {
         </div>
       </section>
 
-      <div className="py-7 px-11 lg:w-full">
+      <div className="py-7 px-8 lg:w-full">
         <div className="dets text-left">
           <h6 className="hidden lg:block text-[25px] leading-8 font-extrabold">
             {title}
           </h6>
           <div className="desc">
-            <p className="text-left text-[18px] leading-8">{description}</p>
+            <p className="text-left text-sm lg:text-[18px] leading-8">
+              {description}
+            </p>
           </div>
         </div>
         <div className="p-8 lg:p-0 lg:text-right">

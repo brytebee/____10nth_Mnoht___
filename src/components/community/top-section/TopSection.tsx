@@ -6,9 +6,9 @@ import AboutCommunity from '../about-community/AboutCommunity';
 
 const TopSection = () => {
   return (
-    <div className="p-4">
+    <div>
       <section className="flex flex-col-reverse lg:flex-row pb-8 text-center justify-around lg:py-32">
-        <div className="lg:w-1/2 lg:flex lg:flex-col lg:justify-center lg:px-6">
+        <div className="lg:w-1/2 lg:flex lg:flex-col lg:justify-center px-6">
           <div className="lg:text-left">
             <p className="text-[25px] lg:text-[45px] pb-2 font-bold leading-9 lg:leading-[60px]">
               We bring a wealth of skills and experience from a wide range of

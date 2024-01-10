@@ -4,7 +4,7 @@ import AboutPC from './AboutPC';
 
 const AboutCommunity = () => {
   return (
-    <div>
+    <div className="-px-4">
       <AboutMobile />
       <AboutPC />
     </div>
