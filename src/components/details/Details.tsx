@@ -3,10 +3,8 @@
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import Back from '../../../public/svgs/back-icon.svg';
-import BackDesk from '../../../public/svgs/back-icon-desk.svg';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
-
 import { courses } from '@/app/staticData/data';
 import Link from 'next/link';
 import DesktopOnly from './DesktopOnly';

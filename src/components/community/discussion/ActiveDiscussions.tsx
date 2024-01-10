@@ -1,6 +1,7 @@
 import React from 'react';
 import Card from '../discussion/Card';
 import { Discuss } from '@/app/staticData/data';
+import Link from 'next/link';
 
 const ActiveDiscussions = () => {
   return (
@@ -13,7 +14,7 @@ const ActiveDiscussions = () => {
       </section>
       <section className="text-center lg:px-16">
         <section className="lg:flex">
-          {Discuss.map(
+          {Discuss.slice(0, 3).map(
             ({ image, username, title, description, likes, comments }) => (
               <Card
                 image={image}
@@ -27,9 +28,11 @@ const ActiveDiscussions = () => {
           )}
         </section>
         <div className="pt-4 pb-14">
-          <button className="w-[134px] lg:w-[159px] py-[10px] px-[24px text-[#D97508] hover:bg-[#D97508] hover:text-white outline rounded-[10px] self-center">
-            View more
-          </button>
+          <Link className="text-none" href="/community/discussions">
+            <button className="w-[134px] lg:w-[159px] py-[10px] px-[24px text-[#D97508] hover:bg-[#D97508] hover:text-white outline rounded-[10px] self-center">
+              View more
+            </button>
+          </Link>
         </div>
       </section>
     </div>

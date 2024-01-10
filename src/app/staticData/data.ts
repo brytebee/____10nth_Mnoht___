@@ -358,4 +358,76 @@ export const Discuss = [
     likes: 356,
     comments: 101,
   },
+  {
+    image: Images[14],
+    title: 'Overcoming academic fears',
+    username: 'Jinsing lau',
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+  },
+  {
+    image: Images[14],
+    title: 'Overcoming academic fears',
+    username: 'Jinsing lau',
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+  },
+  {
+    image: Images[14],
+    title: 'Overcoming academic fears',
+    username: 'Jinsing lau',
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+  },
+  {
+    image: Images[14],
+    title: 'Overcoming academic fears',
+    username: 'Jinsing lau',
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+  },
+  {
+    image: Images[14],
+    title: 'Overcoming academic fears',
+    username: 'Jinsing lau',
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+  },
+  {
+    image: Images[14],
+    title: 'Overcoming academic fears',
+    username: 'Jinsing lau',
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+  },
+];
+
+export const Commenta = [
+  {
+    image: Images[14],
+    name: 'Anderson craig',
+    desc: 'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsu',
+  },
+  {
+    image: Images[14],
+    name: 'Anderson craig',
+    desc: 'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsu',
+  },
+  {
+    image: Images[14],
+    name: 'Anderson craig',
+    desc: 'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsu',
+  },
 ];

@@ -1,8 +1,12 @@
+'use client';
+
 import Image from 'next/image';
 import React from 'react';
 import Line from '../../../../public/svgs/line.svg';
 import Like from '../../../../public/svgs/like.svg';
 import Comment from '../../../../public/svgs/comment.svg';
+import { usePathname } from 'next/navigation';
+import Comments from './Comments';
 
 type Props = {
   image: string | HTMLImageElement;
@@ -21,8 +25,11 @@ const Card = ({
   likes,
   comments,
 }: Props) => {
+  const path = usePathname();
+  const onDiscuss = path.includes('/community/discussions');
+
   return (
-    <section className="box-border shadow-lg m-8 p-6 bg-white rounded-[20px] text-center flex flex-col items-center">
+    <section className="box-border shadow-lg border-2 m-8 p-6 bg-white rounded-[20px] text-center flex flex-col">
       <header className="flex flex-col items-center lg:flex lg:flex-row lg:w-full lg:justify-around">
         <Image className="w-12" src={image} alt={`${title} photo`} />
         <div className="flex flex-col-reverse lg:items-start">
@@ -31,7 +38,9 @@ const Card = ({
           <p className="text-sm leading-7">{username}</p>
         </div>
       </header>
-      <p className="text-sm leading-7">{description}</p>
+      <p className="text-sm leading-7">
+        {description} <span className="text-[#D97508]">...Read more</span>
+      </p>
       <footer className="mt-auto lg:flex lg:w-full lg:justify-between">
         <div className="lg:flex justify-between hidden">
           <div className="box-border shadow-md rounded-md m-1 p-1 bg-white w-20">
@@ -47,9 +56,12 @@ const Card = ({
             </div>
           </div>
         </div>
-        <button className="text-[#D97508] underline py-2" type="button">
-          View discussion
-        </button>
+        {!onDiscuss && (
+          <button className="text-[#D97508] underline py-2" type="button">
+            View discussion
+          </button>
+        )}
+        {onDiscuss && <Comments />}
       </footer>
     </section>
   );
