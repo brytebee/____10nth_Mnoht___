@@ -3,7 +3,7 @@ export const tutor = [
     dashboard: [
       {
         label: 'Overview',
-        href: 'tutor',
+        href: '/dashboard/tutor',
       },
     ],
   },
@@ -11,15 +11,15 @@ export const tutor = [
     'main-menu': [
       {
         label: 'Lessons',
-        href: 'lessons',
+        href: '/dashboard/tutor/lessons',
       },
       {
         label: 'Calendar',
-        href: 'tutor/calendar',
+        href: '/dashboard/tutor/calendar',
       },
       {
         label: 'Community',
-        href: 'tutor/community',
+        href: '/dashboard/tutor/community',
       },
     ],
   }
@@ -29,11 +29,11 @@ export const student = [
     dashboard: [
       {
         label: 'Overview',
-        href: 'student',
+        href: '/dashboard/student',
       },
       {
         label: 'Progress',
-        href: 'progress',
+        href: '/dashboard/student/progress',
       }
     ],
   },
@@ -41,15 +41,15 @@ export const student = [
     'main-menu': [
       {
         label: 'Tasks/Assignments',
-        href: 'tasks',
+        href: '/dashboard/student/tasks',
       },
       {
         label: 'Calendar',
-        href: 'calendar',
+        href: '/dashboard/student/calendar',
       },
       {
         label: 'Peer Learning',
-        href: 'peer-learning',
+        href: '/dashboard/student/peer-learning',
       },
     ],
   }];

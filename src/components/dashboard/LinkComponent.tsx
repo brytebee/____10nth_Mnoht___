@@ -1,26 +1,33 @@
 import Link from 'next/link';
-
-interface ILinks {
-  [key: string]: IMapProps[];
-}
+import ProfileLink from './ProfileLink';
 
 interface IMapProps {
   label: string;
   href: string;
 }
 
-const LinksContainer = ({ links }: any) => {
+interface ILinks {
+  [key: string]: IMapProps[];
+}
+
+function LinksContainer<T>({ links, path }: any): React.ReactElement<T> {
+  const isActive = (href: string) => {
+    return path === href;
+  }
+  const getClassName = (href: string) => {
+    return isActive(href) ? 'px-4 py-1 bg-gray-100 font-bold text-[#333] shadow-sm w-[200px] rounded-[20px]' : 'px-2 py-1 text-base font-bold text-[#333] rounded-[20px] hover:bg-gray-100 hover:text-gray-900 w-[200px]';
+  }
   return (
-    <div className='mb-auto'>
+    <div className='mb-auto' >
       <div className='w-auto'>
         {links.map((roleLinks: ILinks, index: number) => (
           Object.entries(roleLinks).map(([section, sectionLinks]) => (
             <div key={index}>
-              <dt className="text-sm font-medium text-gray-500">{section}</dt>
+              <dt className="my-[12px] text-sm font-normal text-[#333] capitalize">{section}</dt>
               <dd>
-                <ul className="">
+                <ul className="flex flex-col gap-1">
                   {sectionLinks.map(({ label, href }: IMapProps) => (
-                    <li key={href} className="px-2 py-1 text-sm font-normal text-gray-500 rounded-md hover:bg-gray-100 hover:text-gray-900 w-36">
+                    <li key={href} className={getClassName(href)}>
                       <Link href={href}>{label}</Link>
                     </li>
                   ))}
@@ -30,28 +37,25 @@ const LinksContainer = ({ links }: any) => {
           ))
         ))}
       </div>
-
-      <div className="mt-2 pl-0 flex flex-col w-auto">
-        <Link href='slack' className='mt-auto px-2 py-1 text-sm font-normal text-gray-500 rounded-md hover:bg-gray-100 hover:text-gray-900 w-36'>
+      <div className="mt-2 flex flex-col w-auto gap-1">
+        <Link href='https://slack.com' target='_blank' className={`mt-auto ${getClassName('https://slack.com')}`}>
           Slack
         </Link>
-        <Link href='profile' className='mt-auto px-2 py-1 text-sm font-normal text-gray-500 rounded-md hover:bg-gray-100 hover:text-gray-900 w-36'>
-          Profile
-        </Link>
+        <ProfileLink classes={getClassName} />
       </div >
       <div>
-        <dt className="">
+        <dt className="mt-[14px] text-sm font-normal text-[#333] capitalize">
           Get Help
         </dt>
         <dd>
-          <ul className="mt-2 space-y-2">
-            <li className="px-2 py-1 text-sm font-normal text-gray-500 rounded-md hover:bg-gray-100 hover:text-gray-900 w-36">
-              <Link href='/projects'>
+          <ul className="mt-2 flex flex-col gap-1">
+            <li className={`${getClassName('/questions')}`}>
+              <Link href='/questions'>
                 Ask questions
               </Link>
             </li>
-            <li className="px-2 py-1 text-sm font-normal text-gray-500 rounded-md hover:bg-gray-100 hover:text-gray-900 w-36">
-              <Link href='/projects/1'>
+            <li className={`${getClassName('/announcement')}`}>
+              <Link href='/annoucement'>
                 Announcement
               </Link>
             </li>
