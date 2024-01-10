@@ -266,3 +266,96 @@ export const reviews: Review[] = [
     image: Images[13],
   },
 ];
+
+export const coursesCom = [
+  {
+    image: Images[0],
+    title: 'UI & UX DESIGN',
+    rating: 5,
+    student: 308,
+  },
+  {
+    image: Images[4],
+    title: 'WEB DEVELOPMENT',
+    rating: 5,
+    student: 590,
+  },
+  {
+    image: Images[2],
+    title: 'DATA SCIENCE',
+    rating: 5,
+    student: 207,
+  },
+];
+
+export const metrics = [
+  {
+    courses: 25,
+    students: 30000,
+    instructors: 50,
+    certified: 185,
+  },
+];
+
+export const blogs = [
+  {
+    image: Images[14],
+    title: 'How to develop your learning skills',
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non tempus aliquam. Adipiscing diam donec a scelerisque scelerisque mauris amet. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretiu',
+    user: {
+      username: 'Jinsing lau',
+      image: Images[14],
+    },
+  },
+  {
+    image: Images[14],
+    title: 'How to develop your learning skills',
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non tempus aliquam. Adipiscing diam donec a scelerisque scelerisque mauris amet. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretiu',
+    user: {
+      username: 'Jinsing lau',
+      image: Images[14],
+    },
+  },
+  {
+    image: Images[14],
+    title: 'How to develop your learning skills',
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non tempus aliquam. Adipiscing diam donec a scelerisque scelerisque mauris amet. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretiu',
+    user: {
+      username: 'Jinsing lau',
+      image: Images[14],
+    },
+  },
+];
+
+export const Discuss = [
+  {
+    image: Images[14],
+    title: 'Overcoming academic fears',
+    username: 'Jinsing lau',
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+  },
+  {
+    image: Images[14],
+    title: 'Overcoming academic fears',
+    username: 'Jinsing lau',
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+  },
+  {
+    image: Images[14],
+    title: 'Overcoming academic fears',
+    username: 'Jinsing lau',
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+  },
+];

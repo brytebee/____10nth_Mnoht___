@@ -3,9 +3,7 @@ import TopSection from './top-section/TopSection';
 import MidSection from './mid-section/MidSection';
 import BottomSection from './bottom-section/BottomSection';
 
-type Props = {};
-
-const Community = (props: Props) => {
+const Community = () => {
   return (
     <div>
       <TopSection />

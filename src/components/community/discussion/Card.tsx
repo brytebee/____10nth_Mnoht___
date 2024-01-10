@@ -5,7 +5,7 @@ import Like from '../../../../public/svgs/like.svg';
 import Comment from '../../../../public/svgs/comment.svg';
 
 type Props = {
-  image: string;
+  image: string | HTMLImageElement;
   title: string;
   username: string;
   description: string;

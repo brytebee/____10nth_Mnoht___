@@ -1,40 +1,7 @@
 import React from 'react';
 import Recommended from '../recommended/Recommended';
 import Blog from '../blog/Blog';
-import Avatar from '../../../../public/svgs/avatar.svg';
-
-const blogs = [
-  {
-    image: Avatar,
-    title: 'How to develop your learning skills',
-    description:
-      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non tempus aliquam. Adipiscing diam donec a scelerisque scelerisque mauris amet. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretiu',
-    user: {
-      username: 'Jinsing lau',
-      image: Avatar,
-    },
-  },
-  {
-    image: Avatar,
-    title: 'How to develop your learning skills',
-    description:
-      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non tempus aliquam. Adipiscing diam donec a scelerisque scelerisque mauris amet. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretiu',
-    user: {
-      username: 'Jinsing lau',
-      image: Avatar,
-    },
-  },
-  {
-    image: Avatar,
-    title: 'How to develop your learning skills',
-    description:
-      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non tempus aliquam. Adipiscing diam donec a scelerisque scelerisque mauris amet. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretiu',
-    user: {
-      username: 'Jinsing lau',
-      image: Avatar,
-    },
-  },
-];
+import { blogs } from '@/app/staticData/data';
 
 const BottomSection = () => {
   return (

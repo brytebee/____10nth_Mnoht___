@@ -3,7 +3,7 @@ import React from 'react';
 import RatingStars from './RatingStars';
 
 type Props = {
-  image: string;
+  image: string | HTMLImageElement;
   title: string;
   rating: number;
   student: number;

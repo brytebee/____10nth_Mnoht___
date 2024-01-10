@@ -4,7 +4,7 @@ import Image from 'next/image';
 import React from 'react';
 
 type Props = {
-  image: string;
+  image: string | HTMLImageElement;
   title: string;
   description: string;
   username: string;

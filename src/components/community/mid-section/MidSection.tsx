@@ -1,81 +1,8 @@
 import React from 'react';
-import Card from '../discussion/Card';
-import Avatar from '../../../../public/svgs/avatar.svg';
-import ECard from '../upcoming-events/Card';
-import Image from 'next/image';
-import LP from '../../../../public/svgs/left-polygon.svg';
-import LP2 from '../../../../public/svgs/left-polygon2.svg';
+import UpcomingEvents from '../upcoming-events/UpcomingEvents';
+import ActiveDiscussions from '../discussion/ActiveDiscussions';
 
 const MidSection = () => {
-  const cardDets = [
-    {
-      image: Avatar,
-      title: 'Overcoming academic fears',
-      username: 'Jinsing lau',
-      description:
-        'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
-      likes: 356,
-      comments: 101,
-    },
-    {
-      image: Avatar,
-      title: 'Overcoming academic fears',
-      username: 'Jinsing lau',
-      description:
-        'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
-      likes: 356,
-      comments: 101,
-    },
-    {
-      image: Avatar,
-      title: 'Overcoming academic fears',
-      username: 'Jinsing lau',
-      description:
-        'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
-      likes: 356,
-      comments: 101,
-    },
-  ];
-
-  const events = [
-    {
-      date: '13 April',
-      title: 'Embracing technology and its help to mankind',
-      description:
-        'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed ',
-      venue: 'Zoom platform',
-      color: 'd97508',
-      time: '8:15pm',
-    },
-    {
-      date: '27 May',
-      title: 'Embracing technology and its help to mankind',
-      description:
-        'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed ',
-      venue: 'Zoom platform',
-      color: '333333',
-      time: '8:15pm',
-    },
-    {
-      date: '31 Jan',
-      title: 'Embracing technology and its help to mankind',
-      description:
-        'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed ',
-      venue: 'Zoom platform',
-      color: 'ff3b30',
-      time: '8:15pm',
-    },
-    {
-      date: '18 April',
-      title: 'Embracing technology and its help to mankind',
-      description:
-        'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed ',
-      venue: 'Zoom platform',
-      color: 'ffd426',
-      time: '8:15pm',
-    },
-  ];
-
   return (
     <div>
       <section className="fst-section bg-[#A63F0E] py-14 text-center">
@@ -99,69 +26,8 @@ const MidSection = () => {
           />
         </div>
       </section>
-      <div className="bg-[#F2F2F2] text-center">
-        <section className="scd-section py-14 text-center">
-          <h3 className="font-semibold text-xl pb-2">Active discussions</h3>
-          <p className="px-14">
-            Read about others stories and share your thoughts
-          </p>
-        </section>
-        <section className="text-center">
-          <section className="lg:flex">
-            {cardDets.map(
-              ({ image, username, title, description, likes, comments }) => (
-                <Card
-                  image={image}
-                  username={username}
-                  title={title}
-                  description={description}
-                  likes={likes}
-                  comments={comments}
-                />
-              )
-            )}
-          </section>
-          <div className="pt-4 pb-14">
-            <button className="w-[134px] lg:w-[159px] py-[10px] px-[24px text-[#D97508] hover:bg-[#D97508] hover:text-white outline rounded-[10px] self-center">
-              View more
-            </button>
-          </div>
-        </section>
-        <section className="text-center p-4">
-          <h3 className="font-semibold text-xl pb-4">Upcoming Events</h3>
-          <p className="text-[14px] leading-[30px] lg:mx-80">
-            Get ready for an unparalleled tech experience at the Techverse Tech
-            Expo 2024! Dive into cutting-edge innovations, hands-on workshops,
-            and insightful discussions. Don't miss the chance to connect with
-            industry leaders and shape the future of technology. Join us for a
-            day of inspiration and exploration! <br />{' '}
-            <strong>#TechverseExpo2024</strong> ✨🚀
-          </p>
-        </section>
-        <section className="hidden lg:block relative">
-          <Image className="absolute -top-32" src={LP} alt="left polygon" />
-          <Image className="absolute -top-16" src={LP2} alt="left polygon" />
-        </section>
-        <section className="upcoming px-8 pt-6 lg:py-28 lg:bg-upcoming-event bg-no-repeat lg:bg-cover">
-          <section className="grid grid-cols-2 gap-2 lg:mx-14">
-            {events.map(({ date, time, title, description, venue, color }) => (
-              <ECard
-                date={date}
-                title={title}
-                description={description}
-                venue={venue}
-                color={color}
-                time={time}
-              />
-            ))}
-          </section>
-        </section>
-        <div className="py-10">
-          <button className="w-[159px] py-[10px] px-[24px] text-[#D97508] outline hover:bg-[#D97508] hover:text-white text-primary rounded-[10px]">
-            See more
-          </button>
-        </div>
-      </div>
+      <ActiveDiscussions />
+      <UpcomingEvents />
     </div>
   );
 };
