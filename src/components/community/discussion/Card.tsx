@@ -1,7 +1,7 @@
 'use client';
 
+import React, { useState } from 'react';
 import Image from 'next/image';
-import React from 'react';
 import Line from '../../../../public/svgs/line.svg';
 import Like from '../../../../public/svgs/like.svg';
 import Comment from '../../../../public/svgs/comment.svg';
@@ -28,6 +28,12 @@ const Card = ({
   const path = usePathname();
   const onDiscuss = path.includes('/community/discussions');
   const smScreen = 'hidden lg:block';
+  const [more, setMore] = useState(false);
+  const show = description.length > 111 && onDiscuss;
+
+  const toggleDescription = () => {
+    setMore(!more);
+  };
 
   return (
     <section className="box-border shadow-lg border-2 m-6 p-3 bg-white rounded-[20px] text-center flex flex-col">
@@ -39,12 +45,21 @@ const Card = ({
           <p className="text-sm leading-7">{username}</p>
         </div>
       </header>
-      <p className="text-sm leading-7">
-        {description}{' '}
-        {onDiscuss && (
-          <span className="text-[#D97508] lg:hidden">...Read more</span>
-        )}
+      <p
+        className={`${
+          more ? 'block' : 'overflow-hidden line-clamp-4'
+        } text-gray-700`}
+      >
+        {description}
       </p>
+      {show && (
+        <span
+          onClick={toggleDescription}
+          className=" lg:hidden text-[#D97508] hover:underline mt-2"
+        >
+          {more ? 'Read less' : 'Read more'}
+        </span>
+      )}
       <footer className="mt-auto lg:flex lg:w-full lg:justify-between">
         <div className="lg:flex justify-between hidden">
           <div className="box-border shadow-md rounded-md m-1 p-1 bg-white w-20">
