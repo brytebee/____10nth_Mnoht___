@@ -27,9 +27,10 @@ const Card = ({
 }: Props) => {
   const path = usePathname();
   const onDiscuss = path.includes('/community/discussions');
+  const smScreen = 'hidden lg:block';
 
   return (
-    <section className="box-border shadow-lg border-2 m-8 p-6 bg-white rounded-[20px] text-center flex flex-col">
+    <section className="box-border shadow-lg border-2 m-6 p-3 bg-white rounded-[20px] text-center flex flex-col">
       <header className="flex flex-col items-center lg:flex lg:flex-row lg:w-full lg:justify-around">
         <Image className="w-12" src={image} alt={`${title} photo`} />
         <div className="flex flex-col-reverse lg:items-start">
@@ -39,7 +40,10 @@ const Card = ({
         </div>
       </header>
       <p className="text-sm leading-7">
-        {description} <span className="text-[#D97508]">...Read more</span>
+        {description}{' '}
+        {onDiscuss && (
+          <span className="text-[#D97508] lg:hidden">...Read more</span>
+        )}
       </p>
       <footer className="mt-auto lg:flex lg:w-full lg:justify-between">
         <div className="lg:flex justify-between hidden">
@@ -56,11 +60,14 @@ const Card = ({
             </div>
           </div>
         </div>
-        {!onDiscuss && (
-          <button className="text-[#D97508] underline py-2" type="button">
-            View discussion
-          </button>
-        )}
+
+        <button
+          className={`text-[#D97508] underline py-2 " type="button ${
+            onDiscuss && smScreen
+          }`}
+        >
+          View discussion
+        </button>
         {onDiscuss && <Comments />}
       </footer>
     </section>

@@ -332,6 +332,27 @@ export const blogs = [
 
 export const Discuss = [
   {
+    id: '12jsoaisoia',
+    image: Images[14],
+    title: 'Overcoming academic fears',
+    username: 'Jinsing lau',
+    description:
+      'Embracing Challenges: Overcoming academic fear begins with changing your perspective on challenges. Rather than viewing difficult subjects as obstacles, consider them as opportunities for growth. Approach each academic hurdle with the mindset that every struggle is a chance to learn and improve. Embracing challenges gradually transforms fear into a catalyst for personal and academic development. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+  },
+  {
+    id: '34jsoaisoia',
+    image: Images[14],
+    title: 'Overcoming academic fears',
+    username: 'Jinsing lau',
+    description:
+      'Embracing Challenges: Overcoming academic fear begins with changing your perspective on challenges. Rather than viewing difficult subjects as obstacles, consider them as opportunities for growth. Approach each academic hurdle with the mindset that every struggle is a chance to learn and improve. Embracing challenges gradually transforms fear into a catalyst for personal and academic development. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+  },
+  {
+    id: '56jsoaisoia',
     image: Images[14],
     title: 'Overcoming academic fears',
     username: 'Jinsing lau',
@@ -341,6 +362,7 @@ export const Discuss = [
     comments: 101,
   },
   {
+    id: '78jsoaisoia',
     image: Images[14],
     title: 'Overcoming academic fears',
     username: 'Jinsing lau',
@@ -350,6 +372,7 @@ export const Discuss = [
     comments: 101,
   },
   {
+    id: '23jsoaisoia',
     image: Images[14],
     title: 'Overcoming academic fears',
     username: 'Jinsing lau',
@@ -359,6 +382,7 @@ export const Discuss = [
     comments: 101,
   },
   {
+    id: '45jsoaisoia',
     image: Images[14],
     title: 'Overcoming academic fears',
     username: 'Jinsing lau',
@@ -368,6 +392,7 @@ export const Discuss = [
     comments: 101,
   },
   {
+    id: '67jsoaisoia',
     image: Images[14],
     title: 'Overcoming academic fears',
     username: 'Jinsing lau',
@@ -377,6 +402,7 @@ export const Discuss = [
     comments: 101,
   },
   {
+    id: '89jsoaisoia',
     image: Images[14],
     title: 'Overcoming academic fears',
     username: 'Jinsing lau',
@@ -386,24 +412,7 @@ export const Discuss = [
     comments: 101,
   },
   {
-    image: Images[14],
-    title: 'Overcoming academic fears',
-    username: 'Jinsing lau',
-    description:
-      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
-    likes: 356,
-    comments: 101,
-  },
-  {
-    image: Images[14],
-    title: 'Overcoming academic fears',
-    username: 'Jinsing lau',
-    description:
-      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
-    likes: 356,
-    comments: 101,
-  },
-  {
+    id: '01jsoaisoia',
     image: Images[14],
     title: 'Overcoming academic fears',
     username: 'Jinsing lau',
@@ -416,16 +425,19 @@ export const Discuss = [
 
 export const Commenta = [
   {
+    id: 'jsoaisoia',
     image: Images[14],
     name: 'Anderson craig',
     desc: 'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsu',
   },
   {
+    id: 'yaiahysu',
     image: Images[14],
     name: 'Anderson craig',
     desc: 'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsu',
   },
   {
+    id: 'bjhksoaoa',
     image: Images[14],
     name: 'Anderson craig',
     desc: 'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsu',

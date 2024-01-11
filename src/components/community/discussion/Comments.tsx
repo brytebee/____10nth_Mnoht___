@@ -13,12 +13,14 @@ const Comments = (props: Props) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <section>
+    <section className="lg:hidden">
       <Interact />
-      <div className="lg:hidden text-left mb-3">
+      <div className="text-left mb-3">
         <p
           onClick={() => setOpen(!open)}
-          className={open ? 'underline text-[#D97508]' : 'underline'}
+          className={
+            open ? 'underline text-[#D97508] text-sm' : 'underline text-sm'
+          }
         >
           {open ? 'Close Comment' : 'View comments'}
         </p>
@@ -26,8 +28,10 @@ const Comments = (props: Props) => {
       <div className="comments">
         {open && (
           <section className="mt-[30px]">
-            {Commenta.map(({ image, name, desc }) => (
-              <ComCard image={image} desc={desc} name={name} />
+            {Commenta.map(({ id, image, name, desc }) => (
+              <div key={id}>
+                <ComCard image={image} desc={desc} name={name} />
+              </div>
             ))}
             <div
               className="flex justify-center mt-6"
