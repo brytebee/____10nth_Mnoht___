@@ -1,12 +1,11 @@
 'use client';
 
 import React, { useState } from 'react';
-import Image from 'next/image';
-import Line from '../../../../public/svgs/line.svg';
-import Like from '../../../../public/svgs/like.svg';
-import Comment from '../../../../public/svgs/comment.svg';
 import { usePathname } from 'next/navigation';
 import Comments from './Comments';
+import ReadMore from './ReadMore';
+import Header from './Header';
+import Engage from './Engage';
 
 type Props = {
   image: string | HTMLImageElement;
@@ -37,44 +36,15 @@ const Card = ({
 
   return (
     <section className="box-border shadow-lg border-2 m-6 p-3 bg-white rounded-[20px] text-center flex flex-col">
-      <header className="flex flex-col items-center lg:flex lg:flex-row lg:w-full lg:justify-around">
-        <Image className="w-12" src={image} alt={`${title} photo`} />
-        <div className="flex flex-col-reverse lg:items-start">
-          <h3 className="font-normal text-lg pb-4">{title}</h3>
-          <Image src={Line} alt="line" />
-          <p className="text-sm leading-7">{username}</p>
-        </div>
-      </header>
-      <p
-        className={`${
-          more ? 'block' : 'overflow-hidden line-clamp-4'
-        } text-gray-700`}
-      >
-        {description}
-      </p>
-      {show && (
-        <span
-          onClick={toggleDescription}
-          className=" lg:hidden text-[#D97508] hover:underline mt-2"
-        >
-          {more ? 'Read less' : 'Read more'}
-        </span>
-      )}
+      <Header image={image} title={title} username={username} />
+      <ReadMore
+        desc={description}
+        more={more}
+        show={show}
+        func={toggleDescription}
+      />
       <footer className="mt-auto lg:flex lg:w-full lg:justify-between">
-        <div className="lg:flex justify-between hidden">
-          <div className="box-border shadow-md rounded-md m-1 p-1 bg-white w-20">
-            <div className="flex items-center">
-              <Image src={Like} alt="likes" />
-              <span className="ml-1 text-sm leading-7">+{likes}k</span>
-            </div>
-          </div>
-          <div className="box-border shadow-md rounded-md m-1 p-1 bg-white w-20">
-            <div className="flex items-center">
-              <Image src={Comment} alt="likes" />
-              <span className="ml-1 text-sm leading-7">+{comments}k</span>
-            </div>
-          </div>
-        </div>
+        <Engage likes={likes} comments={comments} />
 
         <button
           className={`text-[#D97508] underline py-2 " type="button ${
