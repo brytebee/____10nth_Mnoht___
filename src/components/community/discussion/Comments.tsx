@@ -7,19 +7,19 @@ import ArrowUp from '../../../../public/svgs/arrow-up.svg';
 import Image from 'next/image';
 import Interact from './Interact';
 
-type Props = {};
-
-const Comments = (props: Props) => {
+const Comments = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="lg:hidden">
+    <section>
       <Interact />
       <div className="text-left mb-3">
         <p
           onClick={() => setOpen(!open)}
           className={
-            open ? 'underline text-[#D97508] text-sm' : 'underline text-sm'
+            open
+              ? 'underline text-[#D97508] text-sm pl-4'
+              : 'underline text-sm pl-4'
           }
         >
           {open ? 'Close Comment' : 'View comments'}

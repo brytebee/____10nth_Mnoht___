@@ -13,6 +13,7 @@ const DiscussPage = () => {
           ({ id, image, username, title, description, likes, comments }) => (
             <div key={id}>
               <Card
+                id={id}
                 image={image}
                 username={username}
                 title={title}

@@ -17,7 +17,7 @@ const Interact = (props: Props) => {
       </div>
       <div className="comment mx-[8px]">
         <input
-          className="bg-[#3333330D] rounded-[20px] px-4 py-2 font-light text-[12px] border-[1px] w-[95%]"
+          className="bg-[#3333330D] rounded-[20px] px-2 py-2 font-light text-[12px] border-[1px] w-[97%]"
           type="text"
           placeholder="write comment"
         />

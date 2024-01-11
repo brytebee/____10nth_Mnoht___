@@ -6,8 +6,10 @@ import Comments from './Comments';
 import ReadMore from './ReadMore';
 import Header from './Header';
 import Engage from './Engage';
+import Link from 'next/link';
 
 type Props = {
+  id: string;
   image: string | HTMLImageElement;
   title: string;
   username: string;
@@ -17,6 +19,7 @@ type Props = {
 };
 
 const Card = ({
+  id,
   image,
   title,
   username,
@@ -46,14 +49,20 @@ const Card = ({
       <footer className="mt-auto lg:flex lg:w-full lg:justify-between">
         <Engage likes={likes} comments={comments} />
 
-        <button
-          className={`text-[#D97508] underline py-2 " type="button ${
-            onDiscuss && smScreen
-          }`}
-        >
-          View discussion
-        </button>
-        {onDiscuss && <Comments />}
+        <Link href={`/community/discussions/${id}`}>
+          <button
+            className={`text-[#D97508] underline py-2 " type="button ${
+              onDiscuss && smScreen
+            }`}
+          >
+            View discussion
+          </button>
+        </Link>
+        {onDiscuss && (
+          <div className="lg:hidden">
+            <Comments />
+          </div>
+        )}
       </footer>
     </section>
   );

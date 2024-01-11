@@ -15,8 +15,9 @@ const ActiveDiscussions = () => {
       <section className="text-center lg:px-16">
         <section className="lg:flex">
           {Discuss.slice(0, 3).map(
-            ({ image, username, title, description, likes, comments }) => (
+            ({ id, image, username, title, description, likes, comments }) => (
               <Card
+                id={id}
                 image={image}
                 username={username}
                 title={title}
