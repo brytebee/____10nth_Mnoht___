@@ -3,7 +3,7 @@ import Head from 'next/head';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import Script from 'next/script';
-import ConditionalLayout from '@/components/navbar/ConidtionalNavbar';
+import ConditionalLayout from '@/components/navbar/ConditionalLayout';
 
 const inter = Inter({ subsets: ['latin'] });
 
