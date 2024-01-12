@@ -5,8 +5,6 @@ import { usePathname } from 'next/navigation';
 import Comments from './Comments';
 import ReadMore from './ReadMore';
 import Header from './Header';
-import Engage from './Engage';
-import Link from 'next/link';
 
 type Props = {
   id: string;
@@ -18,7 +16,7 @@ type Props = {
   comments: number;
 };
 
-const Card = ({
+const CardPcDetails = ({
   id,
   image,
   title,
@@ -29,7 +27,6 @@ const Card = ({
 }: Props) => {
   const path = usePathname();
   const onDiscuss = path.includes('/community/discussions');
-  const smScreen = 'hidden lg:block';
   const [more, setMore] = useState(false);
   const show = description.length > 111 && onDiscuss;
 
@@ -46,26 +43,12 @@ const Card = ({
         show={show}
         func={toggleDescription}
       />
-      <footer className="mt-auto lg:flex lg:w-full lg:justify-between">
-        <Engage likes={likes} comments={comments} />
 
-        <Link href={`/community/discussions/${id}`}>
-          <button
-            className={`text-[#D97508] underline py-2 " type="button ${
-              onDiscuss && smScreen
-            }`}
-          >
-            View discussion
-          </button>
-        </Link>
-        {onDiscuss && (
-          <div className="lg:hidden">
-            <Comments defaultState={false} likes={likes} commennts={comments} />
-          </div>
-        )}
-      </footer>
+      <div className="">
+        <Comments defaultState={true} likes={likes} commennts={comments} />
+      </div>
     </section>
   );
 };
 
-export default Card;
+export default CardPcDetails;

@@ -7,12 +7,18 @@ import ArrowUp from '../../../../public/svgs/arrow-up.svg';
 import Image from 'next/image';
 import Interact from './Interact';
 
-const Comments = () => {
-  const [open, setOpen] = useState(false);
+type Props = {
+  defaultState: boolean;
+  likes: number;
+  commennts: number;
+};
+
+const Comments = ({ defaultState, likes, commennts }: Props) => {
+  const [open, setOpen] = useState(defaultState);
 
   return (
     <section>
-      <Interact />
+      <Interact likes={likes} comments={commennts} />
       <div className="text-left mb-3">
         <p
           onClick={() => setOpen(!open)}

@@ -1,3 +1,4 @@
+import { usePathname } from 'next/navigation';
 import React from 'react';
 
 type Props = {
@@ -8,6 +9,9 @@ type Props = {
 };
 
 function ReadMore({ more, desc, show, func }: Props) {
+  const path = usePathname();
+  const details = path.includes('/community/discussions/') && show;
+
   return (
     <div>
       <p
@@ -21,6 +25,14 @@ function ReadMore({ more, desc, show, func }: Props) {
         <span
           onClick={func}
           className=" lg:hidden text-[#D97508] hover:underline mt-2"
+        >
+          {more ? 'Read less' : 'Read more'}
+        </span>
+      )}
+      {details && (
+        <span
+          onClick={func}
+          className="hidden lg:block text-[#D97508] hover:underline mt-2"
         >
           {more ? 'Read less' : 'Read more'}
         </span>
