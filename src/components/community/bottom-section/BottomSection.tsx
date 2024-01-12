@@ -13,9 +13,10 @@ const BottomSection = () => (
           Featured Articles/Blog
         </span>
       </h3>
-      {blogs.map(({ title, user, image, description }) => (
-        <div className="lg:mb-8">
+      {blogs.map(({ id, title, user, image, description }) => (
+        <div className="lg:mb-8" key={id}>
           <Blog
+            id={id}
             title={title}
             username={user?.username}
             image={image}

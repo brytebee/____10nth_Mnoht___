@@ -299,6 +299,7 @@ export const metrics = [
 
 export const blogs = [
   {
+    id: '16hsjdhysya',
     image: Images[14],
     title: 'How to develop your learning skills',
     description:
@@ -307,8 +308,10 @@ export const blogs = [
       username: 'Jinsing lau',
       image: Images[14],
     },
+    views: 12,
   },
   {
+    id: '12hsjdhysya',
     image: Images[14],
     title: 'How to develop your learning skills',
     description:
@@ -317,8 +320,10 @@ export const blogs = [
       username: 'Jinsing lau',
       image: Images[14],
     },
+    views: 8,
   },
   {
+    id: '10ihsjdhysya',
     image: Images[14],
     title: 'How to develop your learning skills',
     description:
@@ -327,6 +332,7 @@ export const blogs = [
       username: 'Jinsing lau',
       image: Images[14],
     },
+    views: 2,
   },
 ];
 
