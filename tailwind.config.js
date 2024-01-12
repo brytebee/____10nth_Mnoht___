@@ -15,6 +15,8 @@ module.exports = {
         body: 'var(--body-text-color)',
         testimonial: 'var(--testimonials-bg-color)',
         'mobile-bg': 'var(--mobile-bg-color)',
+        'secondary-color': 'var(--secondary-color)',
+        'dashboard-bg-color': 'var(--dashboard-bg-color)',
       },
 
       backgroundImage: {

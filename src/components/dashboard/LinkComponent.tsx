@@ -15,7 +15,7 @@ function LinksContainer<T>({ links, path }: any): React.ReactElement<T> {
     return path === href;
   }
   const getClassName = (href: string) => {
-    return isActive(href) ? 'px-4 py-1 bg-gray-100 font-bold text-[#333] shadow-sm w-[148px] rounded-[20px]' : 'px-2 py-1 text-base font-bold text-[#333] rounded-[20px] hover:bg-gray-100 hover:text-gray-900 w-[148px]';
+    return isActive(href) ? 'px-4 py-1 bg-gray-100 font-bold text-body shadow-sm w-[148px] rounded-[20px]' : 'px-2 py-1 text-base font-bold text-[#333] rounded-[20px] hover:bg-gray-100 hover:text-gray-900 w-[148px]';
   }
   return (
     <div className='mb-auto' >
@@ -23,7 +23,7 @@ function LinksContainer<T>({ links, path }: any): React.ReactElement<T> {
         {links.map((roleLinks: ILinks, index: number) => (
           Object.entries(roleLinks).map(([section, sectionLinks]) => (
             <div key={index}>
-              <dt className="my-[12px] text-sm font-normal text-[#333] capitalize">{section}</dt>
+              <dt className="my-[12px] text-sm font-normal text-body capitalize">{section}</dt>
               <dd>
                 <div className="flex flex-col gap-1">
                   {sectionLinks.map(({ label, href }: IMapProps) => (
@@ -42,7 +42,7 @@ function LinksContainer<T>({ links, path }: any): React.ReactElement<T> {
         <ProfileLink classes={getClassName} />
       </div >
       <div>
-        <dt className="mt-[14px] text-sm font-normal text-[#333] capitalize">
+        <dt className="mt-[14px] text-sm font-normal text-body capitalize">
           Get Help
         </dt>
         <dd>

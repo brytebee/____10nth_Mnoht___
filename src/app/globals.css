@@ -3,20 +3,54 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #D97508;
-  --hero-bg-color: #B8653D;
-  --hero-header-color: #A63F0E;
-  --secondary-color: #E6C09C;
+  --primary-color: #d97508;
+  --hero-bg-color: #b8653d;
+  --hero-header-color: #a63f0e;
+  --secondary-color: #e6c09c;
   --body-text-color: #333333;
-  --testimonials-bg-color: #F2F2F2;
-  --mobile-bg-color: #F2F2F2;
+  --testimonials-bg-color: #f2f2f2;
+  --mobile-bg-color: #f2f2f2;
+  --dashboard-bg-color: #f6f6f6;
+  --size: 0.3rem;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  color: #000;
+  cursor: pointer;
+}
+
+select:focus {
+  outline: none;
+}
+
+.custom-select {
+  min-width: 125px;
+  position: relative;
+}
+
+.custom-select::before,
+.custom-select::after {
+  position: absolute;
+  content: '';
+  right: 1.5rem;
+  pointer-events: none;
+  border: none;
+}
+
+.custom-select::after {
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-top: var(--size) solid black;
+  top: 45%;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* border: 1px solid red; */
 }
 
 body {
