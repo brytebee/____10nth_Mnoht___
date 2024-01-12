@@ -19,7 +19,7 @@ const Interact = ({ likes }: Props) => {
       </div>
       <div className="comment mx-[8px]">
         <input
-          className="bg-[#3333330D] rounded-[20px] px-2 py-2 font-light text-[12px] border-[1px]"
+          className="bg-[#3333330D] rounded-[20px] px-2 py-2 font-light text-[12px] border-[1px]] w-[97%] lg:w-[24rem]"
           type="text"
           placeholder="write comment"
         />

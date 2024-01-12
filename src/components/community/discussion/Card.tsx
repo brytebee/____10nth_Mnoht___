@@ -35,10 +35,7 @@ const Card = ({
 }: Props) => {
   const path = usePathname();
   const onDiscuss = path.includes('/community/discussions');
-  const details = path.includes('/community/discussions/');
-  const smScreen = 'hidden lg:block';
   const [more, setMore] = useState(false);
-  const hideOnDets = details;
 
   const toggleDescription = () => {
     setMore(!more);

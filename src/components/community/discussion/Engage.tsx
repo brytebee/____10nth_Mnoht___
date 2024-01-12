@@ -8,8 +8,7 @@ type Props = {
   comments: number;
 };
 
-const Engage = ({ likes, comments }: Props) => {
-  return (
+const Engage = ({ likes, comments }: Props) => (
     <div className="lg:flex justify-between hidden">
       <div className="box-border shadow-md rounded-md m-1 p-1 bg-white w-20">
         <div className="flex items-center">
@@ -25,6 +24,5 @@ const Engage = ({ likes, comments }: Props) => {
       </div>
     </div>
   );
-};
 
 export default Engage;

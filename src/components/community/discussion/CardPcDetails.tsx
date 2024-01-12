@@ -1,7 +1,6 @@
 'use client';
 
 import React, { useState } from 'react';
-import { usePathname } from 'next/navigation';
 import Comments from './Comments';
 import ReadMore from './ReadMore';
 import Header from './Header';
@@ -18,7 +17,6 @@ type Props = {
 };
 
 const CardPcDetails = ({
-  id,
   image,
   title,
   username,
@@ -27,10 +25,7 @@ const CardPcDetails = ({
   comments,
   setShow,
 }: Props) => {
-  const path = usePathname();
-  const onDiscuss = path.includes('/community/discussions');
   const [more, setMore] = useState(false);
-  const show = description.length > 111 && onDiscuss;
 
   const toggleDescription = () => {
     setMore(!more);
@@ -45,10 +40,7 @@ const CardPcDetails = ({
         show={setShow}
         func={toggleDescription}
       />
-
-      <div className="">
-        <Comments defaultState={true} likes={likes} commennts={comments} />
-      </div>
+      <Comments defaultState={true} likes={likes} commennts={comments} />
     </section>
   );
 };
