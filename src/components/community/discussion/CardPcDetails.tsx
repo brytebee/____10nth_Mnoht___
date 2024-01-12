@@ -14,6 +14,7 @@ type Props = {
   description: string;
   likes: number;
   comments: number;
+  setShow: boolean;
 };
 
 const CardPcDetails = ({
@@ -24,6 +25,7 @@ const CardPcDetails = ({
   description,
   likes,
   comments,
+  setShow,
 }: Props) => {
   const path = usePathname();
   const onDiscuss = path.includes('/community/discussions');
@@ -35,12 +37,12 @@ const CardPcDetails = ({
   };
 
   return (
-    <section className="box-border shadow-lg border-2 m-6 p-3 bg-white rounded-[20px] text-center flex flex-col">
+    <section className="box-border shadow-lg border-2 m-6 p-3 bg-white rounded-[20px] text-center flex flex-col lg:py-10 lg:px-20">
       <Header image={image} title={title} username={username} />
       <ReadMore
         desc={description}
         more={more}
-        show={show}
+        show={setShow}
         func={toggleDescription}
       />
 

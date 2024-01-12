@@ -16,6 +16,9 @@ type Props = {
   description: string;
   likes: number;
   comments: number;
+  setShow: boolean;
+  showEngage: boolean;
+  showAvailable: boolean;
 };
 
 const Card = ({
@@ -26,12 +29,16 @@ const Card = ({
   description,
   likes,
   comments,
+  setShow,
+  showAvailable,
+  showEngage,
 }: Props) => {
   const path = usePathname();
   const onDiscuss = path.includes('/community/discussions');
+  const details = path.includes('/community/discussions/');
   const smScreen = 'hidden lg:block';
   const [more, setMore] = useState(false);
-  const show = description.length > 111 && onDiscuss;
+  const hideOnDets = details;
 
   const toggleDescription = () => {
     setMore(!more);
@@ -43,22 +50,22 @@ const Card = ({
       <ReadMore
         desc={description}
         more={more}
-        show={show}
+        show={setShow}
         func={toggleDescription}
       />
       <footer className="mt-auto lg:flex lg:w-full lg:justify-between">
         <Engage likes={likes} comments={comments} />
 
-        <Link href={`/community/discussions/${id}`}>
-          <button
-            className={`text-[#D97508] underline py-2 " type="button ${
-              onDiscuss && smScreen
-            }`}
-          >
-            View discussion
-          </button>
-        </Link>
-        {onDiscuss && (
+        {showAvailable && (
+          <Link href={`/community/discussions/${id}`}>
+            <button
+              className={`text-[#D97508] underline py-2 " type="button ${onDiscuss}`}
+            >
+              View discussion
+            </button>
+          </Link>
+        )}
+        {showEngage && (
           <div className="lg:hidden">
             <Comments defaultState={false} likes={likes} commennts={comments} />
           </div>

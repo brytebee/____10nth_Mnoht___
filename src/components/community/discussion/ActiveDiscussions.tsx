@@ -24,6 +24,9 @@ const ActiveDiscussions = () => {
                 description={description}
                 likes={likes}
                 comments={comments}
+                setShow={false}
+                showAvailable={true}
+                showEngage={false}
               />
             )
           )}

@@ -13,7 +13,7 @@ function ReadMore({ more, desc, show, func }: Props) {
   const details = path.includes('/community/discussions/') && show;
 
   return (
-    <div>
+    <div className="lg:text-left">
       <p
         className={`${
           more ? 'block' : 'overflow-hidden line-clamp-4'

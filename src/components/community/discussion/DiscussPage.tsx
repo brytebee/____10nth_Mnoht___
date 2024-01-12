@@ -20,6 +20,9 @@ const DiscussPage = () => {
                 description={description}
                 likes={likes}
                 comments={comments}
+                setShow={false}
+                showEngage={false}
+                showAvailable={true}
               />
             </div>
           )
