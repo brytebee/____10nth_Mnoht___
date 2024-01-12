@@ -38,7 +38,7 @@ const Card = ({
   };
 
   return (
-    <section className="box-border shadow-lg border-2 m-6 p-3 bg-white rounded-[20px] text-center flex flex-col">
+    <section className="box-border shadow-lg border-[1px] border-[#D97508] m-6 p-3 bg-white rounded-[20px] text-center flex flex-col">
       <Header image={image} title={title} username={username} />
       <ReadMore
         desc={description}
