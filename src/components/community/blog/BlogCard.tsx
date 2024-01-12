@@ -11,25 +11,35 @@ type Props = {
   description: string;
   username: string;
   showRead: boolean;
+  showFullDesc: boolean;
 };
 
-const BlogCard = ({ id, image, title, description, showRead }: Props) => {
+const BlogCard = ({
+  id,
+  image,
+  title,
+  description,
+  showRead,
+  showFullDesc,
+}: Props) => {
   return (
-    <section className="lg:p-5 bg-white">
+    <section className="lg:px-5 bg-white">
       <section className="blog-card">
-        <div className="image flex items-center justify-center lg:bg-[#D9D9D9] lg:h-[292px]">
-          <Image src={Images[0]} alt="Blog photo" />
+        <div className="image flex items-center justify-center lg:bg-[#D9D9D9] lg:h-[292px] rounded-xl">
+          <Image width={280} src={image} alt="Blog photo" />
         </div>
       </section>
 
-      <div className="py-7 px-8 lg:px-2 lg:w-full">
+      <div className="py-7 lg:pb-0 px-8 lg:px-2 lg:w-full">
         <div className="dets">
           <h6 className=" text-center text-[18px] leading-8 font-extrabold">
             {title}
           </h6>
           <div className="desc">
             <p className="text-left text-sm lg:text-[18px] leading-8">
-              {description}
+              {showFullDesc
+                ? description
+                : description.slice(0, 90).concat('...')}
             </p>
           </div>
         </div>

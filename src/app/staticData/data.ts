@@ -300,36 +300,36 @@ export const metrics = [
 export const blogs = [
   {
     id: '16hsjdhysya',
-    image: Images[14],
-    title: 'How to develop your learning skills',
+    image: Images[3],
+    title: 'Crushinng web development like a pro',
     description:
       'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non tempus aliquam. Adipiscing diam donec a scelerisque scelerisque mauris amet. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretiu',
     user: {
-      username: 'Jinsing lau',
-      image: Images[14],
+      username: 'Zule zoo',
+      image: Images[3],
     },
     views: 12,
   },
   {
     id: '12hsjdhysya',
-    image: Images[14],
+    image: Images[2],
     title: 'How to develop your learning skills',
     description:
       'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non tempus aliquam. Adipiscing diam donec a scelerisque scelerisque mauris amet. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretiu',
     user: {
       username: 'Jinsing lau',
-      image: Images[14],
+      image: Images[2],
     },
     views: 8,
   },
   {
     id: '10ihsjdhysya',
     image: Images[14],
-    title: 'How to develop your learning skills',
+    title: 'The art of learnning how to learn',
     description:
       'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non tempus aliquam. Adipiscing diam donec a scelerisque scelerisque mauris amet. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretiu',
     user: {
-      username: 'Jinsing lau',
+      username: 'Christine Bennard',
       image: Images[14],
     },
     views: 2,

@@ -2,6 +2,8 @@ import React from 'react';
 import Recommended from '../recommended/Recommended';
 import Blog from '../blog/Blog';
 import { blogs } from '@/app/staticData/data';
+import PrimaryButton from '@/components/utils/components/PrimaryButton';
+import Link from 'next/link';
 
 const BottomSection = () => (
   <div>
@@ -24,6 +26,17 @@ const BottomSection = () => (
           />
         </div>
       ))}
+      <div className="pt-2">
+        <Link href="/blogs">
+          <PrimaryButton
+            position="center"
+            positionPC="center"
+            px="139"
+            text="More blogs"
+            pxpc="159"
+          />
+        </Link>
+      </div>
     </section>
   </div>
 );

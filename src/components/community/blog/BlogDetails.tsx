@@ -3,7 +3,6 @@
 import React from 'react';
 import { blogs } from '@/app/staticData/data';
 import { usePathname } from 'next/navigation';
-import Blog from './Blog';
 import BlogCard from './BlogCard';
 
 const BlogDetails = () => {
@@ -25,11 +24,12 @@ const BlogDetails = () => {
           title={title}
           description={description}
           showRead={false}
+          showFullDesc={true}
         />
       </div>
       {/* This could be hidden on mobile screen, hear out the team on this. */}
       <div className="others overflow-y-auto max-h-[400px] lg:max-h-[900px] lg:w-[40%] lg:block">
-        <h4 className="py-4 lg:mt-6 mx-6 px-4 border-2 font-semibold rounded-xl">
+        <h4 className="py-4 mx-6 px-4 border-2 font-semibold rounded-xl">
           Most Frequently Read
         </h4>
         {others
@@ -43,6 +43,7 @@ const BlogDetails = () => {
                 title={title}
                 description={description}
                 showRead={true}
+                showFullDesc={false}
               />
             </div>
           ))}

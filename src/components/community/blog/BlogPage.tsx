@@ -17,6 +17,7 @@ const BlogPage = () => (
             title={title}
             description={description}
             showRead={true}
+            showFullDesc={false}
           />
         </div>
       ))}
