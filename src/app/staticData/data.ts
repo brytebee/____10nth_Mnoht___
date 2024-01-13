@@ -286,6 +286,18 @@ export const coursesCom = [
     rating: 5,
     student: 207,
   },
+  {
+    image: Images[3],
+    title: 'DIGITAL MARKETING',
+    rating: 5,
+    student: 190,
+  },
+  {
+    image: Images[7],
+    title: 'CYBER SECURITY',
+    rating: 5,
+    student: 300,
+  },
 ];
 
 export const metrics = [

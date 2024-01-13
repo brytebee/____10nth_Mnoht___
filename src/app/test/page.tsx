@@ -1,4 +1,6 @@
-import Animation from '@/components/community/animation/Animation';
+'use client';
+
+import SwipableDivs from '@/components/community/recommended/Swipe';
 import React from 'react';
 
 type Props = {};
@@ -6,7 +8,7 @@ type Props = {};
 const page = (props: Props) => {
   return (
     <div>
-      <Animation />
+      <SwipableDivs />
     </div>
   );
 };

@@ -1,11 +1,11 @@
 import React from 'react';
 import ArrowRight from '../../../../public/svgs/arrow-right2.svg';
-import Card from './Card';
 import Image from 'next/image';
 import Metrics from '../metrics/Metrics';
 import Details from './Details';
-import { coursesCom as courses } from '@/app/staticData/data';
 import { metrics } from '@/app/staticData/data';
+import SwipableCards from './Swipe';
+import SwipableCardsPC from './SwipePC';
 
 const Recommended = () => {
   return (
@@ -23,16 +23,12 @@ const Recommended = () => {
             </span>
           </button>
         </div>
-        <section className="lg:flex lg:justify-center pb-10">
-          {courses.map(({ title, image, rating, student }) => (
-            <Card
-              title={title}
-              image={image}
-              rating={rating}
-              student={student}
-            />
-          ))}
-        </section>
+        <div className="lg:hidden">
+          <SwipableCards />
+        </div>
+        <div className="hidden lg:block">
+          <SwipableCardsPC />
+        </div>
       </section>
       <Details />
       <section className="metrics hidden lg:block bg-[#E6C09CB2] mt-20 px-32">
