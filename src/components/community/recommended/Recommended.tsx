@@ -10,7 +10,7 @@ const Recommended = () => {
   return (
     <div>
       <section className="bg-[#F2F2F2] p-4 lg:p-0 mb-[72px]">
-        <h3 className="text-[25px] lg:ml-36 lg:text-[45px] pb-2 font-bold leading-9">
+        <h3 className="text-[25px] lg:ml-36 lg:text-[45px] pb-2 font-bold leading-[46px] pt-28">
           Top Recommended <br />
           Courses
         </h3>
