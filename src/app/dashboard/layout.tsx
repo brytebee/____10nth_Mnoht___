@@ -10,7 +10,7 @@ export default async function DashboardLayout({ children }: Props) {
   return (
     <div className='flex gap-5 w-full bg-dashboard-bg-color'>
       <DashboardSideBar />
-      <section className='w-full h-screen pt-3'>
+      <section className='h-screen pt-3 w-[76rem]'>
         <DashboardTopBar />
         {children} { /* this is where the content will be rendered the height and width can be controlled by individual components */}
       </section>

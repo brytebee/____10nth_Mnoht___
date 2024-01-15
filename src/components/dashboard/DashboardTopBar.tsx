@@ -18,7 +18,7 @@ export default function DashboardTopBar() {
     { value: 'reviewer', label: 'reviewer' },
   ];
   return (
-    <div className='w-[1047px] h-14 bg-white rounded-2xl shadow flex justify-between pl-11 pr-5 items-center'>
+    <div className='w-full h-14 bg-white rounded-2xl shadow flex justify-between pl-11 pr-5 items-center'>
       <div className='flex pt-2 pb-2 px-5 border bg-[#F2F2F2] items-center rounded-[20px] custom-select'>
         <select name="role" id="role" className='bg-inherit w-full text-[15px] font-semibold'
           value={selected}
