@@ -27,7 +27,7 @@ const MovePC = ({
   return (
     <div
       {...handlers}
-      className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-32 mb-8"
+      className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-32 mb-28"
     >
       {sliced.map((divContent: any, index: number) => (
         <div
