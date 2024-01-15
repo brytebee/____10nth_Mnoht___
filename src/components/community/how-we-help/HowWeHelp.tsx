@@ -29,7 +29,7 @@ const HowWeHelp = () => {
             <h4 className="font-semibold text-[22px] py-2">
               Hands on learning
             </h4>
-            <p className="text-sm lg:text-[18px] leading-8">
+            <p className="text-sm lg:text-[18px] leading-8 lg:w-[460px]">
               At Techverse, we believe in the power of hands-on learning to
               shape proficient tech enthusiasts. Our teaching techniques
               prioritize practical, experiential engagement over passive
@@ -42,7 +42,7 @@ const HowWeHelp = () => {
         <section className="flex flex-col-reverse lg:flex-row lg:pt-32">
           <div className="fts-left flex-1">
             <h4 className="font-semibold text-[22px] py-2">Events</h4>
-            <p className="text-sm lg:text-[18px] leading-8">
+            <p className="text-sm lg:text-[18px] leading-8 lg:w-[460px]">
               Elevate your tech prowess at Techverse events! Gain insights from
               experts, refine your resume and LinkedIn, and upskill for tech
               roles. With regular online events featuring industry leaders and
@@ -62,7 +62,7 @@ const HowWeHelp = () => {
           </div>
           <div className="fts-left flex-1">
             <h4 className="font-semibold text-[22px] py-2">Student Stories</h4>
-            <p className="text-sm lg:text-[18px] leading-8">
+            <p className="text-sm lg:text-[18px] leading-8 lg:w-[460px]">
               Thanks to the practical experience provided by Techverse, I could
               seamlessly translate my theoretical learning into real-life
               applications. When I sought job referrals, I had tangible evidence
