@@ -12,6 +12,7 @@ import Student1 from '../../../public/images/joseph.jpeg';
 import Student2 from '../../../public/images/moses.jpeg';
 import Student3 from '../../../public/images/kolawole.jpeg';
 import Student4 from '../../../public/images/samuel.jpeg';
+import Avatar from '../../../public/svgs/avatar.svg';
 
 type Img = HTMLImageElement;
 
@@ -30,6 +31,7 @@ const Images: Img[] = [
   Student2,
   Student3,
   Student4,
+  Avatar
 ];
 
 export default Images;

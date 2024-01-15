@@ -12,6 +12,21 @@ export interface Course {
   conclusion: string;
 }
 
+// Ensure you combine the props of course and coursesCom
+export type CourseCom = {
+  image: string | HTMLImageElement;
+  rating: number;
+  student: number;
+  title: string;
+};
+
+type Review = {
+  comment: String;
+  name: String;
+  image: HTMLImageElement;
+  course?: String;
+};
+
 export const courses: Course[] = [
   {
     name: 'Computer Appreciation',
@@ -229,13 +244,6 @@ export const courses: Course[] = [
   },
 ];
 
-type Review = {
-  comment: String;
-  name: String;
-  image: HTMLImageElement;
-  course?: String;
-};
-
 export const reviews: Review[] = [
   {
     comment:
@@ -264,5 +272,213 @@ export const reviews: Review[] = [
       "Kudos to the makers of this course! It's rare to find something that delivers on its promises. I'm genuinely impressed and grateful.",
     name: 'Samuel O',
     image: Images[13],
+  },
+];
+
+export const coursesCom: CourseCom[] = [
+  {
+    image: Images[0],
+    title: 'UI & UX DESIGN',
+    rating: 5,
+    student: 308,
+  },
+  {
+    image: Images[4],
+    title: 'WEB DEVELOPMENT',
+    rating: 5,
+    student: 590,
+  },
+  {
+    image: Images[2],
+    title: 'DATA SCIENCE',
+    rating: 5,
+    student: 207,
+  },
+  {
+    image: Images[3],
+    title: 'DIGITAL MARKETING',
+    rating: 5,
+    student: 190,
+  },
+  {
+    image: Images[7],
+    title: 'CYBER SECURITY',
+    rating: 5,
+    student: 300,
+  },
+];
+
+export const metrics = [
+  {
+    courses: 25,
+    students: 30000,
+    instructors: 50,
+    certified: 185,
+  },
+];
+
+export const blogs = [
+  {
+    id: '16hsjdhysya',
+    image: Images[3],
+    title: 'Crushinng web development like a pro',
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non tempus aliquam. Adipiscing diam donec a scelerisque scelerisque mauris amet. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretiu',
+    user: {
+      username: 'Zule zoo',
+      image: Images[3],
+    },
+    views: 12,
+  },
+  {
+    id: '12hsjdhysya',
+    image: Images[2],
+    title: 'How to develop your learning skills',
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non tempus aliquam. Adipiscing diam donec a scelerisque scelerisque mauris amet. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretiu',
+    user: {
+      username: 'Jinsing lau',
+      image: Images[2],
+    },
+    views: 8,
+  },
+  {
+    id: '10ihsjdhysya',
+    image: Images[14],
+    title: 'The art of learnning how to learn',
+    description:
+      'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non tempus aliquam. Adipiscing diam donec a scelerisque scelerisque mauris amet. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretiu',
+    user: {
+      username: 'Christine Bennard',
+      image: Images[14],
+    },
+    views: 2,
+  },
+];
+
+export const Discuss = [
+  {
+    id: '12jsoaisoia',
+    image: Images[14],
+    title: 'Great Responsibility',
+    username: 'Peter Pan',
+    description:
+      'Embracing Challenges: Overcoming academic fear begins with changing your perspective on challenges. Rather than viewing difficult subjects as obstacles, consider them as opportunities for growth. Approach each academic hurdle with the mindset that every struggle is a chance to learn and improve. Embracing challenges gradually transforms fear into a catalyst for personal and academic development. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+    views: 23,
+  },
+  {
+    id: '34jsoaisoia',
+    image: Images[14],
+    title: 'Im worried about you',
+    username: 'Ben Amoura',
+    description:
+      'Embracing Challenges: Overcoming academic fear begins with changing your perspective on challenges. Rather than viewing difficult subjects as obstacles, consider them as opportunities for growth. Approach each academic hurdle with the mindset that every struggle is a chance to learn and improve. Embracing challenges gradually transforms fear into a catalyst for personal and academic development. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+    views: 17,
+  },
+  {
+    id: '56jsoaisoia',
+    image: Images[14],
+    title: 'You dad had plennty of them - flaws',
+    username: 'Jim the writer',
+    description:
+      'Embracing Challenges: Overcoming academic fear begins with changing your perspective on challenges. Rather than viewing difficult subjects as obstacles, consider them as opportunities for growth. Approach each academic hurdle with the mindset that every struggle is a chance to learn and improve. Embracing challenges gradually transforms fear into a catalyst for personal and academic development. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+    views: 0,
+  },
+  {
+    id: '78jsoaisoia',
+    image: Images[14],
+    title:
+      'Some confusing and really really long ttile Im interested in seing how it displays',
+    username: 'Check Title',
+    description:
+      'Embracing Challenges: Overcoming academic fear begins with changing your perspective on challenges. Rather than viewing difficult subjects as obstacles, consider them as opportunities for growth. Approach each academic hurdle with the mindset that every struggle is a chance to learn and improve. Embracing challenges gradually transforms fear into a catalyst for personal and academic development. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+    views: 2,
+  },
+  {
+    id: '23jsoaisoia',
+    image: Images[14],
+    title: 'Overcoming academic fears',
+    username: 'Jinsing lau',
+    description:
+      'Embracing Challenges: Overcoming academic fear begins with changing your perspective on challenges. Rather than viewing difficult subjects as obstacles, consider them as opportunities for growth. Approach each academic hurdle with the mindset that every struggle is a chance to learn and improve. Embracing challenges gradually transforms fear into a catalyst for personal and academic development. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+    views: 20,
+  },
+  {
+    id: '45jsoaisoia',
+    image: Images[14],
+    title: 'Overcoming academic fears',
+    username: 'Jinsing lau',
+    description:
+      'Embracing Challenges: Overcoming academic fear begins with changing your perspective on challenges. Rather than viewing difficult subjects as obstacles, consider them as opportunities for growth. Approach each academic hurdle with the mindset that every struggle is a chance to learn and improve. Embracing challenges gradually transforms fear into a catalyst for personal and academic development. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+    views: 8,
+  },
+  {
+    id: '67jsoaisoia',
+    image: Images[14],
+    title: 'Overcoming academic fears',
+    username: 'Jinsing lau',
+    description:
+      'Embracing Challenges: Overcoming academic fear begins with changing your perspective on challenges. Rather than viewing difficult subjects as obstacles, consider them as opportunities for growth. Approach each academic hurdle with the mindset that every struggle is a chance to learn and improve. Embracing challenges gradually transforms fear into a catalyst for personal and academic development. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+    views: 4,
+  },
+  {
+    id: '89jsoaisoia',
+    image: Images[14],
+    title: 'Overcoming academic fears',
+    username: 'Jinsing lau',
+    description:
+      'Embracing Challenges: Overcoming academic fear begins with changing your perspective on challenges. Rather than viewing difficult subjects as obstacles, consider them as opportunities for growth. Approach each academic hurdle with the mindset that every struggle is a chance to learn and improve. Embracing challenges gradually transforms fear into a catalyst for personal and academic development. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+    views: 9,
+  },
+  {
+    id: '01jsoaisoia',
+    image: Images[14],
+    title: 'Overcoming academic fears',
+    username: 'Jinsing lau',
+    description:
+      'Embracing Challenges: Overcoming academic fear begins with changing your perspective on challenges. Rather than viewing difficult subjects as obstacles, consider them as opportunities for growth. Approach each academic hurdle with the mindset that every struggle is a chance to learn and improve. Embracing challenges gradually transforms fear into a catalyst for personal and academic development. Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsum amet urna pretium ullamcorper. Elementum consequat non ',
+    likes: 356,
+    comments: 101,
+    views: 1,
+  },
+];
+
+export const Commenta = [
+  {
+    id: 'jsoaisoia',
+    image: Images[14],
+    name: 'Anderson craig',
+    desc: 'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsu',
+    views: 10,
+  },
+  {
+    id: 'yaiahysu',
+    image: Images[14],
+    name: 'Anderson craig',
+    desc: 'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsu',
+    views: 7,
+  },
+  {
+    id: 'bjhksoaoa',
+    image: Images[14],
+    name: 'Anderson craig',
+    desc: 'Lorem ipsum dolor sit amet consectetur. Vulputate cum neque sagittis sed sed nunc. Vel scelerisque bibendum sed ipsu',
+    views: 2,
   },
 ];

@@ -7,6 +7,13 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        spot: {
+          '0%': { transform: 'rotateY(0deg)' },
+          '100%': { transform: 'rotateY(360deg)' },
+        },
+      },
+
       colors: {
         primary: 'var(--primary-color)',
         hero: 'var(--hero-bg-color)',
@@ -23,8 +30,16 @@ module.exports = {
         'hero-pattern': "url('../../public/svgs/globe.svg')",
         'about-bg': "url('../../public/svgs/about-bg.svg')",
         'about-bg-mobile': "url('../../public/svgs/about-bg-mobile.svg')",
+        'com-about-us': "url('../../public/svgs/fst-section-bg.svg')",
+        'how-we-help': "url('../../public/svgs/how-we-help.svg')",
+        'upcoming-event': "url('../../public/svgs/upcoming-event.svg')",
+        'recom-cross-bg': "url('../../public/svgs/recom-cross-bg.svg')",
         'about-linear':
           'linear-gradient(0deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.80) 100%)',
+      },
+
+      animation: {
+        'com-hero-anim': 'spot 15s ease-out infinite',
       },
     },
     fontFamily: {
