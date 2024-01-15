@@ -19,7 +19,7 @@ const NavBar = () => {
   ];
 
   return (
-    <nav className="bg-inherit w-full relative fixed lg:mb-[84px] mb-[50px]">
+    <nav className="bg-inherit w-full relative lg:mb-[84px] mb-[50px]">
       <div className={` ${pathname === '/about' ? 'md:bg-transparent bg-[#fff]' : 'bg-[#fff]'} flex items-center justify-between mx-auto py-3 px-2 md:px-1 lg:mx-0 lg:px-8 ${pathname === '/about' ? 'md:relative fixed' : 'fixed'}   z-20 w-full top-0 `}>
         <Link href="/" className="flex items-center">
           <Image
@@ -41,22 +41,20 @@ const NavBar = () => {
           </button>
         </div>
         <div
-          className={`w-full md:block md:w-auto ${
-            openNavbar
-              ? 'w-full flex flex-col gap-3 z-20 pb-7 bg-primary absolute top-16 right-0 md:relative'
-              : 'hidden'
-          }`}
+          className={`w-full md:block md:w-auto ${openNavbar
+            ? 'w-full flex flex-col gap-3 z-20 pb-7 bg-primary absolute top-16 right-0 md:relative'
+            : 'hidden'
+            }`}
         >
           <ul className="items-center justify-center space-y-4 p-4 md:pl-0 md:flex md:space-x-3 lg:space-x-8 md:space-y-0">
             {navMenus.map(({ name, path }, index) => (
               <li key={index}>
                 <Link
                   href={path}
-                  className={`block py-2 pl-3 pr-4 rounded ${
-                    pathname === path
-                      ? 'md:text-primary text-[18px] font-semibold leading-6 text-black'
-                      : `text-white ${pathname === '/about' ? 'md:text-white':'md:text-body'} md:text-sm lg:text-lg`
-                  } hover:bg-gray-100 hover:text-primary md:hover:bg-transparent md:p-0`}
+                  className={`block py-2 pl-3 pr-4 rounded ${pathname === path
+                    ? 'md:text-primary text-[18px] font-semibold leading-6 text-black'
+                    : `text-white ${pathname === '/about' ? 'md:text-white' : 'md:text-body'} md:text-sm lg:text-lg`
+                    } hover:bg-gray-100 hover:text-primary md:hover:bg-transparent md:p-0`}
                   aria-current={pathname === path ? 'page' : undefined}
                   onClick={() => setOpenNavbar(false)}
                 >
