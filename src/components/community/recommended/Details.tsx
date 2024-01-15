@@ -12,8 +12,8 @@ const Details = ({ course }: Props) => {
   const { image, rating, student, title } = course;
   return (
     <section className="more-details lg:flex mb-2">
-      <div className="video lg:flex-1 pr-16 w-32 h-32">
-        <Image className=" w-3/5" src={image} alt="photo" />
+      <div className="video lg:flex-1 lg:pr-16 lg:w-32 lg:h-32 flex justify-center">
+        <Image className=" lg:w-3/5" src={image} alt="photo" />
       </div>
       <div className="info p-4 bg-[#A63F0E] text-white lg:flex-1">
         <div className=" lg:flex lg:flex-col lg:text-left pt-6">
