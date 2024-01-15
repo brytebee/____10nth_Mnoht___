@@ -5,7 +5,9 @@ import { useSwipeable, SwipeEventData } from 'react-swipeable';
 import { coursesCom } from '@/app/staticData/data';
 import Card from './Card';
 import Indicator from './Indicator';
-import Move from './Move';
+import MovePC from './MovePC';
+import Navigator from './Navigator';
+import Details from './Details';
 
 interface DivContent {
   component: React.FC<any>;
@@ -20,7 +22,7 @@ const divs: DivContent[] = coursesCom
     ),
   }));
 
-function SwipableCards() {
+function LinearScroll() {
   const [currentDivIndex, setCurrentDivIndex] = useState<number>(0);
 
   const handlers = useSwipeable({
@@ -41,37 +43,25 @@ function SwipableCards() {
   });
 
   return (
-    <div className="p-10 relative overflow-hidden">
-      {/* Na here I for dey render the components 😜 */}
-      <Move divs={divs} handlers={handlers} currentDivIndex={currentDivIndex} />
-
-      {/* Arrows dey sup for here 😜 */}
-      <div className="absolute top-0 right-0 lg:flex lg:items-center lg:justify-end">
-        <button
-          onClick={() => setCurrentDivIndex(currentDivIndex - 1)}
-          className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400"
-          disabled={currentDivIndex === 0}
-        >
-          <div className="w-6 h-6 text-gray-500">{'<'}</div>
-        </button>
-        <button
-          onClick={() => setCurrentDivIndex(currentDivIndex + 1)}
-          className="ml-4 p-2 rounded-full bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400"
-          disabled={currentDivIndex === divs.length - 1}
-        >
-          <div className="w-6 h-6 text-gray-500">{'>'}</div>
-        </button>
-      </div>
-      {/* Indicator dey sup for here 😜 */}
-      <div className="lg:hidden">
-        <Indicator
+    <div>
+      <div className="overflow-hidden">
+        {/* Arrows dey sup for here 😜 */}
+        <Navigator
           divs={divs}
           currentDivIndex={currentDivIndex}
           setCurrentDivIndex={setCurrentDivIndex}
         />
+        {/* Na here I for dey render the components 😜 */}
+        <MovePC
+          divs={divs}
+          handlers={handlers}
+          currentDivIndex={currentDivIndex}
+          setCurrentDivIndex={setCurrentDivIndex}
+        />
       </div>
+      <Details course={coursesCom[currentDivIndex]} />
     </div>
   );
 }
 
-export default SwipableCards;
+export default LinearScroll;

@@ -11,7 +11,7 @@ type Props = {
 
 const Indicator = ({ divs, currentDivIndex, setCurrentDivIndex }: Props) => {
   return (
-    <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 md:hidden">
+    <div className="lg:hidden absolute bottom-0 left-1/2 transform -translate-x-1/2">
       {divs.map((_: any, index: number) => (
         <button key={index} onClick={() => setCurrentDivIndex(index)}>
           {index === currentDivIndex ? (

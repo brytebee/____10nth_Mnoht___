@@ -4,9 +4,15 @@ type Props = {
   handlers: any;
   divs: any;
   currentDivIndex: number;
+  setCurrentDivIndex: (a: number) => void;
 };
 
-const MovePC = ({ handlers, divs, currentDivIndex }: Props) => {
+const MovePC = ({
+  handlers,
+  divs,
+  currentDivIndex,
+  setCurrentDivIndex,
+}: Props) => {
   // There's a bug in this slice that makes the user click twice to move
   let sliced = [];
   if (currentDivIndex <= 0) {
@@ -21,10 +27,16 @@ const MovePC = ({ handlers, divs, currentDivIndex }: Props) => {
   return (
     <div
       {...handlers}
-      className="relative grid grid-cols-1 md:grid-cols-3 gap-4"
+      className="grid grid-cols-1 md:grid-cols-3 gap-4 mx-32 mb-8"
     >
       {sliced.map((divContent: any, index: number) => (
-        <div key={index} className="relative">
+        <div
+          key={index}
+          className={`flex justify-center ${
+            index === currentDivIndex ? 'border-l-2 border-amber-600' : ''
+          }`}
+          onClick={() => setCurrentDivIndex(currentDivIndex)}
+        >
           {divContent.component({
             image: divContent.image,
             rating: divContent.rating,

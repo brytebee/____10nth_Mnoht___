@@ -12,6 +12,14 @@ export interface Course {
   conclusion: string;
 }
 
+// Ensure you combine the props of course and coursesCom
+export type CourseCom = {
+  image: string | HTMLImageElement;
+  rating: number;
+  student: number;
+  title: string;
+};
+
 type Review = {
   comment: String;
   name: String;
@@ -267,7 +275,7 @@ export const reviews: Review[] = [
   },
 ];
 
-export const coursesCom = [
+export const coursesCom: CourseCom[] = [
   {
     image: Images[0],
     title: 'UI & UX DESIGN',

@@ -1,6 +1,6 @@
 'use client';
 
-import SwipableDivs from '@/components/community/recommended/Swipe';
+import SwipableDivs from '@/components/community/recommended/CircularSwip';
 import React from 'react';
 
 type Props = {};

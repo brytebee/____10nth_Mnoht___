@@ -8,7 +8,7 @@ type Props = {
 
 const Move = ({ handlers, divs, currentDivIndex }: Props) => {
   return (
-    <div {...handlers} className="relative">
+    <div {...handlers} className="py-4">
       {/* Render the component from the array */}
       {divs[currentDivIndex].component()}
     </div>
