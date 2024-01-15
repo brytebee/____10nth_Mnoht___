@@ -1,11 +1,14 @@
 import React from 'react';
-import CentralImage from './CentralImage';
-import OtherImages from './OtherImages';
+import PcImg from '../../../../public/svgs/com-hero-central-img-pc.svg';
+import OrbitingImages from './OrbitingImages';
+import Others from '../../../../public/images/new-other.png';
 
 const Animation = () => (
-  <div className="container flex items-center justify-center mb-40">
-    <CentralImage />
-    <OtherImages />
+  <div>
+    <OrbitingImages
+      staticImageSrc={PcImg} 
+      orbitingImageSrc={Others} 
+    />
   </div>
 );
 
