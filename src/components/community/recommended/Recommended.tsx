@@ -32,6 +32,7 @@ const Recommended = () => {
       <section className="metrics hidden lg:block bg-[#E6C09CB2] mt-20 px-32">
         {metrics.map(({ courses, students, instructors, certified }) => (
           <Metrics
+            key={courses}
             course={courses}
             student={students}
             instructor={instructors}

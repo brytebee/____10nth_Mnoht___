@@ -20,7 +20,7 @@ const AboutPC = () => (
           </p>
           <p className="pt-8 text-xl leading-[30px] pr-6">
             “A place where your technology journey is not merely an education –
-            it's an exhilarating adventure!”
+            it&apos;s an exhilarating adventure!”
           </p>
           <div className="pt-[22px]">
             <SecondaryButton

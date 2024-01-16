@@ -14,6 +14,7 @@ const ActiveDiscussions = () => (
         {Discuss.slice(0, 3).map(
           ({ id, image, username, title, description, likes, comments }) => (
             <Card
+              key={id}
               id={id}
               image={image}
               username={username}

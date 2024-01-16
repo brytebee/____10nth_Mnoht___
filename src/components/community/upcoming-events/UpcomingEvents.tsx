@@ -51,9 +51,9 @@ const UpcomingEvents = () => {
         <p className="text-[14px] leading-[30px] lg:mx-80">
           Get ready for an unparalleled tech experience at the Techverse Tech
           Expo 2024! Dive into cutting-edge innovations, hands-on workshops, and
-          insightful discussions. Don't miss the chance to connect with industry
-          leaders and shape the future of technology. Join us for a day of
-          inspiration and exploration! <br />{' '}
+          insightful discussions. Don&apos;t miss the chance to connect with
+          industry leaders and shape the future of technology. Join us for a day
+          of inspiration and exploration! <br />{' '}
           <strong>#TechverseExpo2024</strong> ✨🚀
         </p>
       </section>
@@ -65,6 +65,7 @@ const UpcomingEvents = () => {
         <section className="grid grid-cols-2 gap-2 lg:mx-14">
           {events.map(({ date, time, title, description, venue, color }) => (
             <ECard
+              key={title}
               date={date}
               title={title}
               description={description}

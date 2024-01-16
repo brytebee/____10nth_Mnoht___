@@ -16,8 +16,8 @@ const AboutMobile = () => (
         <Image src={CommGroup} alt="community" />
       </div>
       <p className="text-sm">
-        “A place where your technology journey is not merely an education – it's
-        an exhilarating adventure!”
+        “A place where your technology journey is not merely an education –
+        it&apos;s an exhilarating adventure!”
       </p>
       <div className="py-5">
         <SecondaryButton
